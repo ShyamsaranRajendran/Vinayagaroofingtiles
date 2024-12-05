@@ -20,6 +20,17 @@ export default function ProductCard({
     setIsModalOpen(false);
   };
 
+// - Price: $${price} 
+  // WhatsApp message URL
+  const whatsappMessage = encodeURIComponent(
+    `Hi! I'm interested in the following product: 
+- Name: ${name} 
+- Material: ${material} 
+- Dimensions: ${dimensions}
+Could you share more details and assist with the purchase? 😊`
+  );
+  const whatsappLink = `https://wa.me/+918056513467?text=${whatsappMessage}`;
+
   return (
     <div className="product-card">
       {/* Product Image */}
@@ -36,7 +47,7 @@ export default function ProductCard({
       <div className="product-card-content">
         <div className="product-card-header">
           <h3 className="product-card-title">{name}</h3>
-          <span className="product-card-price">${price}</span>
+          {/* <span className="product-card-price">${price}</span> */}
         </div>
         <div className="product-card-details">
           <p>Material: {material}</p>
@@ -44,13 +55,14 @@ export default function ProductCard({
         </div>
         <div className="product-card-actions">
           <a
-            href="https://wa.me/8056513467?text=I%20want%20to%20add%20this%20product%20to%20the%20cart"
+            href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="product-card-add-to-cart-btn"
           >
-            Add to Cart
+            Contact on WhatsApp
           </a>
+
           <button className="product-card-info-btn">
             <Info size={20} />
           </button>

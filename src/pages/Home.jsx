@@ -1,13 +1,11 @@
 import React from "react";
-import Hero from "../components/Hero";
+import Carousel from "../components/Hero/Carousel";
 import Features from "../components/Features";
 import ProductCard from "../components/ProductCard";
 
-
 const featuredProducts = [
   {
-    image:
-      "https://images.unsplash.com/photo-1622993295842-5cea471a10cd?auto=format&fit=crop&q=80",
+    image: "https://100pillars.in/wp-content/uploads/2022/09/Title-Image-1.jpg",
     name: "Classic Clay Tile",
     price: 599,
     material: "Natural Clay",
@@ -15,7 +13,7 @@ const featuredProducts = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1632239776255-0a7f24814df2?auto=format&fit=crop&q=80",
+      "https://technonicol.in/upload/materials/3_roofing_shingles_multilayer-min.jpg",
     name: "Slate Premium",
     price: 899,
     material: "Natural Slate",
@@ -23,7 +21,7 @@ const featuredProducts = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1632239763277-082e8c7f0f51?auto=format&fit=crop&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIpY0GHxXzZUc6HsrBsX7Z52u1oTyrOlRjXQ&s",
     name: "Modern Metal",
     price: 499,
     material: "Galvanized Steel",
@@ -31,24 +29,25 @@ const featuredProducts = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1632239763553-7fc7e11c8f65?auto=format&fit=crop&q=80",
+      "https://www.static-contents.youth4work.com/y4w/6a46861f-0273-4a83-bb5e-e2839d23f6d9.png",
     name: "Solar Tile X",
     price: 1299,
     material: "Solar Glass",
     dimensions: '14" x 8" x 0.6"',
   },
+  // https://5.imimg.com/data5/SELLER/Default/2022/3/AK/AV/SO/49028997/tata-durashine-multicolor-tile-profile-sheet.jpg
 ];
 
 export default function Home() {
   return (
-    <div className="home-container">
-      <Hero />
+    <div className="home-wrapper">
+      <Carousel />
       <Features />
 
-      <section className="home-featured-section">
-        <div className="home-header">
-          <h2 className="home-title">Featured Products</h2>
-          <p className="home-description">
+      <div className="home-featured-section">
+        <div className="home-featured-header">
+          <h2 className="home-featured-title">Featured Products</h2>
+          <p className="home-featured-description">
             Discover our selection of premium roofing tiles, designed to enhance
             the beauty and protection of your home.
           </p>
@@ -59,7 +58,7 @@ export default function Home() {
             <ProductCard key={index} {...product} />
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 }

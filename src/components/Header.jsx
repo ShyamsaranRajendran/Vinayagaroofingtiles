@@ -16,7 +16,7 @@ function Header() {
     <header className="header-container">
       <div className="header-brand">
         <Link to="/" className="header-brand-link">
-          Roofing Tiles
+        Vinayaga Roofing Tiles
         </Link>
       </div>
       <nav className="header-navigation">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Wrench, Shield, Ruler, Clock } from "lucide-react";
+
 const services = [
   {
     icon: Wrench,
@@ -42,17 +43,36 @@ export default function Services() {
       </div>
 
       <div className="services-grid">
-        {services.map((service, index) => (
-          <div key={index} className="service-card">
-            <service.icon className="service-icon" />
-            <h3 className="service-title">{service.title}</h3>
-            <p className="service-description">{service.description}</p>
-            <div className="service-footer">
-              <span className="service-price">{service.price}</span>
-              <button className="service-button">Book Now</button>
+        {services.map((service, index) => {
+          // Construct WhatsApp URL dynamically
+          const whatsappMessage = encodeURIComponent(
+            `Hi! I am interested in the following service: 
+- Service: ${service.title}
+- Description: ${service.description}
+- Price: ${service.price}
+Could you provide more details and help me book this service? 😊`
+          );
+          const whatsappLink = `https://wa.me/+918056513467?text=${whatsappMessage}`;
+
+          return (
+            <div key={index} className="service-card">
+              <service.icon className="service-icon" />
+              <h3 className="service-title">{service.title}</h3>
+              <p className="service-description">{service.description}</p>
+              <div className="service-footer">
+                <span className="service-price">{service.price}</span>
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="service-button"
+                >
+                  Book Now
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

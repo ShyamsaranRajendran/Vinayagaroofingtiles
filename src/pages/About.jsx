@@ -38,7 +38,7 @@ export default function About() {
         <div className="about-story grid md:grid-cols-2 gap-12 items-center">
           <div className="story-image">
             <img
-              src="https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?auto=format&fit=crop&q=80"
+              src=" https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg"
               alt="Our Team"
               className="rounded-lg shadow-lg"
             />

@@ -121,45 +121,229 @@ body {
   margin: 0;
   font-size: 0.875rem;
 }
-
 /* =========================================================== Home page ========================================================= */
 
-.home-container {
-    font-family: 'Poppins', Arial, sans-serif;
-  color: #333;
+.home-wrapper {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
 }
 
+/* Featured Section */
 .home-featured-section {
   padding: 4rem 1.5rem;
   background-color: #f9f9f9;
+  width: 90%;
 }
 
-.home-header {
+.home-featured-header {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.home-title {
+.home-featured-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #333;
 }
 
-.home-description {
+.home-featured-description {
   font-size: 1rem;
   color: #666;
   max-width: 600px;
   margin: 0 auto;
 }
 
+/* Products Grid */
 .home-products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+}
+
+/* =========================================================== Carousel page ========================================================= */
+
+.carousel-container {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  width: 100%;
   margin: 0 auto;
 }
 
+/* Carousel Slides Wrapper */
+.carousel-slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-out;
+}
+
+/* Carousel Slide */
+.carousel-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Slide Content */
+.carousel-slide-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-slide-description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-slide-cta {
+  background-color: #007BFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-slide-cta:hover {
+  background-color: #0056b3;
+}
+
+/* Navigation Buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 0.75rem;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-button-left {
+  left: 1rem;
+}
+
+.carousel-button-right {
+  right: 1rem;
+}
+
+/* Indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicator.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ======================== Responsive Design ======================== */
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 60vh;
+  }
+
+  .carousel-slide-title {
+    font-size: 2rem;
+  }
+
+  .carousel-slide-description {
+    font-size: 1rem;
+  }
+
+  .carousel-slide-cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .carousel-button {
+    padding: 0.5rem;
+  }
+
+  .carousel-indicators {
+    bottom: 0.5rem;
+    gap: 0.3rem;
+  }
+
+  .carousel-indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Adjustments for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 50vh;
+  }
+
+  .carousel-slide-title {
+    font-size: 1.5rem;
+  }
+
+  .carousel-slide-description {
+    font-size: 0.875rem;
+  }
+
+  .carousel-slide-cta {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .carousel-button {
+    padding: 0.4rem;
+  }
+
+  .carousel-indicators {
+    gap: 0.2rem;
+  }
+
+  .carousel-indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
 
 /* =========================================================== service page ==========================================================  */
 
@@ -610,7 +794,7 @@ body {
 
 .contact-info-item {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -628,6 +812,17 @@ body {
 .contact-info-text {
   color: #555;
 }
+
+.contact-info-email-link {
+  color: #007bff; /* Blue color */
+  text-decoration: none; /* Removes underline */
+}
+
+.contact-info-email-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #0056b3; /* Darker blue on hover */
+}
+
 
 /* Responsive Adjustments */
 @media (min-width: 768px) {
@@ -1015,8 +1210,8 @@ body {
 }
 
 .product-card-modal-content {
-  max-width: 90%;           /* Limit the modal size */
-  max-height: 90%;          /* Limit the modal height */
+  width: 70%;           /* Limit the modal size */
+  height: 70%;          /* Limit the modal height */
   background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
@@ -1062,7 +1257,11 @@ body {
 .product-card-overlay .product-card-zoom-btn:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
-
+@media (min-width: 300px) {
+  .product-card-modal-content {
+    height: auto;
+  }
+}
 
 /* ======================================================================= Hero page =========================================================  */
 
@@ -1152,6 +1351,7 @@ body {
 
 /* Features Section */
 .features-section {
+  width: 90%;
   padding-top: 4rem;
   padding-bottom: 4rem;
   background-color: #f9fafb;

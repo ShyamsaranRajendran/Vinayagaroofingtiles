@@ -4,8 +4,7 @@ import ProductCard from "../components/ProductCard";
 
 const products = [
   {
-    image:
-      "https://images.unsplash.com/photo-1622993295842-5cea471a10cd?auto=format&fit=crop&q=80",
+    image: "https://100pillars.in/wp-content/uploads/2022/09/Title-Image-1.jpg",
     name: "Classic Clay Tile",
     price: 599,
     material: "Natural Clay",
@@ -15,7 +14,7 @@ const products = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1632239776255-0a7f24814df2?auto=format&fit=crop&q=80",
+      "https://technonicol.in/upload/materials/3_roofing_shingles_multilayer-min.jpg",
     name: "Slate Premium",
     price: 899,
     material: "Natural Slate",
@@ -25,14 +24,54 @@ const products = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1506748686217-88cc63b2b220?auto=format&fit=crop&q=80",
-    name: "Wooden Flooring",
-    price: 1200,
-    material: "Wood",
-    dimensions: '24" x 8" x 0.5"',
-    category: "Flooring",
-    subcategory: "Wood",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIpY0GHxXzZUc6HsrBsX7Z52u1oTyrOlRjXQ&s",
+    name: "Modern Metal",
+    price: 499,
+    material: "Galvanized Steel",
+    dimensions: '24" x 12" x 0.25"',
+    category: "Tiles",
+    subcategory: "Clay",
   },
+  {
+    image:
+      "https://www.static-contents.youth4work.com/y4w/6a46861f-0273-4a83-bb5e-e2839d23f6d9.png",
+    name: "Solar Tile X",
+    price: 1299,
+    material: "Solar Glass",
+    dimensions: '14" x 8" x 0.6"',
+    category: "Tiles",
+    subcategory: "Slate",
+  },
+  {
+    image:
+      " https://5.imimg.com/data5/SELLER/Default/2022/3/AK/AV/SO/49028997/tata-durashine-multicolor-tile-profile-sheet.jpg",
+    name: "Classic Clay Tile",
+    price: 599,
+    material: "Natural Clay",
+    dimensions: '10" x 6" x 0.5"',
+    category: "Tiles",
+    subcategory: "Clay",
+  },
+  // {
+  //   image:
+  //     "https://images.unsplash.com/photo-1632239776255-0a7f24814df2?auto=format&fit=crop&q=80",
+  //   name: "Slate Premium",
+  //   price: 899,
+  //   material: "Natural Slate",
+  //   dimensions: '12" x 8" x 0.75"',
+  //   category: "Tiles",
+  //   subcategory: "Slate",
+  // },
+  // {
+  //   image:
+  //     "https://images.unsplash.com/photo-1506748686217-88cc63b2b220?auto=format&fit=crop&q=80",
+  //   name: "Wooden Flooring",
+  //   price: 1200,
+  //   material: "Wood",
+  //   dimensions: '24" x 8" x 0.5"',
+  //   category: "Flooring",
+  //   subcategory: "Wood",
+  // },
   // More products...
 ];
 
