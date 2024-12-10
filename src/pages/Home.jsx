@@ -42,7 +42,6 @@ export default function Home() {
   return (
     <div className="home-wrapper">
       <Carousel />
-      <Features />
 
       <div className="home-featured-section">
         <div className="home-featured-header">
@@ -59,6 +58,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <Features />
     </div>
   );
 }

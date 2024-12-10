@@ -1,0 +1,442 @@
+[
+ 
+  {
+    "image": "https://5.imimg.com/data5/NSDMERP/Default/2024/11/465099508/NA/NO/NU/14768856/14768856-product-1731494556485-250x250.jpg",
+    "name": "Terracotta Clay Jali",
+    "price": 110,
+    "marketPrice": null,
+    "material": "Terracotta and Clay",
+    "dimensions": "8\" x 8\"",
+    "category": "Wire clay brick",
+    "subcategory": "Terracotta Products",
+    "color": "Red",
+    "shape": "Square",
+    "design": "Hollow",
+    "usage": "Side Walls",
+    "features": [],
+    "surfaceTreatment": null,
+    "technique": null,
+    "description": null,
+    "minimumOrderQuantity": "100 Pieces"
+  },
+  {
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFdQ5tJl7djLJHhs_dJOWGt0frWt7sV7hLp6KvTdeiZJN6atvs",
+    "name": "Earthen Jali Bricks (Flower)",
+    "price": 97.22,
+    "marketPrice": 208.32,
+    "material": "Earthen Clay",
+    "dimensions": "220 mm x 220 mm",
+    "category": "Clay roofing tiles",
+    "subcategory": "Jali Bricks",
+    "color": "Amber",
+    "shape": "Flower Design",
+    "design": "Intricate Flower Pattern",
+    "usage": "Decorative Walls",
+    "features": [],
+    "surfaceTreatment": null,
+    "technique": null,
+    "description": null,
+    "minimumOrderQuantity": "Varies by Supplier"
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYcSSGvfy-p1ocvKu6EZufDO83n4dL0AygaVnfakMwKkuAQ00v",
+    "name": "Mangalore Clay Roof Tiles 2",
+    "price": 12,
+    "marketPrice": null,
+    "material": "Clay",
+    "dimensions": "7.5 x 4 x 2 inches (L x W x H)",
+    "category": "Roof Tiles",
+    "subcategory": "Ceramic roofing tiles",
+    "color": "Brown",
+    "shape": null,
+    "design": null,
+    "usage": "Roofing for residential and commercial buildings",
+    "features": [
+      "Durable and heat-resistant clay material",
+      "Color-coated for a polished look",
+      "Profiled design for better installation"
+    ],
+    "surfaceTreatment": "Color Coated",
+    "technique": null,
+    "description": "Mangalore Clay Roof Tiles provide an excellent heat-resistant solution for roofing, featuring a durable clay build, polished finish, and profiled design for efficient installation.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+  {
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaVRz3RPsilKw8c1NG0ni1w0luy9C-7cN6IwgpJOI_rF8wK6Ez",
+    "name": "Camp Clay Jali",
+    "price": 75,
+    "material": "Clay",
+    "dimensions": "8 x 8 x 2.6 inches (L x W x H)",
+    "category": "Concrete roofing tiles",
+    "subcategory": "Clay roofing tiles",
+    "usage": "Side Walls",
+    "color": "Red",
+    "design": "Solid",
+    "resistance": ["Fire Resistant"],
+    "waterAbsorption": "5%",
+    "features": [
+      "Durable clay material with fire-resistant properties",
+      "Ideal for side walls in construction",
+      "Solid design for strength and stability",
+      "Low water absorption (5%)"
+    ],
+    "description": "Camp Clay Jali provides a strong, fire-resistant solution for side walls, featuring solid construction and low water absorption for durability in various weather conditions.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ojYrsBXjlPSTR-VAKvkkj_Gfg3UJI0G-UXwK-p4feDQUiB4b",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Clay roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPP3TSvKRNoXT3bp68YQsGqT5oE69t8d8uzuoHKrawMfwQZ31P",
+    "name": "Terracotta Clay Jali",
+    "price": 110,
+    "marketPrice": null,
+    "material": "Terracotta and Clay",
+    "dimensions": "8\" x 8\"",
+    "category": "Clay roofing tiles",
+    "subcategory": "Terracotta Products",
+    "color": "Red",
+    "shape": "Square",
+    "design": "Hollow",
+    "usage": "Side Walls",
+    "features": [],
+    "surfaceTreatment": null,
+    "technique": null,
+    "description": null,
+    "minimumOrderQuantity": "100 Pieces"
+  },
+  {
+    "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWfELlfyZgvpimjCT15RU96tn-TYxLLwOzVjlDtNHk_dQGxUOv",
+    "name": "Earthen Jali Bricks (Flower)",
+    "price": 97.22,
+    "marketPrice": 208.32,
+    "material": "Earthen Clay",
+    "dimensions": "220 mm x 220 mm",
+    "category": "Clay roofing tiles",
+    "subcategory": "Jali Bricks",
+    "color": "Amber",
+    "shape": "Flower Design",
+    "design": "Intricate Flower Pattern",
+    "usage": "Decorative Walls",
+    "features": [],
+    "surfaceTreatment": null,
+    "technique": null,
+    "description": null,
+    "minimumOrderQuantity": "Varies by Supplier"
+  },
+  {
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFIvBO09t-xSOm6LbUznJVrJn0Z8ouVc_QkljItg10ZWZwFnli",
+    "name": "Mangalore Clay Roof Tiles",
+    "price": 12,
+    "marketPrice": null,
+    "material": "Clay",
+    "dimensions": "7.5 x 4 x 2 inches (L x W x H)",
+    "category": "UPVC roofing shine tiles",
+    "subcategory": "Clay Roof Tiles",
+    "color": "Brown",
+    "shape": null,
+    "design": null,
+    "usage": "Roofing for residential and commercial buildings",
+    "features": [
+      "Durable and heat-resistant clay material",
+      "Color-coated for a polished look",
+      "Profiled design for better installation"
+    ],
+    "surfaceTreatment": "Color Coated",
+    "technique": null,
+    "description": "Mangalore Clay Roof Tiles provide an excellent heat-resistant solution for roofing, featuring a durable clay build, polished finish, and profiled design for efficient installation.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+  {
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShmfj0uYa1Os07EG9Zo8SIQ2-fXuYti1Dn39zjOyM8d8kNAmBg",
+    "name": "Camp Clay Jali",
+    "price": 75,
+    "material": "Clay",
+    "dimensions": "8 x 8 x 2.6 inches (L x W x H)",
+    "category": "Clay roofing tiles",
+    "subcategory": "Clay Jali",
+    "usage": "Side Walls",
+    "color": "Red",
+    "design": "Solid",
+    "resistance": ["Fire Resistant"],
+    "waterAbsorption": "5%",
+    "features": [
+      "Durable clay material with fire-resistant properties",
+      "Ideal for side walls in construction",
+      "Solid design for strength and stability",
+      "Low water absorption (5%)"
+    ],
+    "description": "Camp Clay Jali provides a strong, fire-resistant solution for side walls, featuring solid construction and low water absorption for durability in various weather conditions.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+
+
+  {
+    "image":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaonuynsEyG8Z53EpjZ8iPxkSsXZXhty_ew1rravjzn7GxZB5q",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Clay roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ2zwz7wK-2Oe8d3EQOfU7k8LV1QzBmnyxdEPPXB3EyLW9JIhu",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Clay roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDxgg2y3Vekn0jez0qGL33lVYxmSykExlNxBVWG-nLxWLJriMV",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Ceramic roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzWkEx-2CErJLWsjP53-VYsl14PsoSvaEXtKIbR92QLWOb8dN4",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Ceramic roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcwyNa6SUKxRvEvqJ-JlxgyT2edXFRBzrXASXW4v02b1tlGqtM",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Concrete roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSp2bx6xngrwGOZOAL-zAM4IG6gfjJ7xv4PRVfbsVJNsm6nTYkF",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Ceramic roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEddsTZIDfmVpVGFSMw4H6ZilH5AKOggMQJd9YHf0WprKVuUUL",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Wire clay brick",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-VGEcH8qaYqPjvp5gr3Go9ihT7wuqalFQLaUtAZK6JzMSlWRl",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Concrete roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfa1BKT3i0eiyZ6BiHiFsnpBKrGSa9pgLU_svvEs2n7plJXPOz",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Wire clay brick",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROyTxGq3mWSbUyAdCggqY9W58TZDx_nAZV2YUbJdbTe-AeHCSr",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Concrete roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGxk7AyFS-y14IUTX0glaTotDKZUKzhLVbQ-5U3GA6c8VvF-sp",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Concrete roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO3jaxFAdOdFTHjlW4uBMeMnkVqlugfGIVRg3EGWNbI9JQD9TG",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Concrete roofing tiles",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-AkYGZ2AVTOKR_n_Kk9s32chZG3xLT1RJUuT4dEP4qvSUZIsa",
+    "name": "Bubble Top Tile",
+    "price": 30,
+    "priceUnit": "Square Feet",
+    "material": "All",
+    "usage": "All",
+    "color": "Many",
+    "size": "All",
+    "category": "Laser Plates",
+    "subcategory": "Decorative Tiles",
+    "features": [
+      "Versatile design suitable for various applications",
+      "Available in multiple colors and sizes",
+      "Can be used in a variety of settings"
+    ],
+    "description": "Bubble Top Tile offers a unique and versatile design suitable for a wide range of applications. Available in a variety of colors and sizes to fit different needs.",
+    "minimumOrderQuantity": "Contact for details"
+  },
+   {
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAFhme8KeF-rOE9Bfr4kbqYUg1an3ZUTEcWyFm4ODSuSxELTYN",
+    "name": "Bubble Top Tile",
+    "category": "Ceramic roofing tiles"
+    }
+]

@@ -7,27 +7,27 @@ const services = [
     title: "Professional Installation",
     description:
       "Expert installation by our certified team of professionals with years of experience.",
-    price: "Starting from $2,500",
+  
   },
   {
     icon: Shield,
     title: "Maintenance & Repair",
     description:
       "Regular maintenance and prompt repair services to keep your roof in perfect condition.",
-    price: "Starting from $299",
+
   },
   {
     icon: Ruler,
     title: "Roof Inspection",
     description:
       "Comprehensive roof inspection to identify potential issues before they become problems.",
-    price: "Starting from $149",
+   
   },
   {
     icon: Clock,
     title: "Emergency Services",
     description: "24/7 emergency repair services for urgent roofing problems.",
-    price: "Starting from $399",
+   
   },
 ];
 
@@ -52,7 +52,7 @@ export default function Services() {
 - Price: ${service.price}
 Could you provide more details and help me book this service? 😊`
           );
-          const whatsappLink = `https://wa.me/+918056513467?text=${whatsappMessage}`;
+          const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
 
           return (
             <div key={index} className="service-card">
@@ -60,7 +60,6 @@ Could you provide more details and help me book this service? 😊`
               <h3 className="service-title">{service.title}</h3>
               <p className="service-description">{service.description}</p>
               <div className="service-footer">
-                <span className="service-price">{service.price}</span>
                 <a
                   href={whatsappLink}
                   target="_blank"
@@ -77,3 +76,29 @@ Could you provide more details and help me book this service? 😊`
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // {
+  // "Clay roofing tiles",
+  // "Concrete roofing tiles",
+  // "Ceramic roofing tiles",
+  // "UPVC roofing shine tiles",
+  // "Laser Plates",
+  // "Wire clay brick",
+  // "7th category",
+  // },

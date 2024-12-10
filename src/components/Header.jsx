@@ -40,16 +40,16 @@ function Header() {
               Products
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/services" className="header-link" onClick={closeMenu}>
               Services
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link to="/gallery" className="header-link" onClick={closeMenu}>
               Gallery
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/about" className="header-link" onClick={closeMenu}>
               About
