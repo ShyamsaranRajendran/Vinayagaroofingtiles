@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -12,11 +13,17 @@ function Header() {
     setMenuOpen(false);
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    closeMenu();
+    document.body.classList.toggle("dark-mode", !darkMode); // Add or remove "dark-mode" class to body
+  };
+
   return (
     <header className="header-container">
       <div className="header-brand">
         <Link to="/" className="header-brand-link">
-        Vinayaga Roofing Tiles
+          Vinayaga Roofing Tiles
         </Link>
       </div>
       <nav className="header-navigation">
@@ -40,16 +47,6 @@ function Header() {
               Products
             </Link>
           </li>
-          {/* <li>
-            <Link to="/services" className="header-link" onClick={closeMenu}>
-              Services
-            </Link>
-          </li> */}
-          {/* <li>
-            <Link to="/gallery" className="header-link" onClick={closeMenu}>
-              Gallery
-            </Link>
-          </li> */}
           <li>
             <Link to="/about" className="header-link" onClick={closeMenu}>
               About
@@ -59,6 +56,15 @@ function Header() {
             <Link to="/contact" className="header-link" onClick={closeMenu}>
               Contact
             </Link>
+          </li>
+          <li>
+            <button
+              className="dark-mode-toggle"
+              onClick={toggleDarkMode}
+              aria-label="Toggle dark mode"
+            >
+              {darkMode ? "☀️" : "🌙"}
+            </button>
           </li>
         </ul>
       </nav>

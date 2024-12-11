@@ -10,7 +10,7 @@ const categories = [
   "UPVC roofing shine tiles",
   "Laser Plates",
   "Wire clay brick",
-  "7th category",
+  "UPVC Rain Gutter",
 ];
 
 const brands = [
@@ -59,18 +59,7 @@ export default function Products() {
             </option>
           ))}
         </select>
-        <select
-          className="filter-select"
-          value={brandFilter}
-          onChange={(e) => setBrandFilter(e.target.value)}
-        >
-          <option value="">All Brands</option>
-          {brands.map((brand) => (
-            <option key={brand} value={brand}>
-              {brand}
-            </option>
-          ))}
-        </select>
+        
       </div>
 
       <div className="products-grid">
@@ -80,7 +69,7 @@ export default function Products() {
               (categoryFilter ? product.category === categoryFilter : true) &&
               (brandFilter ? product.brand === brandFilter : true) &&
               (!searchQuery ||
-                product.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                product.category.toLowerCase().includes(searchQuery.toLowerCase()))
           )
           .map((product, index) => (
             <ProductCard key={index} {...product} />
