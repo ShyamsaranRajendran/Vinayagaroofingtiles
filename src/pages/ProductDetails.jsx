@@ -24,8 +24,9 @@ export default function ProductDetails() {
 
   const whatsappMessage = encodeURIComponent(
     `Hi! I'm interested in the following product: 
-    - Name: ${name} 
-    - Material: ${material} 
+   - category: ${category} 
+   - Product:  ${image}
+   - Material: ${material} 
     Could you share more details and assist with the purchase? 😊`
   );
   const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
