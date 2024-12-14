@@ -26,7 +26,8 @@ export default function ProductCard({
   // WhatsApp message URL
   const whatsappMessage = encodeURIComponent(
     `Hi! I'm interested in the following product: 
-- Name: ${name} 
+- category: ${category} 
+- Product  ${image}
 - Material: ${material} 
 Could you share more details and assist with the purchase? 😊`
   );

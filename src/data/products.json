@@ -87,299 +87,460 @@
     "material": "Concrete",
     "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
   },
-   {
-    "id":36,
+    {
+    "id": 12,
     "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZ8tETAwGmwbp4VfahinAxgLlwx06B0VOqzb8c2pMJpfBVrbeI",
     "name": "Bubble Top Tile",
-    "category": "Concrete roofing tiles"
-    },
-    {
-    "id":37,
-    "image": "https://i.ytimg.com/vi/c4Y8ywmPALA/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLA1HlmNQEWvn8IeGlHeBbh2bTLdRw",
-    "name": "Bubble Top Tile",
-    "category": "Ceramic roofing tiles"
-    },
-   {
-    "id":38,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyUNdBWIgrKIjBwa6WIx5WpRC-e6OzHlT0vHi_-h8V_7t1NmqQ",
-    "name": "Bubble Top Tile",
-    "category": "Clay roofing tiles"
-    },
-   
-     {
-    "id":40,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgoVZCCwH57OwQKOvVR_rqg5gvMdXcykSx97qcS0eDB88XY0m9",
-    "name": "Bubble Top Tile",
-    "category": "Concrete roofing tiles"
-    },
-   {
-    "id":16,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtW66Vn7quch0IwF3NVzvO2B-eYy-5hOzIkAJL2gez27qNFlcJ",
-    "name": "Bubble Top Tile",
-    "category": "Wire clay brick"
-    },
-     {
-    "id":18,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl2A3ZYyyrblkFRYM-ndYIKVE-kUKFCYq4eLUgRv1M6_4-C0_f",
-    "name": "Bubble Top Tile",
-    "category": "Wire clay brick"
-    },
-    {
-    "id":33,
-    "image": "https://i0.wp.com/brickart.in/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-20-at-1.25.44-PM-5.jpeg?fit=1024%2C683&ssl=1",
-    "name": "Bubble Top Tile",
-    "category": "Wire clay brick"
-    },
-    {
-    "id":32,
-    "image": "../assets/brick.png",
-    "name": "Bubble Top Tile",
-    "category": "Clay false ceiling tiles"
-    },
-
-  {
-    "id":32,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG8p9F9n1Govx46c9DRdDm-WCwpctlxkjVEGgI97loeUdZJxGx",
-    "name": "Bubble Top Tile",
-    "category":"Clay roofing tiles"
-    },
-      {
-    "id":32,
-    "image":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTNHPttDVtObMhG2VkHzUjSXve9seQnCMoiXovqfukxz0Yqg_k",
-    "name": "Bubble Top Tile",
-    "category":"Clay roofing tiles"
-    },
-  {
-    "id":32,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR543vLRSsnj907vpP_joJBRZpJD7gDc_8daCmRGV7XD54Qu7Yq",
-    "name": "Bubble Top Tile",
-    "category":"Clay roofing tiles"
-    },
-{
-    "id":32,
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcG2j1rxBlIly7r9UzihgfGf_czrP2_fNCA0g23qJ7OBBEMdK",
-    "name": "Bubble Top Tile",
-    "category":"Clay roofing tiles"
-    },
-    {
-    "id":32,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzj5Mwr3tYRUCvlC3jFzXGJqVTKy6jm1DgysSvJFJ4-o7DWon",
-    "name": "Bubble Top Tile",
-    "category":"Clay roofing tiles"
-    },
-  {
-    "id":32,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuRADpKOa1EKLjsiWsYSo2RkBgJTMh5Icqa3GiDJbgTbR8VeyG",
-    "name": "Bubble Top Tile",
-    "category":"Clay roofing tiles"
-    },
-      {
-    "id":32,
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4HYkPZsf6QFQjBjELOC6eAfqBu5v0pVVFqYVHmqkOBMCDsYi",
-    "name": "Bubble Top Tile",
-    "category":"Clay roofing tiles"
-    },
-  {
-    "id":32,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW8AOImdmel_hcAQ27rjoKVjzTwL6EczqNZnlpOXmtfMcZRi_z",
-    "name": "Bubble Top Tile",
-    "category":"Clay roofing tiles"
-    },
-
-
-
-
-   {
-    "id":26,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc9vhLGwKQgWt1gr3HG3pFtjUBqYOjk1paopMS_iF0ZkSTPU_9",
-    "name": "Bubble Top Tile",
-    "category": "Wire clay brick"
-    },
-    {
-    "id":27,
-    "image": "https://i0.wp.com/brickart.in/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-20-at-1.25.44-PM-3.jpeg?fit=1024%2C683&ssl=1",
-    "name": "Bubble Top Tile",
-    "category": "Wire clay brick"
-    },
-    {
-    "id":30,
-    "image": "https://terracon.in/uploads/product/gujarat-jolly.png",
-    "name": "Bubble Top Tile",
-    "category": "Wire clay brick"
-    },
-  {
-    "id":2,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcJMSI30uIZqokDwEsbbiOfh3WXDllCSaJGQXOHLicdNGJX0-x",
-    "name": "Earthen Jali ",
-    "category":  "Clay false ceiling tiles"
-    
+    "category": "Concrete Roofing Tiles",
+    "material": "Concrete",
+    "description": "Durable and weather-resistant concrete roofing tiles with a classic bubble top design."
   },
   {
-    "id":14,
+    "id": 13,
+    "image": "https://i.ytimg.com/vi/c4Y8ywmPALA/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLA1HlmNQEWvn8IeGlHeBbh2bTLdRw",
+    "name": "Bubble Top Tile",
+    "category": "Ceramic Roofing Tiles",
+    "material": "Ceramic",
+    "description": "Aesthetic and functional ceramic roofing tiles offering long-lasting protection and style."
+  },
+  {
+    "id": 14,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyUNdBWIgrKIjBwa6WIx5WpRC-e6OzHlT0vHi_-h8V_7t1NmqQ",
+    "name": "Bubble Top Tile",
+    "category": "Clay Roofing Tiles",
+    "material": "Clay",
+    "description": "Eco-friendly clay tiles with excellent thermal insulation and a natural finish."
+  },
+  {
+    "id": 15,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgoVZCCwH57OwQKOvVR_rqg5gvMdXcykSx97qcS0eDB88XY0m9",
+    "name": "Bubble Top Tile",
+    "category": "Concrete Roofing Tiles",
+    "material": "Concrete",
+    "description": "High-quality concrete tiles offering strength and versatility for diverse roofing needs."
+  },
+  {
+    "id": 17,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtW66Vn7quch0IwF3NVzvO2B-eYy-5hOzIkAJL2gez27qNFlcJ",
+    "name": "Bubble Top Tile",
+    "category": "Wire Clay Brick",
+    "material": "Clay",
+    "description": "Sturdy and traditional wire clay bricks ideal for structural integrity and aesthetics."
+  },
+  {
+    "id": 18,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl2A3ZYyyrblkFRYM-ndYIKVE-kUKFCYq4eLUgRv1M6_4-C0_f",
+    "name": "Bubble Top Tile",
+    "category": "Wire Clay Brick",
+    "material": "Clay",
+    "description": "Reliable clay bricks designed for durability and optimal building performance."
+  },
+  {
+    "id": 19,
+    "image": "https://i0.wp.com/brickart.in/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-20-at-1.25.44-PM-5.jpeg?fit=1024%2C683&ssl=1",
+    "name": "Bubble Top Tile",
+    "category": "Wire Clay Brick",
+    "material": "Clay",
+    "description": "Premium wire clay bricks with a fine finish, perfect for traditional and modern construction."
+  },
+  {
+    "id": 20,
+    "image": "../assets/brick.png",
+    "name": "Bubble Top Tile",
+    "category": "Clay False Ceiling Tiles",
+    "material": "Clay",
+    "description": "Decorative clay tiles for elegant and durable false ceiling applications."
+  },
+  {
+    "id": 21,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG8p9F9n1Govx46c9DRdDm-WCwpctlxkjVEGgI97loeUdZJxGx",
+    "name": "Bubble Top Tile",
+    "category": "Clay Roofing Tiles",
+    "material": "Clay",
+    "description": "Natural clay tiles providing exceptional thermal comfort and a timeless appearance."
+  },
+{
+    "id": 22,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG8p9F9n1Govx46c9DRdDm-WCwpctlxkjVEGgI97loeUdZJxGx",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "High-quality clay",
+    "description": "A durable and eco-friendly roofing tile made from high-quality clay, offering excellent thermal insulation and aesthetic appeal."
+},
+{
+    "id": 23,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTNHPttDVtObMhG2VkHzUjSXve9seQnCMoiXovqfukxz0Yqg_k",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Premium clay",
+    "description": "Premium clay tiles designed for long-lasting performance, providing resistance to weathering and a unique design."
+},
+{
+    "id": 24,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR543vLRSsnj907vpP_joJBRZpJD7gDc_8daCmRGV7XD54Qu7Yq",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Natural clay",
+    "description": "Natural clay roofing tiles with superior strength and a timeless look, suitable for all architectural styles."
+},
+{
+    "id": 25,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcG2j1rxBlIly7r9UzihgfGf_czrP2_fNCA0g23qJ7OBBEMdK",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Refined clay",
+    "description": "Refined clay tiles offering exceptional durability and a modern finish, perfect for homes and commercial buildings."
+},
+{
+    "id": 26,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzj5Mwr3tYRUCvlC3jFzXGJqVTKy6jm1DgysSvJFJ4-o7DWon",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Clay composite",
+    "description": "Lightweight and sturdy clay composite tiles with a bubble top design, ideal for enhancing roof aesthetics."
+},
+{
+    "id": 27,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuRADpKOa1EKLjsiWsYSo2RkBgJTMh5Icqa3GiDJbgTbR8VeyG",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Kiln-fired clay",
+    "description": "Kiln-fired clay tiles offering a smooth texture and superior resistance to cracking and extreme temperatures."
+},
+{
+    "id": 28,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4HYkPZsf6QFQjBjELOC6eAfqBu5v0pVVFqYVHmqkOBMCDsYi",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Organic clay",
+    "description": "Eco-friendly organic clay tiles designed for sustainable roofing solutions with a distinctive bubble top pattern."
+},
+{
+    "id": 29,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW8AOImdmel_hcAQ27rjoKVjzTwL6EczqNZnlpOXmtfMcZRi_z",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Handcrafted clay",
+    "description": "Handcrafted clay tiles with a rustic finish, combining traditional craftsmanship with modern functionality."
+}
+,
+
+
+{
+    "id": 30,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc9vhLGwKQgWt1gr3HG3pFtjUBqYOjk1paopMS_iF0ZkSTPU_9",
+    "name": "Bubble Top Tile",
+    "category": "Wire clay brick",
+    "description": "Durable wire-cut clay bricks with a bubble top design, ideal for both structural and decorative purposes."
+  },
+  {
+    "id": 31,
+    "image": "https://i0.wp.com/brickart.in/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-20-at-1.25.44-PM-3.jpeg?fit=1024%2C683&ssl=1",
+    "name": "Bubble Top Tile",
+    "category": "Wire clay brick",
+    "description": "Premium-quality wire-cut clay bricks designed for enhanced strength and aesthetic appeal."
+  },
+  {
+    "id": 32,
+    "image": "https://terracon.in/uploads/product/gujarat-jolly.png",
+    "name": "Bubble Top Tile",
+    "category": "Wire clay brick",
+    "description": "High-performance wire clay bricks, perfect for modern construction with a distinctive finish."
+  },
+  {
+    "id": 33,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcJMSI30uIZqokDwEsbbiOfh3WXDllCSaJGQXOHLicdNGJX0-x",
+    "name": "Earthen Jali",
+    "category": "Clay false ceiling tiles",
+    "description": "Clay false ceiling tiles with intricate jali patterns, enhancing ventilation and aesthetics."
+  },
+  {
+    "id": 34,
     "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcwyNa6SUKxRvEvqJ-JlxgyT2edXFRBzrXASXW4v02b1tlGqtM",
     "name": "Bubble Top Tile",
-    "category": "Clay false ceiling tiles"
-    }, {
-    "id":7,
-    "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWfELlfyZgvpimjCT15RU96tn-TYxLLwOzVjlDtNHk_dQGxUOv",
-    "name": "Earthen Jali ",
-    "category": "Clay false ceiling tiles"
-    },  {
-    "id":11,
+    "category": "Clay false ceiling tiles",
+    "description": "Stylish clay false ceiling tiles with a bubble top texture for a unique interior look."
+  },
+  {
+    "id": 35,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWfELlfyZgvpimjCT15RU96tn-TYxLLwOzVjlDtNHk_dQGxUOv",
+    "name": "Earthen Jali",
+    "category": "Clay false ceiling tiles",
+    "description": "Eco-friendly earthen jali tiles, perfect for creating natural and ventilated ceiling designs."
+  },
+  {
+    "id": 36,
     "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIXE2anV4X1hxNmFoBk9iI4jM7jGs0-KdabiIiWR90Gq1j6ZvP",
     "name": "Bubble Top Tile",
-    "category": "Clay false ceiling tiles"
-    },
-   {
-    "id":20,
+    "category": "Clay false ceiling tiles",
+    "description": "Functional and attractive clay tiles for false ceilings, featuring a bubble top design."
+  },
+  {
+    "id": 37,
     "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGxk7AyFS-y14IUTX0glaTotDKZUKzhLVbQ-5U3GA6c8VvF-sp",
     "name": "Bubble Top Tile",
-    "category": "Clay false ceiling tiles"
-    },
-   {
-    "id":22,
+    "category": "Clay false ceiling tiles",
+    "description": "Durable clay ceiling tiles with a bubble top pattern, adding a rustic charm to interiors."
+  },
+  {
+    "id": 38,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO3jaxFAdOdFTHjlW4uBMeMnkVqlugfGIVRg3EGWNbI9JQD9TG",
     "name": "Bubble Top Tile",
-    "category": "Clay false ceiling tiles"
-    }
-    , { "name": "Bubble Top Tile",
+    "category": "Clay false ceiling tiles",
+    "description": "High-quality clay tiles for false ceilings, offering a blend of beauty and functionality."
+  },
+  {
+    "id": 39,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrVVDYN7uzpXQrIQAhhmK9ZLSNmu50yV5eboK_QcEqrK3nJURF",
+    "name": "Bubble Top Tile",
     "category": "Ceramic roofing tiles",
-      "image":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrVVDYN7uzpXQrIQAhhmK9ZLSNmu50yV5eboK_QcEqrK3nJURF"
-    },
-   {
-    "id":19,
+    "description": "Elegant ceramic roofing tiles with a bubble top design, offering superior weather resistance."
+  },
+  {
+    "id": 40,
     "image": "/home/shyam/Documents/Projects/Freelancing/vinayagaroofingtiles/src/components/flooring.png",
     "name": "Bubble Top Tile",
-    "category": "Concrete roofing tiles"
-    },
-  {
-    "id":4,
+    "category": "Concrete roofing tiles",
+    "description": "Sturdy concrete roofing tiles with a bubble top pattern, designed for long-lasting performance."
+  },
+ {
+    "id": 41,
     "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTs_PCjLTkQ-Y8S7xa1hbpGuKoPBDq0qF9FMynQQCGaxNUfA30G",
     "name": "Camp Clay Jali",
-    "category": "Clay false ceiling tiles"
-   
-    },
+    "category": "Clay false ceiling tiles",
+    "material": "Clay",
+    "description": "Durable and stylish clay false ceiling tiles, ideal for residential and commercial spaces.",
+    "price": 200,
+    "brand": "TileX"
+  },
   {
-    "id":5,
+    "id": 42,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ojYrsBXjlPSTR-VAKvkkj_Gfg3UJI0G-UXwK-p4feDQUiB4b",
     "name": "Bubble Top Tile",
-    
-    "category": "Clay roofing tiles"
-   
-    },
- 
+    "category": "Clay roofing tiles",
+    "material": "Clay",
+    "description": "Elegant bubble top clay tiles for a sturdy and water-resistant roof.",
+    "price": 300,
+    "brand": "RoofTop"
+  },
   {
-    "id":8,
+    "id": 43,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFIvBO09t-xSOm6LbUznJVrJn0Z8ouVc_QkljItg10ZWZwFnli",
     "name": "Mangalore Clay Roof Tiles",
-    "category": "Ceramic roofing tiles"
-    },
+    "category": "Ceramic roofing tiles",
+    "material": "Ceramic",
+    "description": "Traditional Mangalore ceramic roof tiles with enhanced durability.",
+    "price": 250,
+    "brand": "HeritageTiles"
+  },
   {
-    "id":9,
+    "id": 44,
     "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRyWuoO0nuNtwg86YifH_j19T5eq1FJa-RQjS1AC9b7Eg5aH5R",
     "name": "Camp Clay Jali",
-    "category": "Clay roofing tiles"
-    },
-
-
+    "category": "Clay roofing tiles",
+    "material": "Clay",
+    "description": "Versatile clay jali tiles suitable for roofing with modern aesthetics.",
+    "price": 220,
+    "brand": "TileCraft"
+  },
   {
-    "id":10,
-    "image":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaonuynsEyG8Z53EpjZ8iPxkSsXZXhty_ew1rravjzn7GxZB5q",
+    "id": 45,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaonuynsEyG8Z53EpjZ8iPxkSsXZXhty_ew1rravjzn7GxZB5q",
     "name": "Bubble Top Tile",
-    "category": "Clay roofing tiles"
-    }
-    ,{
-      "image":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThDZGtT6I9V59YJL3QnIRoCW0LKYfjZa6aB4xDVxvknY7a1cgv"
-      ,"name": "Bubble Top Tile",
-    "category": "Ceramic roofing tiles"
-    },
-   
-    {"name":"axa",
-  "id":13,
-  "category":"UPVC Rain Gutter",
-      "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwZoJtAmR-z9aGFUyT3QP3OLeJIudZU7QOfypAllUyrza2lvNB"
-    },
-    {"name":"axa",
-  "id":13,
-  "category":"UPVC Rain Gutter",
-      "image":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjK88vICvSsrvRBXcu2XlWOkDi0HUbXER2aJ_t-jTfIBBU-bHp"
-    },{"name":"axa",
-  "id":13,
-  "category":"UPVC Rain Gutter",
-       "image":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTi-QEsP1EBeiUqA7TsmjqFzJITByjrUiQGMxkjJgJnEvgRElVn"
-    },{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-      "image":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUCwOCmNzA5vwsB2TawD4WLkngeT7amMO8RjaAeL0V4pUuAhMS"
-    },{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZ79J4GiWqiQ9vftpbXT9cQkpHGPv6g9RPzlmaoQwTZLcQHZM"
-    },
-    {"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-      "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV2CLjjxzhgXmPizEWg91xfB8AjnSeAQlDnTQI92hmHoDMeRMj"
-    },{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QujNbFHKkcW8nwDs8RRIVRsV-f-zKPKBFwMw8px2uW45RHv6"
-    }
-,{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOy4Mdsq7BwCRoYgauaIPXCRv9VafnB_Ksm-Vnfzlzu1NFSz1O"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2BbQyDaqi-t6Uz8PO94paAB54CAgstRSR9YbJQCmTkzMQQX6g"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj6N4U5o4MG7Yz6YkQlCAvMXevhpNlcSo2kNZWHFwWv0R8pDlQ"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgmLBaALPeXwohlnbFt1saKNFj7WDZ42ksYuzp5pAOQNMi-mDU"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxn8waMRo4naHBEY9LhvKIeYAepuhGbzWJZM5c49BCjE_Hv4n5"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFZ8hi9lYGKEm0DFQJqHorlzZzWDXPS5cWCiZTKORl-JhFKuoC"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQx4-5BAeLufNiiFIs2rNNswYvZ4QW8Y7SiyLeq15kkOs2ERq08"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL_qsVXAxYVBTCp1mCoTfSiT-Ak1pDReqdvN1gaSCeK6k05SDU"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQo9TNmKPk3Ce7UAXyw_qjPfkC4h7kS9M0ZDN4LrD0eyVZc1--b"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4D0Bwi3hvA9xGZlIdodBsmxffBehgEZXiIyjb9L7mkFbn36FJ"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOGyFi5gNcscsOX1-W8gQBlRpcyoP6b3BDt8n9btICy08eJHsU"
-},{"name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKmpf0rcCdEfybtlNDhvckesZQ7CsGq7Pvqtd80jFZt2eBtxzQ"
-},{ "name":"axa",
-  "id":13,
-  "category":"Laser Plates",
-  "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBBuZf1jjIqdSiR8u3k6-3EcYFBPm403Zrm5beYaYwX8Ue04yJ"
-},{
-  "id":89,
-  "category":"UPVC roofing shine tiles",
-  "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuwqSZT1_nEafX2OKqerfXrkVisW803G7kaw&s"
-}
+    "category": "Clay roofing tiles",
+    "material": "Clay",
+    "description": "Waterproof and lightweight clay tiles with bubble top texture.",
+    "price": 280,
+    "brand": "RoofGuard"
+  },
+  {
+    "id": 46,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThDZGtT6I9V59YJL3QnIRoCW0LKYfjZa6aB4xDVxvknY7a1cgv",
+    "name": "Bubble Top Tile",
+    "category": "Ceramic roofing tiles",
+    "material": "Ceramic",
+    "description": "Stylish ceramic bubble top tiles offering excellent weather resistance.",
+    "price": 320,
+    "brand": "CeramiTile"
+  },
+  {
+    "id": 47,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwZoJtAmR-z9aGFUyT3QP3OLeJIudZU7QOfypAllUyrza2lvNB",
+    "name": "UPVC Rain Gutter",
+    "category": "UPVC Rain Gutter",
+    "material": "UPVC",
+    "description": "High-quality UPVC rain gutters for effective water drainage.",
+    "price": 150,
+    "brand": "RainGuard"
+  },
+  {
+    "id": 48,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjK88vICvSsrvRBXcu2XlWOkDi0HUbXER2aJ_t-jTfIBBU-bHp",
+    "name": "UPVC Rain Gutter",
+    "category": "UPVC Rain Gutter",
+    "material": "UPVC",
+    "description": "Durable and lightweight UPVC rain gutters for long-lasting performance.",
+    "price": 160,
+    "brand": "AquaFlow"
+  },
+  {
+    "id": 49,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTi-QEsP1EBeiUqA7TsmjqFzJITByjrUiQGMxkjJgJnEvgRElVn",
+    "name": "UPVC Rain Gutter",
+    "category": "UPVC Rain Gutter",
+    "material": "UPVC",
+    "description": "Stylish and effective rain gutters made from UPVC.",
+    "price": 170,
+    "brand": "FlowSafe"
+  },
+  {
+    "id": 50,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUCwOCmNzA5vwsB2TawD4WLkngeT7amMO8RjaAeL0V4pUuAhMS",
+    "name": "Laser Plates",
+    "category": "Laser Plates",
+    "material": "Steel",
+    "description": "Precision-crafted steel laser plates for diverse industrial applications.",
+    "price": 400,
+    "brand": "MetalWorks"
+  },
+  {
+    "id": 51,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZ79J4GiWqiQ9vftpbXT9cQkpHGPv6g9RPzlmaoQwTZLcQHZM",
+    "name": "Laser Plates",
+    "category": "Laser Plates",
+    "material": "Aluminum",
+    "description": "Lightweight and durable laser-cut aluminum plates.",
+    "price": 350,
+    "brand": "AluTech"
+  }
+
+  ,
+    {
+    "id": 52,
+    "name": "Laser Plate A",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV2CLjjxzhgXmPizEWg91xfB8AjnSeAQlDnTQI92hmHoDMeRMj",
+    "material": "Stainless Steel",
+    "description": "High-quality laser plate made from durable stainless steel, ideal for industrial and decorative purposes."
+  },
+  {
+    "id": 53,
+    "name": "Laser Plate B",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QujNbFHKkcW8nwDs8RRIVRsV-f-zKPKBFwMw8px2uW45RHv6",
+    "material": "Aluminum Alloy",
+    "description": "Lightweight and corrosion-resistant laser plate suitable for outdoor applications."
+  },
+  {
+    "id": 54,
+    "name": "Laser Plate C",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOy4Mdsq7BwCRoYgauaIPXCRv9VafnB_Ksm-Vnfzlzu1NFSz1O",
+    "material": "Titanium",
+    "description": "Premium laser plate with excellent strength and a sleek appearance, designed for high-end projects."
+  },
+  {
+    "id": 55,
+    "name": "Laser Plate D",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2BbQyDaqi-t6Uz8PO94paAB54CAgstRSR9YbJQCmTkzMQQX6g",
+    "material": "Carbon Steel",
+    "description": "Economical and robust laser plate, widely used in construction and manufacturing."
+  },
+  {
+    "id": 56,
+    "name": "Laser Plate E",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj6N4U5o4MG7Yz6YkQlCAvMXevhpNlcSo2kNZWHFwWv0R8pDlQ",
+    "material": "Ceramic",
+    "description": "Heat-resistant laser plate suitable for specialized applications in high-temperature environments."
+  },
+  {
+    "id": 57,
+    "name": "Laser Plate F",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgmLBaALPeXwohlnbFt1saKNFj7WDZ42ksYuzp5pAOQNMi-mDU",
+    "material": "Polycarbonate",
+    "description": "Impact-resistant and lightweight laser plate ideal for signage and protective covers."
+  },
+  {
+    "id": 58,
+    "name": "Laser Plate G",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxn8waMRo4naHBEY9LhvKIeYAepuhGbzWJZM5c49BCjE_Hv4n5",
+    "material": "Acrylic",
+    "description": "Clear and stylish laser plate used in artistic and decorative projects."
+  },
+  {
+    "id": 59,
+    "name": "Laser Plate H",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFZ8hi9lYGKEm0DFQJqHorlzZzWDXPS5cWCiZTKORl-JhFKuoC",
+    "material": "Copper",
+    "description": "Conductive laser plate suitable for electrical and thermal applications."
+  },
+  {
+    "id": 60,
+    "name": "Laser Plate I",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQx4-5BAeLufNiiFIs2rNNswYvZ4QW8Y7SiyLeq15kkOs2ERq08",
+    "material": "Glass",
+    "description": "Elegant laser plate designed for decorative and architectural purposes."
+  },
+  {
+    "id": 61,
+    "name": "Laser Plate J",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL_qsVXAxYVBTCp1mCoTfSiT-Ak1pDReqdvN1gaSCeK6k05SDU",
+    "material": "PVC",
+    "description": "Durable and affordable laser plate commonly used for industrial labeling."
+  },
+  {
+    "id": 62,
+    "name": "Laser Plate K",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQo9TNmKPk3Ce7UAXyw_qjPfkC4h7kS9M0ZDN4LrD0eyVZc1--b",
+    "material": "Zinc",
+    "description": "Corrosion-resistant laser plate widely used in roofing and outdoor structures."
+  },
+  {
+    "id": 63,
+    "name": "Laser Plate L",
+    "category": "Laser Plates",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4D0Bwi3hvA9xGZlIdodBsmxffBehgEZXiIyjb9L7mkFbn36FJ",
+    "material": "Composite Material",
+    "description": "High-performance laser plate combining multiple materials for enhanced strength and versatility."
+  },
+  {
+    "id": 64,
+    "name": "axa",
+    "category": "Laser Plates",
+    "material": "Steel",
+    "description": "High-quality laser plates used for various industrial applications.",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOGyFi5gNcscsOX1-W8gQBlRpcyoP6b3BDt8n9btICy08eJHsU"
+  },
+  {
+    "id": 65,
+    "name": "axa",
+    "category": "Laser Plates",
+    "material": "Aluminum",
+    "description": "Durable and lightweight laser-cut aluminum plates for precision work.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKmpf0rcCdEfybtlNDhvckesZQ7CsGq7Pvqtd80jFZt2eBtxzQ"
+  },
+  {
+    "id": 66,
+    "name": "axa",
+    "category": "Laser Plates",
+    "material": "Copper",
+    "description": "Copper laser plates with excellent thermal and electrical conductivity.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBBuZf1jjIqdSiR8u3k6-3EcYFBPm403Zrm5beYaYwX8Ue04yJ"
+  },
+  {
+    "id": 67,
+    "name": "axa",
+    "category": "UPVC roofing shine tiles",
+    "material": "UPVC",
+    "description": "UV-resistant UPVC roofing tiles with a high gloss finish for durability and aesthetics.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuwqSZT1_nEafX2OKqerfXrkVisW803G7kaw&s"
+  }
 ]
