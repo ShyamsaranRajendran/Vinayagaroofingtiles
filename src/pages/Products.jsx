@@ -5,6 +5,7 @@ import products from "../data/products.json";
 
 const categories = [
   "Clay roofing tiles",
+  "Clay false ceiling tiles",
   "Concrete roofing tiles",
   "Ceramic roofing tiles",
   "UPVC roofing shine tiles",
@@ -25,7 +26,6 @@ const brands = [
 
 export default function Products() {
   const [categoryFilter, setCategoryFilter] = useState("");
-  const [brandFilter, setBrandFilter] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
@@ -67,7 +67,7 @@ export default function Products() {
           .filter(
             (product) =>
               (categoryFilter ? product.category === categoryFilter : true) &&
-              (brandFilter ? product.brand === brandFilter : true) &&
+              
               (!searchQuery ||
                 product.category.toLowerCase().includes(searchQuery.toLowerCase()))
           )

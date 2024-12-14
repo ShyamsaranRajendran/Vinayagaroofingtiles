@@ -2,13 +2,16 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Info } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import flooringTile from "../assets/flooring.png";
+import brick from '../assets/brick.png'
+
 
 export default function ProductCard({
+  id,
   image,
   name,
-  price,
   material,
-  dimensions,
+  description,
   category,
 }) {
   const navigate = useNavigate();
@@ -16,7 +19,7 @@ export default function ProductCard({
   // Navigate to the product details page
   const goToProductPage = () => {
     navigate(`/product/${encodeURIComponent(name)}`, {
-      state: { image, name, price, material, dimensions,category },
+      state: { image, name, material, description, category },
     });
   };
 
@@ -28,12 +31,16 @@ export default function ProductCard({
 Could you share more details and assist with the purchase? 😊`
   );
   const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
-
+  const isRemoteImage = image.startsWith("http") || image.startsWith("data");
   return (
     <div className="product-card">
       {/* Product Image */}
       <div className="product-card-image-container">
-        <img src={image} alt={name} className="product-card-image" />
+        <img
+          src={isRemoteImage ? image : flooringTile}
+          alt={name}
+          className="product-card-image"
+        />
         <div className="product-card-overlay">
           <button className="product-card-zoom-btn" onClick={goToProductPage}>
             <Info size={20} />
@@ -44,7 +51,9 @@ Could you share more details and assist with the purchase? 😊`
       {/* Product Content */}
       <div className="product-card-content">
         <div className="product-card-header">
-          <h3 className="product-card-title">{category}</h3>
+          <h3 className="product-card-title">
+            {category}
+          </h3>
           {/* <span className="product-card-price">${price}</span> */}
         </div>
         <div className="product-card-actions">

@@ -6,9 +6,7 @@ const CarouselSlide = ({ image, title, description, cta,url }) => (
   <div className="carousel-slide" style={{ backgroundImage: `url(${image})` }}>
     <h2 className="carousel-slide-title">{title}</h2>
     <p className="carousel-slide-description">{description}</p>
-    <a href={url} className="carousel-slide-cta">
-      {cta}
-    </a>
+   
   </div>
 );
 
@@ -36,15 +34,6 @@ const Carousel = () => {
         "Transform your home with our high-quality roofing materials",
       cta: "Explore Products",
       url: "products",
-    },
-
-    {
-      image:
-        "https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg",
-      title: "Expert Installation",
-      description: "Professional installation by certified roofing specialists",
-      cta: "Our Services",
-      url: "services",
     },
     {
       image:
