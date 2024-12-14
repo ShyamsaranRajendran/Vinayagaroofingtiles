@@ -604,7 +604,7 @@ body.dark-mode {
   position: relative;
   height: 60vh;
   overflow: hidden;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
   margin: 0 auto;
 }
 
@@ -749,6 +749,9 @@ body.dark-mode {
 @media (max-width: 480px) {
   .carousel-container {
     height: 50vh;
+  }
+  .carousel-container {
+    width: 100%;
   }
 
   .carousel-slide-title {
