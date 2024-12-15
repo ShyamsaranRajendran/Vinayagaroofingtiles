@@ -143,47 +143,18 @@ const featuredProducts = [
 export default function Home() {
 
   const navigate = useNavigate();
-
-  // Navigate to the product details page
-  
-  // const trackRef = useRef(null);
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const track = trackRef.current;
-  //   const slides = Array.from(track.children);
-
-  //   console.log("Number of slides:", slides.length);
-
-  //   const moveToNextSlide = () => {
-  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-  //   };
-
-  //   const interval = setInterval(moveToNextSlide, 3500);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
-  // useEffect(() => {
-  //   const track = trackRef.current;
-  //   if (track) {
-  //     track.style.transition = "transform 1s ease";
-  //     track.style.transform = `translateX(-${currentIndex * 100}%)`;
-  //   }
-  // }, [currentIndex]);
-  // WhatsApp message URL
  const whatsappMessage = encodeURIComponent(`
 Could you share more details and assist with the purchase? 😊`);
  const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
 
  const goToProductPage = () => {
-   window.location.href = whatsappLink; // Navigate to the external WhatsApp link
+   window.location.href = whatsappLink; 
  };
 
   return (
     <div className="home-wrapper">
-      <img src={Ellipse} alt="" className="backgroundImg" />
-      <img src={Ellipse} alt="" className="backgroundImg1" />
+
+      <Carousel />
 
       <div className="home-display">
         <div className="first">
@@ -196,9 +167,11 @@ Could you share more details and assist with the purchase? 😊`);
         <div className="second">
           <div className="card">
             <img src={logo} alt="logo" />
-            <button onClick={()=>{
-              navigate('/products');
-            }}>
+            <button
+              onClick={() => {
+                navigate("/products");
+              }}
+            >
               <RiProductHuntLine />
               Products
             </button>
@@ -221,8 +194,6 @@ Could you share more details and assist with the purchase? 😊`);
           <img src={logo} alt="" />
         </div>
       </div>
-
-      <Carousel />
 
       <div className="home-featured-section">
         <div className="home-featured-header">

@@ -1,41 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/Group 5.svg';
-function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+import logo from "../assets/Group 5.svg";
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
+function Header({ menuOpen, toggleMenu }) {
   const closeMenu = () => {
-    setMenuOpen(false);
-  };
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    closeMenu();
-    document.body.classList.toggle("dark-mode", !darkMode); // Add or remove "dark-mode" class to body
+    toggleMenu(false); // Close the menu when clicked
   };
 
   return (
     <div className="header-wrapper">
       <header className="header-container">
         <div className="header-brand">
-          <Link to="/" className="header-brand-link">
+          <Link to="/" className="header-brand-link" onClick={closeMenu}>
             <img src={logo} alt="logo" />
           </Link>
         </div>
         <nav className="header-navigation">
           <button
             className="header-menu-icon"
-            onClick={toggleMenu}
+            onClick={() => toggleMenu(!menuOpen)} // Toggle menu state
             aria-label="Toggle menu"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            {menuOpen ? (
+              <span className="close-icon">&times;</span> // Close icon
+            ) : (
+              <span className="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span> // Hamburger icon
+            )}
           </button>
           <ul className={`header-menu ${menuOpen ? "open" : ""}`}>
             <li>
@@ -57,15 +51,6 @@ function Header() {
               <Link to="/contact" className="header-link" onClick={closeMenu}>
                 Contact
               </Link>
-            </li>
-            <li>
-              <button
-                className="dark-mode-toggle"
-                onClick={toggleDarkMode}
-                aria-label="Toggle dark mode"
-              >
-                {darkMode ? "☀️" : "🌙"}
-              </button>
             </li>
           </ul>
         </nav>

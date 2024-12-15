@@ -1,15 +1,41 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom"; // Import useLocation
 import Header from "./Header";
 import Footer from "./Footer";
 
 function Layout() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  const location = useLocation(); // Get the current location (route)
+
+  // Toggle menu open/close
+  const toggleMenu = (state) => {
+    setMenuOpen(state);
+  };
+
+  // Toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark-mode", !darkMode); // Toggle dark mode class on body
+  };
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
+
   return (
     <div className="layout-container">
-      <Header />
+      <Header menuOpen={menuOpen} toggleMenu={toggleMenu} />
       <main className="layout-main">
         <Outlet />
       </main>
+      <button
+        className="dark-mode-toggle"
+        onClick={toggleDarkMode}
+        aria-label="Toggle dark mode"
+      >
+        {darkMode ? "☀️" : "🌙"}
+      </button>
       <Footer />
     </div>
   );

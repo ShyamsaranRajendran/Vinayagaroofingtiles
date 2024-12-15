@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Filter, Search } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
@@ -28,6 +28,31 @@ export default function Products() {
   const [categoryFilter, setCategoryFilter] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
 
+  // Load saved filters from localStorage if they exist
+  useEffect(() => {
+    const savedCategory = localStorage.getItem("categoryFilter");
+    const savedSearchQuery = localStorage.getItem("searchQuery");
+
+    if (savedCategory) {
+      setCategoryFilter(savedCategory);
+    }
+
+    if (savedSearchQuery) {
+      setSearchQuery(savedSearchQuery);
+    }
+  }, []);
+
+  // Save filters to localStorage whenever they change
+  const handleCategoryChange = (e) => {
+    setCategoryFilter(e.target.value);
+    localStorage.setItem("categoryFilter", e.target.value);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+    localStorage.setItem("searchQuery", e.target.value);
+  };
+
   return (
     <div className="products-container">
       <div className="products-header">
@@ -39,7 +64,7 @@ export default function Products() {
               placeholder="Search products..."
               className="search-input"
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={handleSearchChange}
             />
             <Search className="search-icon" size={20} />
           </div>
@@ -50,7 +75,7 @@ export default function Products() {
         <select
           className="filter-select"
           value={categoryFilter}
-          onChange={(e) => setCategoryFilter(e.target.value)}
+          onChange={handleCategoryChange}
         >
           <option value="">All Categories</option>
           {categories.map((category) => (
@@ -59,7 +84,6 @@ export default function Products() {
             </option>
           ))}
         </select>
-        
       </div>
 
       <div className="products-grid">
@@ -67,9 +91,10 @@ export default function Products() {
           .filter(
             (product) =>
               (categoryFilter ? product.category === categoryFilter : true) &&
-              
               (!searchQuery ||
-                product.category.toLowerCase().includes(searchQuery.toLowerCase()))
+                product.category
+                  .toLowerCase()
+                  .includes(searchQuery.toLowerCase()))
           )
           .map((product, index) => (
             <ProductCard key={index} {...product} />

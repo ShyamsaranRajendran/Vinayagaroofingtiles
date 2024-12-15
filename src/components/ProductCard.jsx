@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Info } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import flooringTile from "../assets/flooring.png";
 import brick from '../assets/brick.png'
 
+import { useLocation } from "react-router-dom";
 
 export default function ProductCard({
   id,
@@ -64,7 +65,7 @@ Could you share more details and assist with the purchase? 😊`
             rel="noopener noreferrer"
             className="product-card-add-to-cart-btn"
           >
-            <FaWhatsapp />
+            <FaWhatsapp size={20}/>
           </a>
         </div>
       </div>

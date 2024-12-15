@@ -2,11 +2,33 @@ import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // CarouselSlide Component
-const CarouselSlide = ({ image, title, description, cta,url }) => (
-  <div className="carousel-slide" style={{ backgroundImage: `url(${image})` }}>
-    <h2 className="carousel-slide-title">{title}</h2>
-    <p className="carousel-slide-description">{description}</p>
-   
+const CarouselSlide = ({ image, title, description, cta, url }) => (
+  <div
+    className="carousel-slide"
+    style={{
+      backgroundImage: `url(${image})`,
+    }}
+  >
+    <div className="carousel-content">
+      <h2 className="carousel-slide-title">{title}</h2>
+      <p className="carousel-slide-description">
+        {description.split(" ").map((word, index) => {
+          // Highlight important words
+          if (
+            ["roofing", "quality", "premium", "eco-friendly"].includes(
+              word.toLowerCase()
+            )
+          ) {
+            return (
+              <span key={index} className="highlight">
+                {word}
+              </span>
+            );
+          }
+          return word + " ";
+        })}
+      </p>
+    </div>
   </div>
 );
 
@@ -31,26 +53,36 @@ const Carousel = () => {
         "https://assets-news.housing.com/news/wp-content/uploads/2021/07/28195700/All-about-roofing-sheets-Explore-these-evolving-roofing-trends-for-your-home-FB-1200x700-compressed.jpg",
       title: "Premium Roofing Solutions",
       description:
-        "Transform your home with our high-quality roofing materials",
+        "Transform your home with our high-quality roofing materials.",
       cta: "Explore Products",
-      url: "products",
     },
     {
       image:
         "https://skyshieldroofs.com/wp-content/uploads/2021/12/roofing.jpeg",
       title: "Sustainable Solutions",
-      description: "Eco-friendly roofing options for a greener future",
+      description: "Eco-friendly roofing options for a greener future.",
       cta: "Learn More",
-      url: "products",
     },
     {
       image:
         "https://www.static-contents.youth4work.com/y4w/6a46861f-0273-4a83-bb5e-e2839d23f6d9.png",
-      title: "Premium Roofing Solutions",
+      title: "Trusted by Thousands",
       description:
-        "Transform your home with our high-quality roofing materials",
-      cta: "Explore Products",
-      url: "products",
+        "Join our growing community of satisfied customers worldwide.",
+      cta: "View Testimonials",
+    },
+    {
+      image:
+        "https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg",
+      title: "Innovative Roofing Designs",
+      description: "Discover modern designs to enhance your living space.",
+      cta: "Browse Designs",
+    },
+    {
+      image:"https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg"
+    ,  title: "Weatherproof Roofing",
+      description: "Durable and reliable materials to withstand any climate.",
+      cta: "Check Products",
     },
   ];
 
