@@ -3,6 +3,7 @@ import { Outlet, useLocation } from "react-router-dom"; // Import useLocation
 import Header from "./Header";
 import Footer from "./Footer";
 
+import { FaArrowUp } from "react-icons/fa"; 
 function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
@@ -18,6 +19,13 @@ function Layout() {
     setDarkMode(!darkMode);
     document.body.classList.toggle("dark-mode", !darkMode); // Toggle dark mode class on body
   };
+
+   const scrollToTop = () => {
+     window.scrollTo({
+       top: 0,
+       behavior: "smooth",
+     });
+   };
 
   useEffect(() => {
     setMenuOpen(false);
@@ -35,6 +43,13 @@ function Layout() {
         aria-label="Toggle dark mode"
       >
         {darkMode ? "☀️" : "🌙"}
+      </button>
+      <button
+        className="dark-mode-toggle-up"
+        aria-label="Toggle dark mode"
+        onClick={scrollToTop}
+      >
+        <FaArrowUp size={18} color="gold" />
       </button>
       <Footer />
     </div>

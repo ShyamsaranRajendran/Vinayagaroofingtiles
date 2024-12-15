@@ -5,6 +5,8 @@ import Ellipse from "../assets/Ellipse.svg"
 import { FaWhatsapp } from "react-icons/fa";
 import logo from '../assets/Group 5.svg'
 import { RiProductHuntLine } from "react-icons/ri";
+import { FaPlus } from "react-icons/fa"; // Importing the plus icon
+
 
 import { useNavigate } from "react-router-dom";
 const barproduct = [
@@ -127,16 +129,6 @@ const featuredProducts = [
     material: "Ceramic",
     description:
       "Versatile and weather-resistant ceramic tiles with a stylish bubble top texture.",
-  },
-  {
-    id: 6,
-    image:
-      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnf644F92MMELGlUhIN2t08mruQSQikcIuwtBaIq-fJRtMb-4L",
-    name: "Bubble Top Tile",
-    category: "Concrete Roofing Tiles",
-    material: "Concrete",
-    description:
-      "High-quality concrete tiles designed for long-lasting durability and low maintenance.",
   }
 ];
 
@@ -153,7 +145,6 @@ Could you share more details and assist with the purchase? 😊`);
 
   return (
     <div className="home-wrapper">
-
       <Carousel />
 
       <div className="home-display">
@@ -207,6 +198,14 @@ Could you share more details and assist with the purchase? 😊`);
           {featuredProducts.map((product, index) => (
             <ProductCard key={index} {...product} />
           ))}
+        </div>
+        <div
+          className="see-more-card"
+          onClick={() => {
+            navigate("/products");
+          }}
+        >
+          <FaPlus size={60} />
         </div>
       </div>
     </div>
