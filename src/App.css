@@ -272,7 +272,7 @@ body.dark-mode {
 .scroll-to-top-btn {
   position: fixed;
   bottom: 2rem;
-  right: 1.5rem;
+  right: 18px;
    background-color: transparent;
     color: var(--button-text, #333);
   border: none;
