@@ -79,7 +79,7 @@ export default function Products() {
         >
           <option value="">All Categories</option>
           {categories.map((category) => (
-            <option key={category} value={category}>
+            <option key={category} value={category} >
               {category}
             </option>
           ))}

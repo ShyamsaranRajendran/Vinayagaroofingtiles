@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
-import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProductDetails from './pages/ProductDetails';
@@ -39,7 +38,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1000);
+    const timer = setTimeout(() => setIsLoading(false), 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -55,7 +54,7 @@ function App() {
               <Route path="products" element={<Products />} />
               <Route path="/product/:name" element={<ProductDetails />} />
              
-              <Route path="gallery" element={<Gallery />} />
+              {/* <Route path="gallery" element={<Gallery />} /> */}
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
             </Route>

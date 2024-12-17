@@ -1,13 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
 import Carousel from "../components/Hero/Carousel";
+import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
-import Ellipse from "../assets/Ellipse.svg"
-import { FaWhatsapp } from "react-icons/fa";
-import logo from '../assets/Group 5.svg'
-import { RiProductHuntLine } from "react-icons/ri";
-import { FaPlus } from "react-icons/fa"; // Importing the plus icon
-
-
+import LandX from './LandX';
+import Brand from './Brand'
 import { useNavigate } from "react-router-dom";
 const barproduct = [
   
@@ -145,46 +141,10 @@ Could you share more details and assist with the purchase? 😊`);
 
   return (
     <div className="home-wrapper">
+      <LandX />
+
       <Carousel />
-
-      <div className="home-display">
-        <div className="first">
-          <h1>DESIGN YOUR ROOF, YOUR WAY</h1>
-          <p>
-            Mix and match GAF shingle styles and colors along with siding, trim,
-            and doors to create the perfect look for your home.
-          </p>
-        </div>
-        <div className="second">
-          <div className="card">
-            <img src={logo} alt="logo" />
-            <button
-              onClick={() => {
-                navigate("/products");
-              }}
-            >
-              <RiProductHuntLine />
-              Products
-            </button>
-          </div>
-          <div className="card">
-            <img src={logo} alt="logo" />
-            <button onClick={() => goToProductPage()}>
-              <FaWhatsapp /> WhatsApp
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div className="companies-brand">
-        Brands
-        <div className="companies">
-          <img src={logo} alt="" /> <img src={logo} alt="" />{" "}
-          <img src={logo} alt="" /> <img src={logo} alt="" />{" "}
-          <img src={logo} alt="" /> <img src={logo} alt="" />{" "}
-          <img src={logo} alt="" />
-        </div>
-      </div>
+      <Brand />
 
       <div className="home-featured-section">
         <div className="home-featured-header">
@@ -201,11 +161,12 @@ Could you share more details and assist with the purchase? 😊`);
         </div>
         <div
           className="see-more-card"
-          onClick={() => {
-            navigate("/products");
-          }}
         >
-          <FaPlus size={60} />
+          <button  className="landX-cta-button">
+            <Link to="/products" className="link-learn">
+              See More
+            </Link>{" "}
+          </button>{" "}
         </div>
       </div>
     </div>

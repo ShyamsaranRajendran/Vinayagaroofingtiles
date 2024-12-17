@@ -1,6 +1,6 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-
+import Map from '../assets/map.png';
 export default function Contact() {
   return (
     <div className="contact-container">
@@ -40,7 +40,7 @@ export default function Contact() {
                   <p className="contact-info-text">
                     <a
                       href="mailto:vinayagaroofingtiles@gmail.com"
-                      className="email-link"
+                      className="contact-info-email-link"
                     >
                       vinayagaroofingtiles@gmail.com
                     </a>
@@ -62,36 +62,14 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="contact-form">
-            <form className="contact-form-fields">
-              <div className="contact-field">
-                <label className="contact-label">Name</label>
-                <input
-                  type="text"
-                  className="contact-input"
-                  placeholder="Your name"
-                />
-              </div>
-              <div className="contact-field">
-                <label className="contact-label">Email</label>
-                <input
-                  type="email"
-                  className="contact-input"
-                  placeholder="your@email.com"
-                />
-              </div>
-              <div className="contact-field">
-                <label className="contact-label">Message</label>
-                <textarea
-                  rows={4}
-                  className="contact-textarea"
-                  placeholder="Your message"
-                />
-              </div>
-              <button type="submit" className="contact-button">
-                Send Message
-              </button>
-            </form>
+          <div className="map">
+            <a
+              href="https://www.google.com/maps/dir//175,+Sathy+Rd,+Erode,+Tamil+Nadu+638004/@11.3518123,77.620659,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96f1fefb42cf5:0xf62648e4c5623f46!2m2!1d77.7029881!2d11.3518323?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Map} alt="Map" />
+            </a>
           </div>
         </div>
       </div>

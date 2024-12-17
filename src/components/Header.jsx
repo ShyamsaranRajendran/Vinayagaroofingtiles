@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/Group 5.svg";
 
 function Header({ menuOpen, toggleMenu }) {
+  const [showHeader, setShowHeader] = useState(true); // Controls visibility of the header
+  const [lastScrollY, setLastScrollY] = useState(0); // Tracks the last scroll position
+
   const closeMenu = () => {
     toggleMenu(false); // Close the menu when clicked
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setShowHeader(false); // Hide header on scroll down
+      } else {
+        setShowHeader(true); // Show header on scroll up
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <div className="header-wrapper">
+    <div className={`header-wrapper ${showHeader ? "show" : "hide"}`}>
       <header className="header-container">
         <div className="header-brand">
           <Link to="/" className="header-brand-link" onClick={closeMenu}>
