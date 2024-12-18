@@ -65,7 +65,7 @@ const Carousel = () => {
     },
     {
       image:
-        "https://www.static-contents.youth4work.com/y4w/6a46861f-0273-4a83-bb5e-e2839d23f6d9.png",
+        "https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg",
       title: "Trusted by Thousands",
       description:
         "Join our growing community of satisfied customers worldwide.",
@@ -73,14 +73,15 @@ const Carousel = () => {
     },
     {
       image:
-        "https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg",
+        "https://skyshieldroofs.com/wp-content/uploads/2021/12/roofing.jpeg",
       title: "Innovative Roofing Designs",
       description: "Discover modern designs to enhance your living space.",
       cta: "Browse Designs",
     },
     {
-      image:"https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg"
-    ,  title: "Weatherproof Roofing",
+      image:
+        "https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg",
+      title: "Weatherproof Roofing",
       description: "Durable and reliable materials to withstand any climate.",
       cta: "Check Products",
     },

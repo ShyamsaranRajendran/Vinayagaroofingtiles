@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Filter, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
-
+import NoProduct from '../assets/no-product.png';
 const categories = [
   "Clay roofing tiles",
   "Clay false ceiling tiles",
@@ -12,16 +12,6 @@ const categories = [
   "Laser Plates",
   "Wire clay brick",
   "UPVC Rain Gutter",
-];
-
-const brands = [
-  "Chitra Ceramic",
-  "Swastik Tiles",
-  "Thomson Tile",
-  "Wiener Berger Bricks",
-  "Pionnier Roof Tile",
-  "Nuvocotto Clay Roof Tile",
-  "Topco Ceramic Tiles",
 ];
 
 export default function Products() {
@@ -53,6 +43,18 @@ export default function Products() {
     localStorage.setItem("searchQuery", e.target.value);
   };
 
+  const handleKeywordClick = (keyword) => {
+    setSearchQuery(keyword);
+    localStorage.setItem("searchQuery", keyword);
+  };
+
+  const filteredProducts = products.filter(
+    (product) =>
+      (categoryFilter ? product.category === categoryFilter : true) &&
+      (!searchQuery ||
+        product.category.toLowerCase().includes(searchQuery.toLowerCase()))
+  );
+
   return (
     <div className="products-container">
       <div className="products-header">
@@ -66,7 +68,18 @@ export default function Products() {
               value={searchQuery}
               onChange={handleSearchChange}
             />
-            <Search className="search-icon" size={20} />
+            <button onClick={() => handleKeywordClick("")}>clear</button>
+          </div>
+          <div className="suggested-keywords-container">
+            <p>Try using these keywords:</p>
+            <ul className="suggested-keywords">
+              <li onClick={() => handleKeywordClick("UPVC")}>Metal roof</li>
+              <li onClick={() => handleKeywordClick("Ceramic")}>Ceramic</li>
+              <li onClick={() => handleKeywordClick("Clay")}>
+                Clay tiles
+              </li>{" "}
+              <li onClick={() => handleKeywordClick("brick")}>Bricks</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -79,7 +92,7 @@ export default function Products() {
         >
           <option value="">All Categories</option>
           {categories.map((category) => (
-            <option key={category} value={category} >
+            <option key={category} value={category}>
               {category}
             </option>
           ))}
@@ -87,18 +100,19 @@ export default function Products() {
       </div>
 
       <div className="products-grid">
-        {products
-          .filter(
-            (product) =>
-              (categoryFilter ? product.category === categoryFilter : true) &&
-              (!searchQuery ||
-                product.category
-                  .toLowerCase()
-                  .includes(searchQuery.toLowerCase()))
-          )
-          .map((product, index) => (
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((product, index) => (
             <ProductCard key={index} {...product} />
-          ))}
+          ))
+        ) : (
+          <div className="no-products-found">
+            <img
+              src={NoProduct}
+              alt="No products found"
+              className="no-products-image"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

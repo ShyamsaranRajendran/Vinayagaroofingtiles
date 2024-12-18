@@ -3,12 +3,8 @@ import { useNavigate } from "react-router-dom"; // Importing useNavigate
 import { Link } from "react-router-dom"; // Importing Link
 
 export default function RoofingLandingPageShuffle() {
-  const words = [
-    "durable metal roof",
-    "stylish asphalt shingles",
-    "eco-friendly green roof",
-    "classic clay tiles",
-  ];
+ const words = ["metal roof", "asphalt shingles", "green roof", "clay tiles"];
+
 
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [shufflingWord, setShufflingWord] = useState(currentWord);
@@ -46,17 +42,18 @@ export default function RoofingLandingPageShuffle() {
     }, 100); // Shuffle letters every 100ms
   };
 
-  const generateShuffledWord = (current, next, progress) => {
-    const maxLength = Math.max(current.length, next.length);
-    const shuffled = Array.from({ length: maxLength }).map((_, i) => {
-      if (Math.random() > progress) {
-        return String.fromCharCode(97 + Math.floor(Math.random() * 26)); // Random letter
-      } else {
-        return next[i] || " "; // Gradually settle to the next word
-      }
-    });
-    return shuffled.join("");
-  };
+ const generateShuffledWord = (current, next, progress) => {
+   const maxLength = Math.max(current.length, next.length);
+   const shuffled = Array.from({ length: maxLength }).map((_, i) => {
+     if (Math.random() > progress) {
+       return String.fromCharCode(97 + Math.floor(Math.random() * 26)); // Random letter
+     } else {
+       return next[i] || " "; // Gradually settle to the next word
+     }
+   });
+   return shuffled.join("").padEnd(maxLength, " "); // Pad shorter words to maintain width
+ };
+
 
   const navigate = useNavigate();
   const whatsappMessage = encodeURIComponent(`
@@ -70,10 +67,12 @@ Could you share more details and assist with the purchase? 😊`);
   return (
     <div className="landX-container">
       <header className="landX-header">
-        <h1 className="landX-title">Welcome to Premium Roofing Solutions</h1>
-        <p className="landX-subtitle">
+        {/* <h1 className="landX-title">Welcome to Premium Roofing Solutions</h1> */}
+        <p className="landX-title">
           Protecting your home with the best{" "}
-          <span className="landX-shuffle-text">{shufflingWord}</span>
+          
+            <span className="landX-shuffle-text">{shufflingWord}</span>
+     
         </p>
       </header>
       <section className="landX-cta-section">
