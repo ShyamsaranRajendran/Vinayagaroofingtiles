@@ -64,7 +64,7 @@ export default function Contact() {
 
           <div className="map">
             <a
-              href="https://www.google.com/maps/dir//175,+Sathy+Rd,+Erode,+Tamil+Nadu+638004/@11.3518123,77.620659,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba96f1fefb42cf5:0xf62648e4c5623f46!2m2!1d77.7029881!2d11.3518323?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/place/Vinayaga+Timbers+Pvt/@11.3474741,77.721128,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba96f378e01f547:0x26fc8eb30000000!8m2!3d11.3474741!4d77.721128!16s%2Fg%2F11s0fl727b?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
             >

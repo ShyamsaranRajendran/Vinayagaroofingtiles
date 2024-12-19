@@ -3,7 +3,7 @@
     "id": 1,
     "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDxgg2y3Vekn0jez0qGL33lVYxmSykExlNxBVWG-nLxWLJriMV",
     "name": "Bubble Top Tile",
-    "category": "Ceramic rooftng Tiles",
+    "category": "Ceramic roofing tiles",
     "material": "Ceramic",
     "description": "Durable and aesthetically pleasing ceramic roofing tiles, ideal for residential and commercial buildings."
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_eOEGs8nCHa3plqsSi-kfOVuVDsNG4FCyRlfeG4LZKXslh13i",
     "name": "Bubble Top Tile",
-    "category": "Ceramic rooftng Tiles",
+    "category": "Ceramic roofing tiles",
     "material": "Ceramic",
     "description": "Classic ceramic tiles with a bubble top design, providing an elegant look and excellent protection."
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1KPMWEgiP_NWtz_ZRNHcykpzMLOXf7IyK39ZGP2aLh2s2axMy",
     "name": "Mangalore Clay Rtof Tiles 2",
-    "category": "Ceramic rooftng Tiles",
+    "category": "Ceramic roofing tiles",
     "material": "Clay",
     "description": "Traditional Mangalore-style clay roof tiles known for their durability and natural insulation properties."
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSp2bx6xngrwGOZOAL-zAM4IG6gfjJ7xv4PRVfbsVJNsm6nTYkF",
     "name": "Bubble Top Tile",
-    "category": "Ceramic rooftng Tiles",
+    "category": "Ceramic roofing tiles",
     "material": "Ceramic",
     "description": "Versatile and weather-resistant ceramic tiles with a stylish bubble top texture."
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTe-dQ5aKX1pD00bTi2vv9w5AEW0QWghabjRgfdxuExGG3ymsDo",
     "name": "Bubble Top Tile",
-    "category": "Concrete rooftng Tiles",
+    "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "Strong and reliable concrete roofing tiles with a unique bubble top design."
   },
@@ -43,18 +43,11 @@
     "id": 6,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnf644F92MMELGlUhIN2t08mruQSQikcIuwtBaIq-fJRtMb-4L",
     "name": "Bubble Top Tile",
-    "category": "Concrete rooftng Tiles",
+    "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "High-quality concrete tiles designed for long-lasting durability and low maintenance."
   },
-  {
-    "id": 7,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-2bhmu5VUd1dYBkvsikAhmJnKPZN4pEj7YMGjJwkyeSDMxPWT",
-    "name": "Bubble Top Tile",
-    "category": "Concrete rooftng Tiles",
-    "material": "Concrete",
-    "description": "Reliable and stylish concrete tiles for both modern and traditional roofing needs."
-  },
+
   {
     "id": 8,
     "image": "https://image.made-in-china.com/43f34j00btCMgleFCEoi/Flat-Tile-Roof-Solar-Panel-BIPV-Clay-Rtof-Tiles-Shingles-Roof.jpg",
@@ -67,23 +60,16 @@
     "id": 9,
     "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYPBKU4jlakuQCDfNmEN1WLkfrWb9WU5Rp5YfzdCWy5ayyEkYq",
     "name": "Bubble Top Tile",
-    "category": "Concrete rooftng Tiles",
+    "category": "Concrete roofing tiles",
     "material": "Concrete",
-    "description": "Premium concrete roofing tiles offering exceptional strength and weather resistance."
+    "description": "Premium Concrete roofing tiles offering exceptional strength and weather resistance."
   },
-  {
-    "id": 10,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD_8xRfP8KL39ONWUY6NUbkEMB5wwsWwDwdCOjB-cU_HuGJmRl",
-    "name": "Bubble Top Tile",
-    "category": "Ceramic rooftng Tiles",
-    "material": "Ceramic",
-    "description": "Elegant ceramic tiles with a classic bubble top design for aesthetic appeal and protection."
-  },
+ 
   {
     "id": 11,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Kvlxyr6wVWwaPZfPx_tVR2Ithgso5x-nFzPw6kAP2WvXJrvW",
     "name": "Bubble Top Tile",
-    "category": "Concrete rooftng Tiles",
+    "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
   },
@@ -91,7 +77,7 @@
     "id": 12,
     "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZ8tETAwGmwbp4VfahinAxgLlwx06B0VOqzb8c2pMJpfBVrbeI",
     "name": "Bubble Top Tile",
-    "category": "Concrete rooftng Tiles",
+    "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "Durable and weather-resistant concrete roofing tiles with a classic bubble top design."
   },
@@ -99,23 +85,16 @@
     "id": 13,
     "image": "https://i.ytimg.com/vi/c4Y8ywmPALA/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLA1HlmNQEWvn8IeGlHeBbh2bTLdRw",
     "name": "Bubble Top Tile",
-    "category": "Ceramic rooftng Tiles",
+    "category": "Ceramic roofing tiles",
     "material": "Ceramic",
     "description": "Aesthetic and functional ceramic roofing tiles offering long-lasting protection and style."
   },
-  {
-    "id": 14,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyUNdBWIgrKIjBwa6WIx5WpRC-e6OzHlT0vHi_-h8V_7t1NmqQ",
-    "name": "Bubble Top Tile",
-    "category": "Clay rooftng Tiles",
-    "material": "Clay",
-    "description": "Eco-friendly clay tiles with excellent thermal insulation and a natural finish."
-  },
+ 
   {
     "id": 15,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgoVZCCwH57OwQKOvVR_rqg5gvMdXcykSx97qcS0eDB88XY0m9",
     "name": "Bubble Top Tile",
-    "category": "Concrete rooftng Tiles",
+    "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "High-quality concrete tiles offering strength and versatility for diverse roofing needs."
   },
@@ -155,18 +134,11 @@
     "id": 21,
     "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG8p9F9n1Govx46c9DRdDm-WCwpctlxkjVEGgI97loeUdZJxGx",
     "name": "Bubble Top Tile",
-    "category": "Clay rooftng Tiles",
+    "category": "Clay rooftng tiles",
     "material": "Clay",
     "description": "Natural clay tiles providing exceptional thermal comfort and a timeless appearance."
   },
-{
-    "id": 22,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG8p9F9n1Govx46c9DRdDm-WCwpctlxkjVEGgI97loeUdZJxGx",
-    "name": "Bubble Top Tile",
-    "category": "Clay roofing tiles",
-    "material": "High-quality clay",
-    "description": "A durable and eco-friendly roofing tile made from high-quality clay, offering excellent thermal insulation and aesthetic appeal."
-},
+
 {
     "id": 23,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTNHPttDVtObMhG2VkHzUjSXve9seQnCMoiXovqfukxz0Yqg_k",
@@ -181,16 +153,9 @@
     "name": "Bubble Top Tile",
     "category": "Clay roofing tiles",
     "material": "Natural clay",
-    "description": "Natural clay roofing tiles with superior strength and a timeless look, suitable for all architectural styles."
+    "description": "Natural Clay roofing tiles with superior strength and a timeless look, suitable for all architectural styles."
 },
-{
-    "id": 25,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcG2j1rxBlIly7r9UzihgfGf_czrP2_fNCA0g23qJ7OBBEMdK",
-    "name": "Bubble Top Tile",
-    "category": "Clay roofing tiles",
-    "material": "Refined clay",
-    "description": "Refined clay tiles offering exceptional durability and a modern finish, perfect for homes and commercial buildings."
-},
+
 {
     "id": 26,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzj5Mwr3tYRUCvlC3jFzXGJqVTKy6jm1DgysSvJFJ4-o7DWon",
@@ -199,31 +164,7 @@
     "material": "Clay composite",
     "description": "Lightweight and sturdy clay composite tiles with a bubble top design, ideal for enhancing roof aesthetics."
 },
-{
-    "id": 27,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuRADpKOa1EKLjsiWsYSo2RkBgJTMh5Icqa3GiDJbgTbR8VeyG",
-    "name": "Bubble Top Tile",
-    "category": "Clay roofing tiles",
-    "material": "Kiln-fired clay",
-    "description": "Kiln-fired clay tiles offering a smooth texture and superior resistance to cracking and extreme temperatures."
-},
-{
-    "id": 28,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4HYkPZsf6QFQjBjELOC6eAfqBu5v0pVVFqYVHmqkOBMCDsYi",
-    "name": "Bubble Top Tile",
-    "category": "Clay roofing tiles",
-    "material": "Organic clay",
-    "description": "Eco-friendly organic clay tiles designed for sustainable roofing solutions with a distinctive bubble top pattern."
-},
-{
-    "id": 29,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW8AOImdmel_hcAQ27rjoKVjzTwL6EczqNZnlpOXmtfMcZRi_z",
-    "name": "Bubble Top Tile",
-    "category": "Clay roofing tiles",
-    "material": "Handcrafted clay",
-    "description": "Handcrafted clay tiles with a rustic finish, combining traditional craftsmanship with modern functionality."
-}
-,
+
 
 
 {
@@ -296,23 +237,8 @@
     "category": "Ceramic roofing tiles",
     "description": "Elegant ceramic roofing tiles with a bubble top design, offering superior weather resistance."
   },
-  {
-    "id": 40,
-    "image": "/home/shyam/Documents/Projects/Freelancing/vinayagaroofingtiles/src/components/flooring.png",
-    "name": "Bubble Top Tile",
-    "category": "Concrete roofing tiles",
-    "description": "Sturdy concrete roofing tiles with a bubble top pattern, designed for long-lasting performance."
-  },
- {
-    "id": 41,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTs_PCjLTkQ-Y8S7xa1hbpGuKoPBDq0qF9FMynQQCGaxNUfA30G",
-    "name": "Camp Clay Jali",
-    "category": "Clay false ceiling tiles",
-    "material": "Clay",
-    "description": "Durable and stylish clay false ceiling tiles, ideal for residential and commercial spaces.",
-    "price": 200,
-    "brand": "TileX"
-  },
+ 
+
   {
     "id": 42,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ojYrsBXjlPSTR-VAKvkkj_Gfg3UJI0G-UXwK-p4feDQUiB4b",
@@ -323,26 +249,7 @@
     "price": 300,
     "brand": "RoofTop"
   },
-  {
-    "id": 43,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFIvBO09t-xSOm6LbUznJVrJn0Z8ouVc_QkljItg10ZWZwFnli",
-    "name": "Mangalore Clay Rtof Tiles",
-    "category": "Ceramic roofing tiles",
-    "material": "Ceramic",
-    "description": "Traditional Mangalore ceramic roof tiles with enhanced durability.",
-    "price": 250,
-    "brand": "HeritageTiles"
-  },
-  {
-    "id": 44,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRyWuoO0nuNtwg86YifH_j19T5eq1FJa-RQjS1AC9b7Eg5aH5R",
-    "name": "Camp Clay Jali",
-    "category": "Clay roofing tiles",
-    "material": "Clay",
-    "description": "Versatile clay jali tiles suitable for roofing with modern aesthetics.",
-    "price": 220,
-    "brand": "TileCraft"
-  },
+ 
   {
     "id": 45,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaonuynsEyG8Z53EpjZ8iPxkSsXZXhty_ew1rravjzn7GxZB5q",
@@ -363,6 +270,46 @@
     "price": 320,
     "brand": "CeramiTile"
   },
+
+  {
+    "id": 68,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi6WKcE6iZvgT-xLVCDcSKymsRGGJ-f7Y7jv0p_UnoLqUVy5BE",
+     "name": "Bubble Top Tile",
+    "category": "Concerete jali (white)",
+    "material": "Concrete",
+    "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
+  },
+  {
+    "id": 69,
+    "image":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxVWTzTkM0Gfxcm7ThmRQNXBHe1V5yL5h_NveGwalZkagHDW_p",
+    "category": "Concerete jali (white)",
+    "material": "Concrete",
+    "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
+  },
+  {
+    "id": 70,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpZbzVvemTbbsAtvVnd1GlrQ-sI4mnmbAgTi-V-jJtUUY3pW_b",  
+    "category": "Concerete jali (white)",
+    "material": "Concrete",
+    "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
+  },
+   {
+    "id": 71,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuE58ZqpClWt7S_1AGaiK1GEV0EPTPi3kqwRjqKpvvhyfXdao-",
+      "category": "Concerete jali (white)",
+    "material": "Concrete",
+    "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
+  },
+  {
+    "id": 72,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnQ3GRKhPa8Lfcnqx4OOqzttrYMxm3fkfL82ZpGQx-2v8jSKkI",
+     "material": "Concrete",
+         "category": "Concerete jali (white)",
+    "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
+  },
+
+
+  
   {
     "id": 47,
     "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwZoJtAmR-z9aGFUyT3QP3OLeJIudZU7QOfypAllUyrza2lvNB",

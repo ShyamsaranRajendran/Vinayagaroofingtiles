@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Search } from "lucide-react";
+import Lottie from "react-lottie";
+import { Search, X } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
-import NoProduct from '../assets/no-product.png';
+import NoProductsAnimation from "../assets/no-products.json"; // Lottie JSON file
+import SearchAnimation from "../assets/Animation - search.json"; // Lottie animation for the search box
+// import FilterAnimation from "../assets/filter-animation.json";
+// import HeaderAnimation from "../assets/header-animation.json"; 
+
 const categories = [
   "Clay roofing tiles",
   "Clay false ceiling tiles",
@@ -12,13 +17,13 @@ const categories = [
   "Laser Plates",
   "Wire clay brick",
   "UPVC Rain Gutter",
+  "Concerete jali (white)",
 ];
 
 export default function Products() {
   const [categoryFilter, setCategoryFilter] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Load saved filters from localStorage if they exist
   useEffect(() => {
     const savedCategory = localStorage.getItem("categoryFilter");
     const savedSearchQuery = localStorage.getItem("searchQuery");
@@ -32,7 +37,6 @@ export default function Products() {
     }
   }, []);
 
-  // Save filters to localStorage whenever they change
   const handleCategoryChange = (e) => {
     setCategoryFilter(e.target.value);
     localStorage.setItem("categoryFilter", e.target.value);
@@ -41,11 +45,18 @@ export default function Products() {
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
     localStorage.setItem("searchQuery", e.target.value);
+    setCategoryFilter("");
+    localStorage.setItem("categoryFilter", "");
   };
 
   const handleKeywordClick = (keyword) => {
     setSearchQuery(keyword);
     localStorage.setItem("searchQuery", keyword);
+  };
+
+  const clearSearch = () => {
+    setSearchQuery("");
+    localStorage.setItem("searchQuery", "");
   };
 
   const filteredProducts = products.filter(
@@ -55,36 +66,82 @@ export default function Products() {
         product.category.toLowerCase().includes(searchQuery.toLowerCase()))
   );
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: NoProductsAnimation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  // const headerOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: HeaderAnimation,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+
+  const searchOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: SearchAnimation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  // const filterOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: FilterAnimation,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+
   return (
     <div className="products-container">
-      <div className="products-header">
+      {/* Animated Header */}
+      {/* <div className="products-header">
+        <Lottie options={headerOptions} height={100} width={100} />
         <h1 className="products-title">Our Products</h1>
-        <div className="products-actions">
-          <div className="search-box">
-            <input
-              type="text"
-              placeholder="Search products..."
-              className="search-input"
-              value={searchQuery}
-              onChange={handleSearchChange}
-            />
-            <button onClick={() => handleKeywordClick("")}>clear</button>
-          </div>
-          <div className="suggested-keywords-container">
-            <p>Try using these keywords:</p>
-            <ul className="suggested-keywords">
-              <li onClick={() => handleKeywordClick("UPVC")}>Metal roof</li>
-              <li onClick={() => handleKeywordClick("Ceramic")}>Ceramic</li>
-              <li onClick={() => handleKeywordClick("Clay")}>
-                Clay tiles
-              </li>{" "}
-              <li onClick={() => handleKeywordClick("brick")}>Bricks</li>
-            </ul>
-          </div>
+      </div> */}
+
+      <div className="products-actions">
+        {/* Animated Search Box */}
+        <div className="search-box">
+          <Lottie options={searchOptions} height={50} width={50} />
+          <input
+            type="text"
+            placeholder="Search products..."
+            className="search-input"
+            value={searchQuery}
+            onChange={handleSearchChange}
+          />
+          {searchQuery && (
+            <button className="clear-search-button" onClick={clearSearch}>
+              <X size={18} />
+            </button>
+          )}
+        </div>
+
+        <div className="suggested-keywords-container">
+          <p>Try using these keywords:</p>
+          <ul className="suggested-keywords">
+            <li onClick={() => handleKeywordClick("UPVC")}>Metal roof</li>
+            <li onClick={() => handleKeywordClick("Ceramic")}>Ceramic</li>
+            <li onClick={() => handleKeywordClick("Clay")}>Clay tiles</li>
+            <li onClick={() => handleKeywordClick("brick")}>Bricks</li>
+          </ul>
         </div>
       </div>
 
+      {/* Animated Filter Dropdown */}
       <div className="filter-options">
+        {/* <Lottie options={filterOptions} height={50} width={50} /> */}
         <select
           className="filter-select"
           value={categoryFilter}
@@ -106,11 +163,8 @@ export default function Products() {
           ))
         ) : (
           <div className="no-products-found">
-            <img
-              src={NoProduct}
-              alt="No products found"
-              className="no-products-image"
-            />
+            <Lottie options={defaultOptions} height={300} width={300} />
+            <p>No products found. Please try another search or filter.</p>
           </div>
         )}
       </div>

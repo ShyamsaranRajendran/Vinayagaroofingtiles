@@ -24,10 +24,10 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about-section py-8">
-      <div className="about-container container mx-auto px-6">
-        <div className="about-header text-center mb-12">
-          <h1 className="about-title text-3xl font-bold mb-4">
+    <div className="about-section">
+      <div className="about-container">
+        <div className="about-header">
+          <h1 className="about-title ">
             About RoofCraft
           </h1>
           <p className="about-description text-gray-600">
@@ -37,22 +37,22 @@ const About = () => {
           </p>
         </div>
 
-        <div className="about-stats grid md:grid-cols-4 gap-8 mb-16">
+        <div className="about-stats">
           {stats.map((stat, index) => (
-            <div key={index} className="stat-item text-center">
-              <stat.icon className="stat-icon w-12 h-12 text-green-600 mx-auto mb-4" />
-              <div className="stat-value text-3xl font-bold text-yellow-600 mb-2">
-                <div className="stat-value text-3xl font-bold text-yellow-600 mb-2">
+            <div key={index} className="stat-item">
+              <stat.icon className="stat-icon" />
+              <div className="stat-value">
+                <div className="stat-value">
                   {counts[index]}{" "}
                   {stat.label === "Customer Satisfaction (%)" ? "%" : "+"}
                 </div>
               </div>
-              <div className="stat-label text-gray-600">{stat.label}</div>
+              <div className="stat-label">{stat.label}</div>
             </div>
           ))}
         </div>
 
-        <div className="about-story grid md:grid-cols-2 gap-12 items-center">
+        <div className="about-story">
           <div className="story-image">
             <img
               src="https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg"
@@ -61,17 +61,17 @@ const About = () => {
             />
           </div>
           <div className="story-content">
-            <h2 className="story-title text-2xl font-bold mb-4">Our Story</h2>
-            <p className="story-description text-gray-600 mb-4">
+            <h2 className="story-title ">Our Story</h2>
+            <p className="story-description">
               What started as a small family business has grown into one of the
               most trusted names in roofing. Founded 38 years ago by
               Paramasivam, and now maintained by Senthil Murugan, we focus on
               using only branded products.
             </p>
-            <p className="story-description text-gray-600 mb-4">
+            <p className="story-description">
               We are a proud GIB member and feature popular brands like:
             </p>
-            <ul className="brandlist mb-4">
+            <ul className="brandlist ">
               <li>- Vinayaga Roofing Tiles</li>
               <li>- Chitra Ceramic</li>
               <li>- Swastik Tiles</li>
@@ -81,7 +81,7 @@ const About = () => {
               <li>- Nuvocotto Clay Roof Tile</li>
               <li>- Topco Ceramic Tiles</li>
             </ul>
-            <p className="story-description text-gray-600">
+            <p className="story-description ">
               Today, we continue to innovate and bring the latest roofing
               technologies to our customers while maintaining the personal touch
               and attention to detail that has been our hallmark since day one.

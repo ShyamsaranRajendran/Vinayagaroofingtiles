@@ -23,6 +23,10 @@ export default function ProductCard({
     return () => clearTimeout(timer);
   }, []);
 
+  const productPageLink = `${
+    window.location.origin
+  }/product/${encodeURIComponent(name)}`;
+
   const goToProductPage = () => {
     navigate(`/product/${encodeURIComponent(name)}`, {
       state: { image, name, material, description, category },
@@ -31,10 +35,13 @@ export default function ProductCard({
 
   const whatsappMessage = encodeURIComponent(
     `Hi! I'm interested in the following product: 
+- Name: ${name}
 - Category: ${category} 
 - Material: ${material} 
+- Link: ${productPageLink}
 Could you share more details and assist with the purchase? 😊`
   );
+
   const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
   const isRemoteImage = image.startsWith("http") || image.startsWith("data");
 
@@ -58,7 +65,8 @@ Could you share more details and assist with the purchase? 😊`
 
       <div className="product-card-content">
         <h3 className="product-card-title fade-in-animation">{category}</h3>
-       
+        <p>{id}</p>
+
         <div className="product-card-actions">
           <a
             href={whatsappLink}

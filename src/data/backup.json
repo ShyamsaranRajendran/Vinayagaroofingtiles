@@ -1,0 +1,97 @@
+[
+    {
+    "id": 25,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcG2j1rxBlIly7r9UzihgfGf_czrP2_fNCA0g23qJ7OBBEMdK",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Refined clay",
+    "description": "Refined clay tiles offering exceptional durability and a modern finish, perfect for homes and commercial buildings."
+},
+
+{
+    "id": 27,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuRADpKOa1EKLjsiWsYSo2RkBgJTMh5Icqa3GiDJbgTbR8VeyG",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Kiln-fired clay",
+    "description": "Kiln-fired clay tiles offering a smooth texture and superior resistance to cracking and extreme temperatures."
+},
+{
+    "id": 28,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4HYkPZsf6QFQjBjELOC6eAfqBu5v0pVVFqYVHmqkOBMCDsYi",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Organic clay",
+    "description": "Eco-friendly organic clay tiles designed for sustainable roofing solutions with a distinctive bubble top pattern."
+},
+{
+    "id": 29,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW8AOImdmel_hcAQ27rjoKVjzTwL6EczqNZnlpOXmtfMcZRi_z",
+    "name": "Bubble Top Tile",
+    "category": "Clay roofing tiles",
+    "material": "Handcrafted clay",
+    "description": "Handcrafted clay tiles with a rustic finish, combining traditional craftsmanship with modern functionality."
+}
+,
+  {
+    "id": 44,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRyWuoO0nuNtwg86YifH_j19T5eq1FJa-RQjS1AC9b7Eg5aH5R",
+    "name": "Camp Clay Jali",
+    "category": "Clay roofing tiles",
+    "material": "Clay",
+    "description": "Versatile clay jali tiles suitable for roofing with modern aesthetics.",
+    "price": 220,
+    "brand": "TileCraft"
+  },
+   {
+    "id": 41,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTs_PCjLTkQ-Y8S7xa1hbpGuKoPBDq0qF9FMynQQCGaxNUfA30G",
+    "name": "Camp Clay Jali",
+    "category": "Clay false ceiling tiles",
+    "material": "Clay",
+    "description": "Durable and stylish clay false ceiling tiles, ideal for residential and commercial spaces.",
+    "price": 200,
+    "brand": "TileX"
+  },
+   {
+    "id": 40,
+    "image": "/home/shyam/Documents/Projects/Freelancing/vinayagaroofingtiles/src/components/flooring.png",
+    "name": "Bubble Top Tile",
+    "category": "Concrete roofing tiles",
+    "description": "Sturdy concrete roofing tiles with a bubble top pattern, designed for long-lasting performance."
+  },
+  {
+    "id": 43,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFIvBO09t-xSOm6LbUznJVrJn0Z8ouVc_QkljItg10ZWZwFnli",
+    "name": "Mangalore Clay Rtof Tiles",
+    "category": "Ceramic roofing tiles",
+    "material": "Ceramic",
+    "description": "Traditional Mangalore ceramic roof tiles with enhanced durability.",
+    "price": 250,
+    "brand": "HeritageTiles"
+  },
+  {
+    "id": 7,
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-2bhmu5VUd1dYBkvsikAhmJnKPZN4pEj7YMGjJwkyeSDMxPWT",
+    "name": "Bubble Top Tile",
+    "category": "Concrete rooftng Tiles",
+    "material": "Concrete",
+    "description": "Reliable and stylish concrete tiles for both modern and traditional roofing needs."
+  },
+  {
+    "id": 10,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD_8xRfP8KL39ONWUY6NUbkEMB5wwsWwDwdCOjB-cU_HuGJmRl",
+    "name": "Bubble Top Tile",
+    "category": "Ceramic rooftng Tiles",
+    "material": "Ceramic",
+    "description": "Elegant ceramic tiles with a classic bubble top design for aesthetic appeal and protection."
+  },
+  {
+    "id": 14,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyUNdBWIgrKIjBwa6WIx5WpRC-e6OzHlT0vHi_-h8V_7t1NmqQ",
+    "name": "Bubble Top Tile",
+    "category": "Clay rooftng Tiles",
+    "material": "Clay",
+    "description": "Eco-friendly clay tiles with excellent thermal insulation and a natural finish."
+  },
+]

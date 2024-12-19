@@ -53,22 +53,25 @@ function Layout() {
       <main className="layout-main">
         <Outlet />
       </main>
-      <button
-        className="dark-mode-toggle"
-        onClick={toggleDarkMode}
-        aria-label="Toggle dark mode"
-      >
-        {darkMode ? "☀️" : "🌙"}
-      </button>
-      {showScrollToTop && ( // Conditionally render the button
+      <div className="dark-options">
         <button
-          className="scroll-to-top-btn"
-          aria-label="Scroll to top"
-          onClick={scrollToTop}
+          className="dark-mode-toggle"
+          onClick={toggleDarkMode}
+          aria-label="Toggle dark mode"
         >
-          <FaArrowUp size={18} color="gold" />
+          {darkMode ? "☀️" : "🌙"}
         </button>
-      )}
+        {showScrollToTop && ( // Conditionally render the button
+          <button
+            className="scroll-to-top-btn"
+            aria-label="Scroll to top"
+            onClick={scrollToTop}
+          >
+            <FaArrowUp size={18} color="gold" />
+          </button>
+        )}
+      </div>
+
       <Footer />
     </div>
   );

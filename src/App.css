@@ -205,7 +205,7 @@ body.dark-mode {
   width: 25px;
   height: 3px;
   margin: 5px 0;
-  background-color: #333;
+  background-color:var( --ham-white-color, #000000);
   transition: all 0.3s ease;
 }
 
@@ -242,53 +242,70 @@ body.dark-mode {
   color: var(--link-hover-color, rgb(73, 73, 73));
   background-color: #C2B280;
 }
-
-/* Dark Mode Toggle Button */
-.dark-mode-toggle {
+/* Container for both buttons */
+.dark-options {
   position: fixed;
-   bottom: 90px;
+  bottom: 50px;
   right: 20px;
-  font-size: 18px;
-   background-color: transparent;
-  color: var(--button-text, #333);
-   border: none;
-  border-radius: 50%;
-  padding: 0.75rem;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0.8;
   z-index: 1000;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-
-
+.dark-mode-toggle,
 .scroll-to-top-btn {
-  position: fixed;
-  bottom: 2rem;
-  right: 18px;
-   background-color: transparent;
-    color: var(--button-text, #333);
+  font-size: 20px;
+  background-color: transparent;
   border: none;
   border-radius: 50%;
-  padding: 0.75rem;
+  padding: 1rem; /* Adjusting padding for consistent button size */
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s ease-in-out;
+  transition: all 0.3s ease; /* Smooth transition for both size and color */
   opacity: 0.8;
+  width: 50px;
+  height: 50px; /* Equal width and height for consistency */
 }
 
+/* Dark mode button styling */
+.dark-mode-toggle {
+  background-color: var(--dark-bg, #fff); /* Light background for dark mode */
+  color: var(--dark-text, #333); /* Dark text color for dark mode */
+}
+
+/* Scroll to top button styling */
+.scroll-to-top-btn {
+  background-color: var(--scroll-to-top-bg, #fff); /* Light background */
+  color: var(--scroll-to-top-text, #333); /* Dark text for normal mode */
+}
+
+/* Hover effect for both buttons */
+.dark-mode-toggle:hover,
 .scroll-to-top-btn:hover {
   opacity: 1;
-  transform: scale(1.1); /* Slight scaling effect on hover */
+  transform: scale(1.1); /* Slight scaling effect */
 }
+
+/* Button colors for Dark Mode */
+body.dark-mode .dark-mode-toggle {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+}
+
+body.dark-mode .scroll-to-top-btn {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+}
+
+body.dark-mode .scroll-to-top-btn:hover {
+  opacity: 1;
+  transform: scale(1.1); /* Scaling effect on hover */
+}
+
 
 
 /* =======================================================================  footer ====================================================================== */
@@ -495,7 +512,7 @@ body.dark-mode .footer-legal-links a:hover {
     position: absolute;
     top: 5%;
     right: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--background-color,rgba(255, 255, 255, 0.8));
     width: 50%;
     padding: 1rem;
     border-radius: 1rem;
@@ -543,6 +560,8 @@ body.dark-mode {
   --header-text: #eee;
   --brand-color: #4ade80;
   --brand-hover-color: #22c55e;
+  --ham-white-color: white;
+  --menu-background: rgb(44, 44, 44);
   --menu-icon-color: rgba(12, 11, 11, 0.6);
   --link-color: #fff;
   --link-hover-color: #4ade80;
@@ -972,12 +991,33 @@ body.dark-mode {
   align-items: center;
 }
 
-/* Search box styling */
 .search-box {
   position: relative;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  gap: 0.5rem;
+}
+
+
+.clear-search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.clear-search-button:hover {
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Change the color of the X icon to red */
+.clear-search-button svg {
+  color: red; /* Set the icon color to red */
 }
 
 .search-input {
@@ -993,7 +1033,7 @@ body.dark-mode {
 
 .search-input:focus {
   border-color: #C2B280; /* Tailwind green-400 equivalent */
-  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.2);
+  box-shadow: 0 0 0 3px rgba(255, 240, 103, 0.2);
 }
 
 .search-icon {
@@ -1057,7 +1097,7 @@ body.dark-mode {
 .filter-select:focus {
   outline: none;
   border-color: #cfcc00;
-  box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.2);
+  box-shadow: 0 0 0 4px rgba(252, 255, 72, 0.2);
 }
 
 /* Style for the Filter Selects on Hover */
@@ -1071,14 +1111,13 @@ body.dark-mode .search-box {
 }
 
 body.dark-mode .search-input {
-  background-color: #555; /* Dark input background */
   color: #f9f9f9; /* Light text for input */
   border: 1px solid #444; /* Darker border */
 }
 
 body.dark-mode .search-input:focus {
-  border-color: #C2B280; /* Green focus */
-  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.2);
+  border-color: #0c0900; /* Green focus */
+  box-shadow: 0 0 0 3px rgba(247, 236, 82, 0.2);
 }
 
 body.dark-mode .search-icon {
@@ -1394,10 +1433,12 @@ body.dark-mode .contact-description {
   display: flex;
   align-items: flex-start; /* Vertically align icons and text */
   justify-content: flex-start;
-  gap: 0.2rem; /* Space between icon and text */
-  flex-wrap: wrap; /* Allows for responsiveness if needed */
 }
 
+.contact-info-item div{
+  display: flex;
+  flex-direction: column;
+}
 .contact-icon {
   color: #C2B280; /* Green icon for light mode */
   margin-top: 1rem;
@@ -1446,6 +1487,7 @@ body.dark-mode .contact-icon {
 
 .contact-info-label {
   font-weight: bold;
+  margin: 2px;
   color: #333; /* Dark text for light mode */
 }
 
@@ -1455,6 +1497,7 @@ body.dark-mode .contact-info-label {
 }
 
 .contact-info-text {
+  margin: 0 0;
   color: #555; /* Dark text for light mode */
 }
 
@@ -1575,6 +1618,24 @@ body.dark-mode .mode-toggle-btn {
   }
 }
 /* ==============================================================================  About page ============================================================================= */
+/* Default Light Mode Styles */
+:root {
+  --bg-color: #ffffff; /* Background color */
+  --text-color: #333333; /* Text color */
+  --text-secondary-color: #4b5563; /* Secondary text color */
+  --button-color: #059669; /* Button/icon color */
+  --highlight-color: #d97706; /* Highlight color (e.g., stat values) */
+  --list-bullet-color: #059669; /* List bullet color */
+}
+
+[data-theme="dark"] {
+  --bg-color: #181818; /* Dark background */
+  --text-color: #e5e5e5; /* Light text for dark mode */
+  --text-secondary-color: #c1c1c1; /* Lighter secondary text */
+  --button-color: #10b981; /* Green for button/icon in dark mode */
+  --highlight-color: #fbbf24; /* Light highlight for dark mode */
+  --list-bullet-color: #10b981; /* List bullet color in dark mode */
+}
 
 .about-section {
   padding: 2rem 0;
@@ -1599,7 +1660,7 @@ body.dark-mode .mode-toggle-btn {
 }
 
 .about-description {
-  color: #4b5563;
+  color: var(--text-secondary-color);
   line-height: 1.5;
 }
 
@@ -1618,18 +1679,18 @@ body.dark-mode .mode-toggle-btn {
 .stat-icon {
   width: 3rem;
   height: 3rem;
-  color: #059669;
+  color: var(--button-color);
   margin: 0 auto 1rem;
 }
 
 .stat-value {
   font-size: 1.875rem;
   font-weight: bold;
-  color: #d97706;
+  color: var(--highlight-color);
 }
 
 .stat-label {
-  color: #4b5563;
+  color: var(--text-secondary-color);
   font-size: 0.875rem;
 }
 
@@ -1655,7 +1716,7 @@ body.dark-mode .mode-toggle-btn {
 }
 
 .story-description {
-  color: #4b5563;
+  color: var(--text-secondary-color);
   line-height: 1.5;
 }
 
@@ -1665,10 +1726,10 @@ body.dark-mode .mode-toggle-btn {
 }
 
 .brandlist ul li::before {
-  
-  list-style: none;
-  color: #059669;
+  content: "\2022"; /* Unicode bullet character */
+  color: var(--list-bullet-color); /* Color of the bullet */
   font-weight: bold;
+  padding-right: 0.5rem; /* Space between bullet and text */
 }
 
 @media (max-width: 1024px) {
@@ -1688,6 +1749,17 @@ body.dark-mode .mode-toggle-btn {
   .stat-value {
     font-size: 1.5rem;
   }
+}
+
+/* Optional: Button Hover Effects */
+.stat-icon:hover {
+  transform: scale(1.1); /* Slight scaling effect on hover */
+  transition: transform 0.3s ease;
+}
+
+.stat-value:hover {
+  color: var(--highlight-color);
+  transition: color 0.3s ease;
 }
 
 
@@ -1731,7 +1803,6 @@ body.dark-mode .mode-toggle-btn {
   align-items: center;
   background-color: #f9fafb;
     font-style: oblique;
-
   padding: 0.75rem 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1813,7 +1884,7 @@ body.dark-mode .mode-toggle-btn {
 
 .no-products-found {
   position: relative;
-  left: 50%;
+  left: .8rem;
   text-align: center;
   padding: 20px;
   background-color: #f9f9f9;
@@ -1824,19 +1895,15 @@ body.dark-mode .mode-toggle-btn {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.no-products-image {
-  width: 150px;
-  height: auto;
-  margin-bottom: 20px;
-  opacity: 0.8;
-  border-radius: 10px;
+/* General styles for suggested keywords */
+.suggested-keywords-container {
+  margin: 20px 0;
+  text-align: center;
 }
 
-.no-products-message {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 15px;
+.suggested-keywords-container p {
+  font-size: 16px;
+  color: #555;
 }
 
 .suggested-keywords {
@@ -1853,19 +1920,51 @@ body.dark-mode .mode-toggle-btn {
   display: inline-block;
   background: #e8f0fe;
   color: #2c7be5;
-  padding: 8px 12px;
+  padding: 8px 16px;
   border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
-  transition: background-color 1s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.suggested-keywords li:hover {
+  background-color: #cfe4fd;
+  color: #1c5dbd;
+  transform: scale(1.05);
 }
 
 .suggested-keywords li:active {
   background-color: #2c7be5;
   color: white;
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e5e7eb;
+}
+
+body.dark-mode .suggested-keywords-container p {
+  color: #bbbbbb;
+}
+
+body.dark-mode .suggested-keywords li {
+  background: #1e1e1e;
+  color: #90caf9;
+}
+
+body.dark-mode .suggested-keywords li:hover {
+  background-color: #333333;
+  color: #64b5f6;
+}
+
+body.dark-mode .suggested-keywords li:active {
+  background-color: #1976d2;
+  color: #e5e7eb;
+}
+
 
 @media (max-width: 768px) {
   .no-products-found {
@@ -2006,7 +2105,7 @@ body.dark-mode .mode-toggle-btn {
 }
 
 .product-card-add-to-cart-btn {
-  background-color: #008d34;
+  background-color: #003d16;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -2016,7 +2115,7 @@ body.dark-mode .mode-toggle-btn {
 }
 
 .product-card-add-to-cart-btn:hover {
-  background-color: #1ebc59;
+  background-color: #007029;
   transform: scale(1.1);
 }
 
@@ -2089,11 +2188,11 @@ body.dark-mode .product-card-details {
 }
 
 body.dark-mode .product-card-add-to-cart-btn {
-  background-color: #00eb9c;
+  background-color: #016626;
 }
 
 body.dark-mode .product-card-add-to-cart-btn:hover {
-  background-color: #00eb9c;
+  background-color: #016626;
 }
 
 body.dark-mode .product-card-info-btn {
@@ -2232,7 +2331,7 @@ body.dark-mode .product-card-modal-close-btn:hover {
     width: 70%; /* Make button full width */
     padding: 0.6rem;
     font-size: 0.9rem; /* Slightly larger font for readability */
-    background-color: #25D366;
+    background-color: #006927;
     color: #fff;
     text-align: center;
     border-radius: 0.375rem;
