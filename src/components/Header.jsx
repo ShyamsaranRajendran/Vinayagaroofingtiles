@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import Lottie from "react-lottie";
 import logo from "../assets/Group 5.svg";
+import animationData from "../assets/AnimationPeople.json";
 
 function Header({ menuOpen, toggleMenu }) {
-  const [showHeader, setShowHeader] = useState(true); // Controls visibility of the header
-  const [lastScrollY, setLastScrollY] = useState(0); // Tracks the last scroll position
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const menuRef = useRef(null);
 
   const closeMenu = () => {
-    toggleMenu(false); // Close the menu when clicked
+    toggleMenu(false);
   };
 
   useEffect(() => {
@@ -15,9 +18,9 @@ function Header({ menuOpen, toggleMenu }) {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        setShowHeader(false); // Hide header on scroll down
+        setShowHeader(false);
       } else {
-        setShowHeader(true); // Show header on scroll up
+        setShowHeader(true);
       }
 
       setLastScrollY(currentScrollY);
@@ -29,6 +32,33 @@ function Header({ menuOpen, toggleMenu }) {
     };
   }, [lastScrollY]);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        closeMenu();
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <div className={`header-wrapper ${showHeader ? "show" : "hide"}`}>
       <header className="header-container">
@@ -37,20 +67,20 @@ function Header({ menuOpen, toggleMenu }) {
             <img src={logo} alt="logo" />
           </Link>
         </div>
-        <nav className="header-navigation">
+        <nav className="header-navigation" ref={menuRef}>
           <button
             className="header-menu-icon"
-            onClick={() => toggleMenu(!menuOpen)} // Toggle menu state
+            onClick={() => toggleMenu(!menuOpen)}
             aria-label="Toggle menu"
           >
             {menuOpen ? (
-              <span className="close-icon">&times;</span> // Close icon
+              <span className="close-icon">&times;</span>
             ) : (
               <span className="hamburger-icon">
                 <span></span>
                 <span></span>
                 <span></span>
-              </span> // Hamburger icon
+              </span>
             )}
           </button>
           <ul className={`header-menu ${menuOpen ? "open" : ""}`}>
@@ -74,6 +104,9 @@ function Header({ menuOpen, toggleMenu }) {
                 Contact
               </Link>
             </li>
+            <div className="animation-container">
+              <Lottie options={defaultOptions} height={200} width={200} />
+            </div>
           </ul>
         </nav>
       </header>

@@ -11,6 +11,7 @@ export default function ProductCard({
   material,
   description,
   category,
+  tag
 }) {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +30,7 @@ export default function ProductCard({
 
   const goToProductPage = () => {
     navigate(`/product/${encodeURIComponent(name)}`, {
-      state: { image, name, material, description, category },
+      state: { image, name, material, description, category ,tag },
     });
   };
 

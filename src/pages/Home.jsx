@@ -93,6 +93,7 @@ const featuredProducts = [
     name: "Bubble Top Tile",
     category: "Ceramic Roofing Tiles",
     material: "Ceramic",
+    tag: "true",
     description:
       "Durable and aesthetically pleasing ceramic roofing tiles, ideal for residential and commercial buildings.",
   },
@@ -103,6 +104,8 @@ const featuredProducts = [
     name: "Bubble Top Tile",
     category: "Ceramic Roofing Tiles",
     material: "Ceramic",
+    tag: "true",
+
     description:
       "Classic ceramic tiles with a bubble top design, providing an elegant look and excellent protection.",
   },
@@ -113,6 +116,8 @@ const featuredProducts = [
     name: "Mangalore Clay Roof Tiles 2",
     category: "Ceramic Roofing Tiles",
     material: "Clay",
+    tag: "true",
+
     description:
       "Traditional Mangalore-style clay roof tiles known for their durability and natural insulation properties.",
   },
@@ -123,9 +128,11 @@ const featuredProducts = [
     name: "Bubble Top Tile",
     category: "Ceramic Roofing Tiles",
     material: "Ceramic",
+    tag: "true",
+
     description:
       "Versatile and weather-resistant ceramic tiles with a stylish bubble top texture.",
-  }
+  },
 ];
 
 export default function Home() {

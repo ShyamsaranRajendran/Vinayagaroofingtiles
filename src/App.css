@@ -127,7 +127,7 @@ body {
 
 /* Dark Mode */
 body.dark-mode {
-  --background-color: #121212;
+  --background-color: #1f1f1f;
   --background-color-1:  rgba(48, 48, 48, 0.61),
   --text-color: #eaeaea;
   --splash-bg: linear-gradient(135deg, #1a1a1a, #4fc3f7);
@@ -135,7 +135,21 @@ body.dark-mode {
   --loader-highlight: #4fc3f7;
   --brand-item-bg: #333;
   --brand-item-color: #eaeaea;
-  --layout-bg: #1a1a1a;
+  --layout-bg: #1f1f1f;
+}
+
+.animation-container {
+  display: none; /* Default: Hidden on larger screens */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .animation-container {
+    display: block; /* Visible only on mobile screens */
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+  }
 }
 
 .header-wrapper {
@@ -455,12 +469,6 @@ body.dark-mode .scroll-to-top-btn:hover {
     font-size: 14px; /* Reduce font size for footer text */
   }
 }
-
-body.dark-mode {
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text color */
-}
-
 body.dark-mode .footer-container {
   background-color: #1a1a1a;
   color: #e0e0e0;
@@ -577,7 +585,7 @@ body.dark-mode {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color, #fff);
+  /* background-color: var(--background-color, #fff); */
   font-family: 'Inter', sans-serif; 
   color: var(--text-color, #000); 
   position: relative;
@@ -1377,8 +1385,8 @@ body.dark-mode .filter-select:hover {
 /* ========================================================== contact page =========================================================== */
 
 .contact-container {
-  padding: 4rem 1.5rem;
-  background-color: #f9f9f9; /* Light background */
+  padding: 2rem 1.5rem;
+  background-color:var(--background-color,#f9f9f9) ; /* Light background */
   font-family: 'Poppins', Arial, sans-serif;
   font-style: oblique;
 }
@@ -1428,6 +1436,9 @@ body.dark-mode .contact-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+}
+.contact-info{
+  padding: 1rem;
 }
 .contact-info-item  {
   display: flex;
@@ -1618,148 +1629,146 @@ body.dark-mode .mode-toggle-btn {
   }
 }
 /* ==============================================================================  About page ============================================================================= */
-/* Default Light Mode Styles */
-:root {
-  --bg-color: #ffffff; /* Background color */
-  --text-color: #333333; /* Text color */
-  --text-secondary-color: #4b5563; /* Secondary text color */
-  --button-color: #059669; /* Button/icon color */
-  --highlight-color: #d97706; /* Highlight color (e.g., stat values) */
-  --list-bullet-color: #059669; /* List bullet color */
+
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: var(--bg-light);
+  border: none;
+  border-radius: 50%;
+  transition: var(--transition);
 }
 
-[data-theme="dark"] {
-  --bg-color: #181818; /* Dark background */
-  --text-color: #e5e5e5; /* Light text for dark mode */
-  --text-secondary-color: #c1c1c1; /* Lighter secondary text */
-  --button-color: #10b981; /* Green for button/icon in dark mode */
-  --highlight-color: #fbbf24; /* Light highlight for dark mode */
-  --list-bullet-color: #10b981; /* List bullet color in dark mode */
+body.dark-mode .theme-toggle {
+  background-color: var(--loader-border);
 }
 
-.about-section {
-  padding: 2rem 0;
+.about-page {
+  min-height: 100vh;
+  padding: 2rem;
 }
 
 .about-container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* Header Styles */
-.about-header {
-  text-align: center;
-  margin-bottom: 3rem;
 }
 
 .about-title {
+  text-align: center;
   font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+body.dark-mode .about-title {
+  color: var(--text-color);
 }
 
 .about-description {
-  color: var(--text-secondary-color);
-  line-height: 1.5;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
 }
 
-/* Stats Section */
+body.dark-mode .about-description {
+  color: var(--text-color);
+}
+
 .about-stats {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  margin-bottom: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
-.stat-item {
+.stat-card {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   text-align: center;
+  transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+body.dark-mode .stat-card {
+  background: var(--brand-item-bg);
+  border-color: var(--loader-border);
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
 }
 
 .stat-icon {
-  width: 3rem;
-  height: 3rem;
-  color: var(--button-color);
-  margin: 0 auto 1rem;
+  font-size: 2rem;
+  color: rgb(143, 129, 0);
+  margin-bottom: 0.5rem;
 }
 
 .stat-value {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: var(--highlight-color);
+  color: var(--text-light);
+}
+
+body.dark-mode .stat-value {
+  color: var(--text-color);
 }
 
 .stat-label {
-  color: var(--text-secondary-color);
   font-size: 0.875rem;
+  color: #555;
 }
 
-/* Story Section */
+body.dark-mode .stat-label {
+  color: var(--text-color);
+}
+
 .about-story {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
 }
 
-.story-image img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+.story-image {
+  flex: 1 1 40%;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
-.story-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.story-content {
+  flex: 1 1 50%;
+
+  font-size: 1.2rem;
+  color: var(--text-light);
 }
 
-.story-description {
-  color: var(--text-secondary-color);
-  line-height: 1.5;
+body.dark-mode .story-content {
+  color: var(--text-color);
 }
 
-.brandlist ul {
-  list-style: none;
+.brand-list {
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-.brandlist ul li::before {
-  content: "\2022"; /* Unicode bullet character */
-  color: var(--list-bullet-color); /* Color of the bullet */
-  font-weight: bold;
-  padding-right: 0.5rem; /* Space between bullet and text */
+.brand-list li {
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-@media (max-width: 1024px) {
-  .about-story {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .stat-value {
-    font-size: 1.5rem;
-  }
-}
-
-/* Optional: Button Hover Effects */
-.stat-icon:hover {
-  transform: scale(1.1); /* Slight scaling effect on hover */
-  transition: transform 0.3s ease;
-}
-
-.stat-value:hover {
-  color: var(--highlight-color);
-  transition: color 0.3s ease;
+body.dark-mode .brand-list li {
+  background-color: var(--brand-item-bg);
+  color: var(--brand-item-color);
 }
 
 
@@ -1940,11 +1949,6 @@ body.dark-mode .mode-toggle-btn {
   color: white;
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #e5e7eb;
-}
 
 body.dark-mode .suggested-keywords-container p {
   color: #bbbbbb;
@@ -2159,11 +2163,6 @@ body.dark-mode .suggested-keywords li:active {
   }
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #e5e7eb;
-}
 
 body.dark-mode .product-card {
   background-color: #1f1f1f;
@@ -2655,18 +2654,6 @@ body.dark-mode .product-card-modal-close-btn:hover {
   .feature-description {
     font-size: 0.8rem;
   }
-}
-
-/* Dark Mode */
-body.dark-mode {
-  --features-bg: #121212;
-  --text-color: #f5f5f5;
-  --card-bg: #1e1e1e;
-  --card-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
-  --card-hover-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
-  --icon-color: #4fc3f7; /* Lighter blue for dark mode */
-  --title-color: #ffffff;
-  --description-color: #cccccc;
 }
 
 /* ================================================ product details ======================================================= */
