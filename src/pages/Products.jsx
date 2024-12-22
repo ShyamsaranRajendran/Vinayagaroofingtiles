@@ -22,7 +22,9 @@ const categories = [
 export default function Products() {
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // Load filters from localStorage on mount
   useEffect(() => {
     const savedCategory = localStorage.getItem("categoryFilter") || "all";
@@ -86,7 +88,7 @@ export default function Products() {
     <div className="products-container">
       <div className="products-actions">
         <div className="search-box">
-          <Lottie options={searchOptions} height={25} width={25} />
+          <Lottie options={searchOptions} className="lot" height={25} width={25} />
           <input
             type="text"
             placeholder="Search products..."

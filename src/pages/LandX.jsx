@@ -69,8 +69,7 @@ Hi! I’m interested in learning more about your roofing solutions. Could you he
       <header className="landX-header">
         <p className="landX-title">
           <span className="landX-highlight">Secure</span> your home with{" "}
-          <span className="landX-highlight">exceptional</span>
-          roofing
+          <span className="landX-highlight">exceptional</span> roofing
         </p>
         <span className="landX-shuffle-text">{shufflingWord}</span>
       </header>

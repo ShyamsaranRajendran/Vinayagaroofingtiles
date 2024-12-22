@@ -162,14 +162,18 @@
 .filter-select:hover {
   border-color: #6b7280;
 }
+.body .dark-mode .suggested-keywords-container p{
+  color: white;
+}
 
 body.dark-mode .search-box {
   background-color: #333;
 }
-
+.lot{
+  background: transparent;
+}
 body.dark-mode .search-input {
   color: #f9f9f9;
-  border: 1px solid #444;
 }
 
 body.dark-mode .search-input:focus {
@@ -359,7 +363,7 @@ body.dark-mode .no-products .message {
     font-size: 0.9rem;
   }
 
-  .no-products .lottie-container > div {
+  .no-products  > div {
     width: 90%;
     max-width: 250px;
   }

@@ -37,9 +37,7 @@
   font-size: inherit;
   background-color: #ff4343;
   color: #ffffff;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 40px;
+  border-radius: 4px;
   font-weight: bold;
   display: inline-block;
   margin: 2px 0; /* Adds vertical spacing between highlighted backgrounds */

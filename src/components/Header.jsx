@@ -104,9 +104,9 @@ function Header({ menuOpen, toggleMenu }) {
                 CONTACT
               </Link>
             </li>
-            <div className="animation-container">
+            {/* <div className="animation-container">
               <Lottie options={defaultOptions} height={200} width={200} />
-            </div>
+            </div> */}
           </ul>
         </nav>
       </header>
