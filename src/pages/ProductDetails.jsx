@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 import products from "../data/products.json";
 import { FaWhatsapp } from "react-icons/fa";
@@ -6,35 +6,57 @@ import { Info } from "lucide-react";
 import "./css/ProductDetails.css";
 
 export default function ProductDetails() {
-  const { name } = useParams();
+  const { id } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
+  const [productDetails, setProductDetails] = useState(null);
+
+  // Fetch product details based on the id from the URL params
+  useEffect(() => {
+    const product = products.find((prod) => prod.id === parseInt(id)); // Adjusted to match product id
+    if (product) {
+      setProductDetails(product);
+    }
+    window.scrollTo(0, 0); // Scroll to top when component mounts
+  }, [id]);
 
   // Navigate to product page with state
   const goToProductPage = (product) => {
-    navigate(`/product/${encodeURIComponent(product.name)}`, {
+    navigate(`/product/${encodeURIComponent(product.id)}`, {
       state: product,
     });
+    window.scrollTo(0, 0);
   };
 
-  // Scroll to top when component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  if (!productDetails) {
+    return <div>Loading...</div>; // Show loading until product details are fetched
+  }
 
-  const { image, material, category, description } = location.state || {};
+  const {
+    id: productId,
+    image,
+    material,
+    category,
+    description,
+    name,
+  } = productDetails;
 
-  const regex = new RegExp(name); // 'i' for case-insensitive matching
+  const productPageLink = `${
+    window.location.origin
+  }/product/${encodeURIComponent(productId)}`;
+  const regex = new RegExp(name, "i"); // Case-insensitive search to avoid the current product
 
+  // Filter recommended products by category and exclude the current product
   const recommendedProducts = products.filter(
-    (product) => product.category === category && !regex.test(product.name)
+    (product) =>
+      product.category.toLowerCase() === category.toLowerCase()
   );
 
   const whatsappMessage = encodeURIComponent(
     `Hi! I'm interested in the following product: 
-   - category: ${category} 
-   - Product:  ${image}
-   - Material: ${material} 
+    - Category: ${category} 
+    - Link: ${productPageLink}
+    - Material: ${material} 
     Could you share more details and assist with the purchase? 😊`
   );
   const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
@@ -46,7 +68,6 @@ export default function ProductDetails() {
         alt={name}
         style={{ width: "100%", maxWidth: "500px" }}
       />
-
       <div className="product-info">
         <p>
           <strong>Material:</strong> {material}

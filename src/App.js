@@ -52,7 +52,7 @@ function App() {
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
               <Route path="products" element={<Products />} />
-              <Route path="/product/:name" element={<ProductDetails />} />
+              <Route path="/product/:id" element={<ProductDetails />} />
              
               {/* <Route path="gallery" element={<Gallery />} /> */}
               <Route path="about" element={<About />} />

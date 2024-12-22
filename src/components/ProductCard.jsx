@@ -25,11 +25,11 @@ export default function ProductCard({
 
   const productPageLink = `${
     window.location.origin
-  }/product/${encodeURIComponent(name)}`;
+  }/product/${encodeURIComponent(id)}`;
 
   const goToProductPage = () => {
-    navigate(`/product/${encodeURIComponent(category)}`, {
-      state: { image, name, material, description, category ,tag },
+    navigate(`/product/${encodeURIComponent(id)}`, {
+      state: { id, image, name, material, description, category, tag },
     });
   };
 

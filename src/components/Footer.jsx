@@ -7,6 +7,11 @@ import {
 } from "react-icons/fa";
 import './css/footer.css'
 function Footer() {
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   useEffect(() => {
     const sections = document.querySelectorAll(".footer-section");
     const observer = new IntersectionObserver(

@@ -15,7 +15,7 @@
 .brand-carousel-track {
   display: flex;
   gap: 20px; /* Adjust spacing between logos */
-  animation: scrollCarousel 15s linear infinite; /* Smooth continuous scrolling */
+  animation: scrollCarousel 30s linear infinite; /* Smooth continuous scrolling */
 }
 
 .brand-carousel-logo {
