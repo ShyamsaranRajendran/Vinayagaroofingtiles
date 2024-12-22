@@ -86,13 +86,7 @@ Hi! I’m interested in learning more about your roofing solutions. Could you he
           </Link>
         </button>
       </section>
-      <footer className="landX-footer">
-        <button className="whatsapp-button">
-          <Link to="/contact" className="whatsapp-link">
-            Contact on WhatsApp
-          </Link>
-        </button>
-      </footer>
+      
     </div>
   );
 }

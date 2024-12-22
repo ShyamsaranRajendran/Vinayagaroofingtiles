@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 import LandX from './LandX';
 import Brand from './Brand'
 import { useNavigate } from "react-router-dom";
-
+import Arrow from '../assets/arrow.svg'
 const featuredProducts = [
   {
     id: 1,
@@ -87,8 +87,9 @@ Could you share more details and assist with the purchase? 😊`);
           <button className="landX-cta-button">
             <Link to="/products" className="link-learn">
               See More
-            </Link>{" "}
-          </button>{" "}
+              <img src={Arrow} alt="" />
+            </Link>
+          </button>
         </div>
       </div>
     </div>
