@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { FaAward, FaUsers, FaBuilding, FaBullseye } from "react-icons/fa";
+import "./css/about.css";
 
 const stats = [
   { icon: FaBuilding, value: 1000, label: "Projects Completed" },
@@ -64,13 +65,12 @@ const About = () => {
 
   return (
     <div className={`about-page ${isDark ? "dark-mode" : ""}`}>
-      
       <div className="about-container">
-        <h1 className="about-title">About </h1>
+        <h1 className="about-title">About</h1>
         <p className="about-description">
-          Since 1998,  Vinayaga Roofing has  been the leading provider of premium roofing
-          solutions. We take pride  in our commitment to quality, innovation, and
-          customer satisfaction.
+          Since 1998, <span className="highlight">Vinayaga Roofing</span> has
+          been the leading provider of premium roofing solutions. We take pride
+          in our commitment to quality, innovation, and customer satisfaction.
         </p>
 
         <div className="about-stats">
@@ -96,11 +96,16 @@ const About = () => {
             <h2>Our Story</h2>
             <p>
               What started as a small family business has grown into one of the
-              most trusted names in roofing. Founded 38 years ago by
-              Paramasivam, and now maintained by Senthil Murugan, we focus on
+              most trusted names in roofing. Founded{" "}
+              <span className="highlight">38 years ago</span> by Paramasivam,
+              and now maintained by{" "}
+              <span className="highlight">Senthil Murugan</span>, we focus on
               using only branded products.
             </p>
-            <p>We are proud to feature popular brands like:</p>
+            <p>
+              We are proud to feature{" "}
+              <span className="highlight">popular brands</span> like:
+            </p>
             <ul className="brand-list">
               {[
                 "Vinayaga Roofing Tiles",
@@ -112,9 +117,16 @@ const About = () => {
                 "Nuvocotto Clay Roof Tile",
                 "Topco Ceramic Tiles",
               ].map((brand, index) => (
-                <li key={index}>{brand}</li>
+                <li key={index}>
+                  <span className="highlight">{brand}</span>
+                </li>
               ))}
             </ul>
+            <p>
+              We are proud to be a <span className="highlight">GBI member</span>
+              , showcasing our commitment to excellence and sustainable building
+              practices.
+            </p>
           </div>
         </div>
       </div>

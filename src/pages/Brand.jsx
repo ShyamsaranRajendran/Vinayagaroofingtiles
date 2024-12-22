@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Brand.css";
 const BrandCarousel = () => {
   const brandLogos = [
     "/images/logo.svg",

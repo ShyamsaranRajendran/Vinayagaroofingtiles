@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
+import './css/Carousel.css';
 // CarouselSlide Component
 const CarouselSlide = ({ image, title, description, cta, url }) => (
   <div
@@ -50,37 +50,38 @@ const Carousel = () => {
   const slides = [
     {
       image:
-        "https://assets-news.housing.com/news/wp-content/uploads/2021/07/28195700/All-about-roofing-sheets-Explore-these-evolving-roofing-trends-for-your-home-FB-1200x700-compressed.jpg",
+        "https://nuvocotto.com/wp-content/uploads/2022/03/ceiling-tiles-hi.jpg",
+      title: "Trusted by Thousands",
+      description:
+        "Join our growing community of satisfied customers worldwide.",
+      cta: "View Testimonials",
+    },
+
+    {
+      image:
+        "https://www.jbcbricks.com/images/files/clay-jali-flower-jali-60d2f721214c7.jpg",
       title: "Premium Roofing Solutions",
       description:
-        "Transform your home with our high-quality roofing materials.",
+        "Transform your home with our high-quality roofing   materials.",
       cta: "Explore Products",
     },
     {
       image:
         "https://skyshieldroofs.com/wp-content/uploads/2021/12/roofing.jpeg",
       title: "Sustainable Solutions",
-      description: "Eco-friendly roofing options for a greener future.",
+      description: "Eco-friendly roofing   options for a greener future.",
       cta: "Learn More",
     },
     {
       image:
-        "https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg",
-      title: "Trusted by Thousands",
-      description:
-        "Join our growing community of satisfied customers worldwide.",
-      cta: "View Testimonials",
-    },
-    {
-      image:
-        "https://skyshieldroofs.com/wp-content/uploads/2021/12/roofing.jpeg",
+        "https://www.tbkmetal.com/wp-content/uploads/2022/07/Modern-Ceiling-Sheet-With-Laser-Cut-Design-For-Home-2-1024x683.jpeg",
       title: "Innovative Roofing Designs",
       description: "Discover modern designs to enhance your living space.",
       cta: "Browse Designs",
     },
     {
       image:
-        "https://images.pexels.com/photos/221525/pexels-photo-221525.jpeg?cs=srgb&dl=pexels-pixabay-221525.jpg&fm=jpg",
+        "https://tricitypropertysearches.com/wp-content/uploads/2022/05/What-color-roof-lasts-the-longest.jpg",
       title: "Weatherproof Roofing",
       description: "Durable and reliable materials to withstand any climate.",
       cta: "Check Products",

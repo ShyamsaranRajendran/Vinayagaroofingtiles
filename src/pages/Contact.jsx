@@ -1,6 +1,7 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Map from '../assets/map.png';
+import './css/contact.css'
 export default function Contact() {
   return (
     <div className="contact-container">

@@ -3,7 +3,7 @@ import { useLocation, useParams, useNavigate } from "react-router-dom";
 import products from "../data/products.json";
 import { FaWhatsapp } from "react-icons/fa";
 import { Info } from "lucide-react";
-
+import './css/ProductDetails.css'
 export default function ProductDetails() {
   const { name } = useParams();
   const location = useLocation();

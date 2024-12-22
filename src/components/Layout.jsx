@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom"; // Import useLocation
 import Header from "./Header";
 import Footer from "./Footer";
+import './css/layout.css';
 
 import { FaArrowUp } from "react-icons/fa";
 

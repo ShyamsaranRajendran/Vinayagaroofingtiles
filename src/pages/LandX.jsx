@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Importing useNavigate
-import { Link } from "react-router-dom"; // Importing Link
+import { useNavigate } from "react-router-dom";
+import "./home.css";
+import "./css/landx.css";
+import { Link } from "react-router-dom";
 
 export default function RoofingLandingPageShuffle() {
- const words = ["metal roof", "asphalt shingles", "green roof", "clay tiles"];
-
+const words = ["metal roofs", "shingles", "green roofs", "clay tiles"];
 
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [shufflingWord, setShufflingWord] = useState(currentWord);
@@ -13,9 +14,9 @@ export default function RoofingLandingPageShuffle() {
   useEffect(() => {
     const interval = setInterval(() => {
       shuffleToNextWord();
-    }, 3000); // Change word every 3 seconds
+    }, 3000);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval);
   }, [currentWordIndex]);
 
   const shuffleToNextWord = () => {
@@ -39,54 +40,59 @@ export default function RoofingLandingPageShuffle() {
         setShufflingWord(nextWord);
         setCurrentWordIndex(nextWordIndex);
       }
-    }, 100); // Shuffle letters every 100ms
+    }, 100);
   };
 
- const generateShuffledWord = (current, next, progress) => {
-   const maxLength = Math.max(current.length, next.length);
-   const shuffled = Array.from({ length: maxLength }).map((_, i) => {
-     if (Math.random() > progress) {
-       return String.fromCharCode(97 + Math.floor(Math.random() * 26)); // Random letter
-     } else {
-       return next[i] || " "; // Gradually settle to the next word
-     }
-   });
-   return shuffled.join("").padEnd(maxLength, " "); // Pad shorter words to maintain width
- };
-
+  const generateShuffledWord = (current, next, progress) => {
+    const maxLength = Math.max(current.length, next.length);
+    const shuffled = Array.from({ length: maxLength }).map((_, i) => {
+      if (Math.random() > progress) {
+        return String.fromCharCode(97 + Math.floor(Math.random() * 26));
+      } else {
+        return next[i] || " ";
+      }
+    });
+    return shuffled.join("").padEnd(maxLength, " ");
+  };
 
   const navigate = useNavigate();
   const whatsappMessage = encodeURIComponent(`
-Could you share more details and assist with the purchase? 😊`);
+Hi! I’m interested in learning more about your roofing solutions. Could you help me? 😊`);
   const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
 
   const goToProductPage = () => {
-    window.location.href = whatsappLink; // Direct navigation
+    window.location.href = whatsappLink;
   };
 
   return (
     <div className="landX-container">
       <header className="landX-header">
-        {/* <h1 className="landX-title">Welcome to Premium Roofing Solutions</h1> */}
         <p className="landX-title">
-          Protecting your home with the best{" "}
-          
-            <span className="landX-shuffle-text">{shufflingWord}</span>
-     
+          <span className="landX-highlight">Secure</span> your home with{" "}
+          <span className="landX-highlight">exceptional</span>
+          roofing
         </p>
+        <span className="landX-shuffle-text">{shufflingWord}</span>
       </header>
       <section className="landX-cta-section">
         <button className="landX-cta-button">
           <Link to="/products" className="link-learn">
-            Get Your Choice{" "}
-          </Link>{" "}
+            Explore Roofing Options
+          </Link>
         </button>
         <button className="landX-cta-button-outline">
-          <Link to="/about" className="link-learn">
-            Learn More
-          </Link>{" "}
+          <Link to="/about" className="link-learn vnu">
+            Learn More About Us
+          </Link>
         </button>
       </section>
+      <footer className="landX-footer">
+        <button className="whatsapp-button">
+          <Link to="/contact" className="whatsapp-link">
+            Contact on WhatsApp
+          </Link>
+        </button>
+      </footer>
     </div>
   );
 }

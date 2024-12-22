@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import './css/footer.css'
 function Footer() {
   useEffect(() => {
     const sections = document.querySelectorAll(".footer-section");
@@ -74,9 +75,7 @@ function Footer() {
             <a href="https://instagram.com">
               <FaInstagram />
             </a>
-            <a href="https://linkedin.com">
-              <FaLinkedinIn />
-            </a>
+           
           </div>
         </div>
       </div>

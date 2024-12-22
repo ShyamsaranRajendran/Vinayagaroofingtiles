@@ -7,7 +7,7 @@ import NoProductsAnimation from "../assets/no-products.json"; // Lottie JSON fil
 import SearchAnimation from "../assets/Animation - search.json"; // Lottie animation for the search box
 // import FilterAnimation from "../assets/filter-animation.json";
 // import HeaderAnimation from "../assets/header-animation.json"; 
-
+import './css/product.css'
 const categories = [
   "Clay roofing tiles",
   "Clay false ceiling tiles",
@@ -15,9 +15,9 @@ const categories = [
   "Ceramic roofing tiles",
   "UPVC roofing shine tiles",
   "Laser Plates",
-  "Wire clay brick",
+  "Wire clay jali",
   "UPVC Rain Gutter",
-  "Concerete jali (white)",
+  "Concrete jali (white)",
 ];
 
 export default function Products() {

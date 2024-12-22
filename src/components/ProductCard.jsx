@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Info } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import flooringTile from "../assets/flooring.png";
-
+import "./Hero/css/ProductCard.css"
 export default function ProductCard({
   id,
   image,
@@ -42,8 +42,8 @@ export default function ProductCard({
 - Link: ${productPageLink}
 Could you share more details and assist with the purchase? 😊`
   );
-
-  const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
+// 9865980220;
+  const whatsappLink = `https://wa.me/+919842313467?text=${whatsappMessage}`;
   const isRemoteImage = image.startsWith("http") || image.startsWith("data");
 
   return (
@@ -66,7 +66,7 @@ Could you share more details and assist with the purchase? 😊`
 
       <div className="product-card-content">
         <h3 className="product-card-title fade-in-animation">{category}</h3>
-        <p>{id}</p>
+        {/* <p>{id}</p> */}
 
         <div className="product-card-actions">
           <a

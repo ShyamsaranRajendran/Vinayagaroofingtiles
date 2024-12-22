@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
 import logo from "../assets/Group 5.svg";
 import animationData from "../assets/AnimationPeople.json";
-
+import './css/header.css'
 function Header({ menuOpen, toggleMenu }) {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);

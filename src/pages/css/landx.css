@@ -1,0 +1,198 @@
+.landX-container {
+  font-style: oblique;
+  text-align: center;
+  color: var(--text-color, #2c2c2c);
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease 0.2s;
+  font-size: 3rem;
+  min-height: 100vh; /* Consistent height */
+  padding: 0 2rem; /* Prevent content from touching edges */
+  box-sizing: border-box; /* Include padding and border */
+}
+
+.landX-header {
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  transition: all 0.3s ease 0.2s;
+}
+
+.landX-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #1d1d1d;
+  margin: 0 0 2rem;
+  transition: all 0.3s ease 0.2s;
+  min-height: 3rem;
+  text-align: center;
+  word-wrap: break-word; /* Prevent text overflow */
+}
+
+.landX-highlight {
+  font-size: inherit;
+  background-color: #ff4343;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+body.dark-mode .landX-title {
+  color: azure;
+}
+
+.landX-subtitle {
+  font-size: 1.8rem;
+  margin: 0;
+  transition: all 0.3s ease 0.2s;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+  word-wrap: break-word;
+}
+
+.landX-shuffle-text {
+  font-weight: bold;
+  font-size: 2.3rem;
+  background: linear-gradient(to right, #e93508, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  transition: all 0.3s ease 0.2s;
+  text-align: center;
+  overflow: hidden;
+}
+
+.landX-cta-section {
+  margin: 5vw;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landX-cta-button,
+.landX-cta-button-outline {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: transparent;
+   border-radius: 50px;
+  transition: transform 0.3s ease 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.landX-cta-button {
+  background: #ffd700;
+  color: #333;
+}
+
+.landX-cta-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.landX-cta-button-outline {
+  background: transparent;
+  color: #ffd700;
+  border: 2px solid hsl(51, 100%, 44%);
+}
+
+.landX-cta-button-outline:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .landX-cta-button {
+  background-color: transparent;
+  border: solid 1px #ffe448;
+}
+
+.link-learn {
+  text-decoration: none;
+  color: var(--text-color, #2c2c2c);
+}
+
+.whatsapp-button {
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px; /* Rounded button */
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Darker WhatsApp green */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.whatsapp-button:active {
+  transform: scale(0.98); /* Slightly scale down on button press */
+}
+
+.whatsapp-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landX-container {
+    padding: 0 1.5rem;
+    min-height: auto;
+  }
+
+  .landX-title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .landX-subtitle {
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .landX-cta-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .landX-cta-button,
+  .landX-cta-button-outline {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landX-title {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    width: 110%;
+  }
+
+  .landX-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .landX-cta-button,
+  .landX-cta-button-outline {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
