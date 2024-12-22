@@ -42,7 +42,7 @@ export default function ProductCard({
 Could you share more details and assist with the purchase? 😊`
   );
 // 9865980220;
-  const whatsappLink = `https://wa.me/+919842313467?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/+9865980220?text=${whatsappMessage}`;
   const isRemoteImage = image.startsWith("http") || image.startsWith("data");
 
   return (
