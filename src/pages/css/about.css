@@ -141,6 +141,10 @@ body.dark-mode .about-page{
   color: #e91e63; /* Pink color, adjust as needed */
   font-weight: bold;
 }
+.highlight a{
+  color: #e91e63; /* Pink color, adjust as needed */
+  font-weight: bold;
+}
 /* Dark mode specific styles */
 body.dark-mode .about-title,
 body.dark-mode .about-description,

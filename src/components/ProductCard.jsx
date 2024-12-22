@@ -17,7 +17,6 @@ export default function ProductCard({
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Add fade-in effect on component mount
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 100);
@@ -29,7 +28,7 @@ export default function ProductCard({
   }/product/${encodeURIComponent(name)}`;
 
   const goToProductPage = () => {
-    navigate(`/product/${encodeURIComponent(name)}`, {
+    navigate(`/product/${encodeURIComponent(category)}`, {
       state: { image, name, material, description, category ,tag },
     });
   };

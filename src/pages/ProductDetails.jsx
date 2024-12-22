@@ -41,7 +41,6 @@ export default function ProductDetails() {
 
   return (
     <div className={`product-details-page`}>
-      <h1>{name}</h1>
       <img
         src={image}
         alt={name}

@@ -108,7 +108,7 @@ const About = () => {
             </p>
             <ul className="brand-list">
               {[
-                "Vinayaga Roofing Tiles",
+                
                 "Chitra Ceramic",
                 "Swastik Tiles",
                 "Thomson Tile",
@@ -123,7 +123,10 @@ const About = () => {
               ))}
             </ul>
             <p>
-              We are proud to be a <span className="highlight">GBI member</span>
+              We are proud to be a{" "}
+              <span className="highlight">
+                <a href="https://giberode.com/">GBI</a> member
+              </span>
               , showcasing our commitment to excellence and sustainable building
               practices.
             </p>

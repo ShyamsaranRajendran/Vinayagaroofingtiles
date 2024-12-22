@@ -3,11 +3,10 @@ import Lottie from "react-lottie";
 import { Search, X } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
-import NoProducts from './NoProducts.jsx'
-import SearchAnimation from "../assets/Animation - search.json"; // Lottie animation for the search box
-// import FilterAnimation from "../assets/filter-animation.json";
-// import HeaderAnimation from "../assets/header-animation.json"; 
-import './css/product.css'
+import NoProducts from "./NoProducts.jsx";
+import SearchAnimation from "../assets/Animation-search.json"; // Lottie animation for the search box
+import "./css/product.css";
+
 const categories = [
   "Clay roofing tiles",
   "Clay false ceiling tiles",
@@ -21,37 +20,41 @@ const categories = [
 ];
 
 export default function Products() {
-  const [categoryFilter, setCategoryFilter] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
 
+  // Load filters from localStorage on mount
   useEffect(() => {
-    const savedCategory = localStorage.getItem("categoryFilter");
-    const savedSearchQuery = localStorage.getItem("searchQuery");
+    const savedCategory = localStorage.getItem("categoryFilter") || "all";
+    const savedSearchQuery = localStorage.getItem("searchQuery") || "";
 
-    if (savedCategory) {
-      setCategoryFilter(savedCategory);
-    }
-
-    if (savedSearchQuery) {
-      setSearchQuery(savedSearchQuery);
-    }
+    setCategoryFilter(savedCategory);
+    setSearchQuery(savedSearchQuery);
   }, []);
 
   const handleCategoryChange = (e) => {
-    setCategoryFilter(e.target.value);
-    localStorage.setItem("categoryFilter", e.target.value);
+    const category = e.target.value;
+
+    setCategoryFilter(category);
+    setSearchQuery(""); // Reset search query
+    localStorage.setItem("categoryFilter", category);
+    localStorage.setItem("searchQuery", ""); // Clear search from storage
   };
 
   const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
-    localStorage.setItem("searchQuery", e.target.value);
-    setCategoryFilter("");
-    localStorage.setItem("categoryFilter", "");
+    const query = e.target.value;
+
+    setSearchQuery(query);
+    setCategoryFilter("all"); // Reset category filter
+    localStorage.setItem("searchQuery", query);
+    localStorage.setItem("categoryFilter", "all"); // Update storage
   };
 
   const handleKeywordClick = (keyword) => {
     setSearchQuery(keyword);
+    setCategoryFilter("all");
     localStorage.setItem("searchQuery", keyword);
+    localStorage.setItem("categoryFilter", "all");
   };
 
   const clearSearch = () => {
@@ -59,21 +62,16 @@ export default function Products() {
     localStorage.setItem("searchQuery", "");
   };
 
-  const filteredProducts = products.filter(
-    (product) =>
-      (categoryFilter ? product.category === categoryFilter : true) &&
-      (!searchQuery ||
-        product.category.toLowerCase().includes(searchQuery.toLowerCase()))
-  );
+  // Filter products based on category and search query
+  const filteredProducts = products.filter((product) => {
+    const matchesCategory =
+      categoryFilter === "all" || product.category === categoryFilter;
+    const matchesSearchQuery = searchQuery
+      ? product.category.toLowerCase().includes(searchQuery.toLowerCase())
+      : true;
 
-  // const headerOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: HeaderAnimation,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
+    return matchesCategory && matchesSearchQuery;
+  });
 
   const searchOptions = {
     loop: true,
@@ -84,25 +82,9 @@ export default function Products() {
     },
   };
 
-  // const filterOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: FilterAnimation,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
-
   return (
     <div className="products-container">
-      {/* Animated Header */}
-      {/* <div className="products-header">
-        <Lottie options={headerOptions} height={100} width={100} />
-        <h1 className="products-title">Our Products</h1>
-      </div> */}
-
       <div className="products-actions">
-        {/* Animated Search Box */}
         <div className="search-box">
           <Lottie options={searchOptions} height={25} width={25} />
           <input
@@ -126,21 +108,19 @@ export default function Products() {
             <li onClick={() => handleKeywordClick("Ceramic")}>Ceramic tiles</li>
             <li onClick={() => handleKeywordClick("Clay")}>Clay tiles</li>
             <li onClick={() => handleKeywordClick("Jali")}>
-              Perforated Pattern (Jali ){" "}
+              Perforated Pattern (Jali)
             </li>
           </ul>
         </div>
       </div>
 
-      {/* Animated Filter Dropdown */}
       <div className="filter-options">
-        {/* <Lottie options={filterOptions} height={50} width={50} /> */}
         <select
           className="filter-select"
           value={categoryFilter}
           onChange={handleCategoryChange}
         >
-          <option value="">All Categories</option>
+          <option value="all">All Categories</option>
           {categories.map((category) => (
             <option key={category} value={category}>
               {category}
