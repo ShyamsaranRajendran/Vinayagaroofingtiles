@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 import products from "../data/products.json";
 import { FaWhatsapp } from "react-icons/fa";
 import { Info } from "lucide-react";
-import './css/ProductDetails.css'
+import "./css/ProductDetails.css";
+
 export default function ProductDetails() {
   const { name } = useParams();
   const location = useLocation();
@@ -16,10 +17,17 @@ export default function ProductDetails() {
     });
   };
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { image, material, category, description } = location.state || {};
 
+  const regex = new RegExp(name); // 'i' for case-insensitive matching
+
   const recommendedProducts = products.filter(
-    (product) => product.category === category && product.name !== name
+    (product) => product.category === category && !regex.test(product.name)
   );
 
   const whatsappMessage = encodeURIComponent(
@@ -62,7 +70,7 @@ export default function ProductDetails() {
           </a>
         </div>
       </div>
-      
+
       <div className="recommended-products">
         <h2>Recommended Products</h2>
         <div className="recommended-list">
@@ -70,8 +78,9 @@ export default function ProductDetails() {
             <button
               className="rec-btn"
               onClick={() => goToProductPage(product)}
+              key={index}
             >
-              <div key={index} className="recommended-card">
+              <div className="recommended-card">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -81,7 +90,6 @@ export default function ProductDetails() {
                     borderRadius: "8px",
                   }}
                 />
-
                 <div>
                   <h3 className="rec-cat">{product.category}</h3>
                 </div>

@@ -3,7 +3,7 @@ import Lottie from "react-lottie";
 import { Search, X } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
-import NoProductsAnimation from "../assets/no-products.json"; // Lottie JSON file
+import NoProducts from './NoProducts.jsx'
 import SearchAnimation from "../assets/Animation - search.json"; // Lottie animation for the search box
 // import FilterAnimation from "../assets/filter-animation.json";
 // import HeaderAnimation from "../assets/header-animation.json"; 
@@ -66,15 +66,6 @@ export default function Products() {
         product.category.toLowerCase().includes(searchQuery.toLowerCase()))
   );
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: NoProductsAnimation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   // const headerOptions = {
   //   loop: true,
   //   autoplay: true,
@@ -113,7 +104,7 @@ export default function Products() {
       <div className="products-actions">
         {/* Animated Search Box */}
         <div className="search-box">
-          <Lottie options={searchOptions} height={50} width={50} />
+          <Lottie options={searchOptions} height={25} width={25} />
           <input
             type="text"
             placeholder="Search products..."
@@ -131,10 +122,12 @@ export default function Products() {
         <div className="suggested-keywords-container">
           <p>Try using these keywords:</p>
           <ul className="suggested-keywords">
-            <li onClick={() => handleKeywordClick("UPVC")}>Metal roof</li>
-            <li onClick={() => handleKeywordClick("Ceramic")}>Ceramic</li>
+            <li onClick={() => handleKeywordClick("UPVC")}>UPVC roof</li>
+            <li onClick={() => handleKeywordClick("Ceramic")}>Ceramic tiles</li>
             <li onClick={() => handleKeywordClick("Clay")}>Clay tiles</li>
-            <li onClick={() => handleKeywordClick("brick")}>Bricks</li>
+            <li onClick={() => handleKeywordClick("Jali")}>
+              Perforated Pattern (Jali ){" "}
+            </li>
           </ul>
         </div>
       </div>
@@ -162,10 +155,7 @@ export default function Products() {
             <ProductCard key={index} {...product} />
           ))
         ) : (
-          <div className="no-products-found">
-            <Lottie options={defaultOptions} height={300} width={300} />
-            <p>No products found. Please try another search or filter.</p>
-          </div>
+          <NoProducts />
         )}
       </div>
     </div>

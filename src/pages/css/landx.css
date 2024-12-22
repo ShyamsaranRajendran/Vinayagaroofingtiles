@@ -25,20 +25,24 @@
   font-weight: bold;
   color: #1d1d1d;
   margin: 0 0 2rem;
+  padding: 2px;
   transition: all 0.3s ease 0.2s;
   min-height: 3rem;
   text-align: center;
   word-wrap: break-word; /* Prevent text overflow */
+  line-height: 1.6; /* Add line spacing to separate lines */
 }
 
 .landX-highlight {
   font-size: inherit;
   background-color: #ff4343;
   color: #ffffff;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 40px;
   font-weight: bold;
   display: inline-block;
+  margin: 2px 0; /* Adds vertical spacing between highlighted backgrounds */
 }
 
 body.dark-mode .landX-title {
@@ -120,7 +124,26 @@ body.dark-mode .landX-cta-button {
   color: inherit;
   display: flex;
   align-items: center;
+  gap: 0.6rem;
 }
+.arrow-icon {
+  width: 25px; /* Adjust size */
+  height: 20px;
+  margin-left: 8px; /* Spacing between text and icon */
+}
+
+body.dark-mode .arrow-icon {
+  filter: invert(1);
+  width: 25px; /* Adjust size */
+  height: 20px;
+  margin-left: 8px; /* Spacing between text and icon */
+}
+
+body.dark-mode .link-learn {
+  text-decoration: none;
+  color: white;
+}
+
 
 .whatsapp-button {
   background-color: #25d366; /* WhatsApp green */

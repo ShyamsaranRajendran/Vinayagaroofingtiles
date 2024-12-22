@@ -87,7 +87,7 @@ Could you share more details and assist with the purchase? 😊`);
           <button className="landX-cta-button">
             <Link to="/products" className="link-learn">
               See More
-              <img src={Arrow} alt="" />
+              <img src={Arrow} alt="arrow" className="arrow-icon" />
             </Link>
           </button>
         </div>
