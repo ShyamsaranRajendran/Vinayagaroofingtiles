@@ -1,8 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDxgg2y3Vekn0jez0qGL33lVYxmSykExlNxBVWG-nLxWLJriMV",
-    
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-1.jpeg?raw=true",
     "category": "Ceramic roofing tiles",
     "material": "Ceramic",
    "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
@@ -10,23 +9,21 @@
  
   {
     "id": 3,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1KPMWEgiP_NWtz_ZRNHcykpzMLOXf7IyK39ZGP2aLh2s2axMy",
-    
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-2.jpeg?raw=true",
     "category": "Ceramic roofing tiles",
     "material": "Clay",
 "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
     },
   {
     "id": 4,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSp2bx6xngrwGOZOAL-zAM4IG6gfjJ7xv4PRVfbsVJNsm6nTYkF",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-3.jpeg?raw=true",
     "category": "Ceramic roofing tiles",
     "material": "Ceramic",
 "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
     },
   {
     "id": 5,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTe-dQ5aKX1pD00bTi2vv9w5AEW0QWghabjRgfdxuExGG3ymsDo",
+            "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete/concrete-3.png?raw=true",
 
     "category": "Concrete roofing tiles",
     "material": "Concrete",
@@ -34,23 +31,21 @@
    },
     {
     "id": 6,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnf644F92MMELGlUhIN2t08mruQSQikcIuwtBaIq-fJRtMb-4L",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete/con2.jpeg?raw=true",
     "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "Concrete roofing tiles are a highly durable and versatile roofing solution known for their strength, longevity, and cost-effectiveness. Made from a mixture of cement, sand, and water, these tiles are molded into various shapes and designs to suit different architectural styles. Concrete tiles are incredibly robust, offering excellent protection against harsh weather conditions such as heavy rain, high winds, and extreme temperatures."
   },
   {
     "id": 7,
-    "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete.png?raw=true"
-   , "category": "Concrete roofing tiles",
+        "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete/con1.jpeg?raw=true",
+        "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "Concrete roofing tiles are a highly durable and versatile roofing solution known for their strength, longevity, and cost-effectiveness. Made from a mixture of cement, sand, and water, these tiles are molded into various shapes and designs to suit different architectural styles. Concrete tiles are incredibly robust, offering excellent protection against harsh weather conditions such as heavy rain, high winds, and extreme temperatures."
   },
   {
     "id": 8,
-    "image": "https://image.made-in-china.com/43f34j00btCMgleFCEoi/Flat-Tile-Roof-Solar-Panel-BIPV-Clay-Rtof-Tiles-Shingles-Roof.jpg",
-
+    "image":"https://raw.githubusercontent.com/VinayagaRoofing/Images/refs/heads/master/ceramic/cer-4.webp",
     "category": "Ceramic roofing tiles",
     "material": "Clay",
 "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
@@ -58,44 +53,42 @@
   
    {
     "id": 9,
-    "image":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnIunjU-bAlrZ6HVONr_v5ZcSt_jlekEzxRy6SDVFEPFPoDBwv", 
-    "material": "Clay",
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-a.jpeg?raw=true",
+     "material": "Clay",
     "category": "Clay false ceiling tiles",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
    }, 
    {
     "id": 10,
-    "image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIr7OijSo1RHhKztUS6uGNc7IGvcCdRqAAKm0PGRPS6WNZS3N9", 
-    "category": "Clay false ceiling tiles",
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-b.jpeg?raw=true",  
+      "category": "Clay false ceiling tiles",
     "material": "Clay",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   }, 
  {
     "id": 11,
-    "image":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRLrdK7p6YR7hsunIR03Iz8wJfHFE5eqEYJMIer6ppJ75FOhZv",
-     "category": "Clay false ceiling tiles",
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-c.jpeg?raw=true",
+        "category": "Clay false ceiling tiles",
     "material": "Clay",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   }, 
      
    {
     "id": 15,
-    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-123-removebg-preview.png?raw=true",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-123-removebg-preview.png?raw=true",
     "category": "Clay roofing tiles",
     "material": "Clay",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
   },{
     "id": 16,
-    "image": "data:image/jpeg;base64,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"
-    ,"category": "Clay roofing tiles",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-m.jpeg?raw=true",
+    "category": "Clay roofing tiles",
     "material": "Clay",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
   },
   {
     "id": 17,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYPBKU4jlakuQCDfNmEN1WLkfrWb9WU5Rp5YfzdCWy5ayyEkYq",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete/con5.jpeg?raw=true",
     "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "Concrete roofing tiles are a highly durable and versatile roofing solution known for their strength, longevity, and cost-effectiveness. Made from a mixture of cement, sand, and water, these tiles are molded into various shapes and designs to suit different architectural styles. Concrete tiles are incredibly robust, offering excellent protection against harsh weather conditions such as heavy rain, high winds, and extreme temperatures."
@@ -103,62 +96,55 @@
  
   {
     "id": 18,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Kvlxyr6wVWwaPZfPx_tVR2Ithgso5x-nFzPw6kAP2WvXJrvW",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete/con6.jpeg?raw=true",
     "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "Concrete roofing tiles are a highly durable and versatile roofing solution known for their strength, longevity, and cost-effectiveness. Made from a mixture of cement, sand, and water, these tiles are molded into various shapes and designs to suit different architectural styles. Concrete tiles are incredibly robust, offering excellent protection against harsh weather conditions such as heavy rain, high winds, and extreme temperatures."
   },
     {
     "id": 19,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZ8tETAwGmwbp4VfahinAxgLlwx06B0VOqzb8c2pMJpfBVrbeI",
-
-    "category": "Concrete roofing tiles",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete/con4.jpeg?raw=true"
+,    "category": "Concrete roofing tiles",
     "material": "Concrete",
     "description": "Concrete roofing tiles are a highly durable and versatile roofing solution known for their strength, longevity, and cost-effectiveness. Made from a mixture of cement, sand, and water, these tiles are molded into various shapes and designs to suit different architectural styles. Concrete tiles are incredibly robust, offering excellent protection against harsh weather conditions such as heavy rain, high winds, and extreme temperatures."
   },
   {
     "id": 20,
-    "image": "https://i.ytimg.com/vi/c4Y8ywmPALA/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLA1HlmNQEWvn8IeGlHeBbh2bTLdRw",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-5.jpg?raw=true",
     "category": "Ceramic roofing tiles",
     "material": "Ceramic",
     "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
    },
   {
     "id": 21,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgoVZCCwH57OwQKOvVR_rqg5gvMdXcykSx97qcS0eDB88XY0m9",
-
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-6.jpeg?raw=true",
     "category": "Ceramic roofing tiles",
     "material": "Ceramic",
     "description": "Concrete roofing tiles are a highly durable and versatile roofing solution known for their strength, longevity, and cost-effectiveness. Made from a mixture of cement, sand, and water, these tiles are molded into various shapes and designs to suit different architectural styles. Concrete tiles are incredibly robust, offering excellent protection against harsh weather conditions such as heavy rain, high winds, and extreme temperatures."
   },
   {
     "id": 22,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtW66Vn7quch0IwF3NVzvO2B-eYy-5hOzIkAJL2gez27qNFlcJ",
-
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/clay-jali/jali-1.jpeg?raw=true",
     "category": "Clay jali",
     "material": "Clay",
     "description": "Sturdy and traditional Clay jalis ideal for structural integrity and aesthetics."
   }, {
     "id": 23,
-    "image": "data:image/jpeg;base64,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",
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/clay-jali/jali-2.jpeg?raw=true",
     "category": "Clay jali",
     "material": "Clay",
     "description": "Sturdy and traditional Clay jalis ideal for structural integrity and aesthetics."
   },
   {
     "id": 24,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl2A3ZYyyrblkFRYM-ndYIKVE-kUKFCYq4eLUgRv1M6_4-C0_f",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-jali/jali-3.jpeg?raw=true",
     "category": "Clay jali",
     "material": "Clay",
     "description": "Reliable clay jalis designed for durability and optimal building performance."
   },
   {
     "id": 25,
-    "image": "https://i0.wp.com/brickart.in/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-20-at-1.25.44-PM-5.jpeg?fit=1024%2C683&ssl=1",
-
+    "image": "https://github.com/VinayagaRoofing/Images/raw/refs/heads/master/clay-jali/jali-4.webp",
     "category": "Clay jali",
     "material": "Clay",
     "description": "Premium Clay jalis with a fine finish, perfect for traditional and modern construction."
@@ -171,44 +157,26 @@
     "material": "Clay",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   },
-  {
-    "id": 27,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG8p9F9n1Govx46c9DRdDm-WCwpctlxkjVEGgI97loeUdZJxGx",
-
-    "category": "Clay rooftng tiles",
-    "material": "Clay",
-    "description": "Natural clay tiles providing exceptional thermal comfort and a timeless appearance."
-  },
+  
 
 {
     "id": 28,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTNHPttDVtObMhG2VkHzUjSXve9seQnCMoiXovqfukxz0Yqg_k",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-a.jpeg?raw=true",
     "category": "Clay roofing tiles",
     "material": "Premium clay",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
 },
 {
     "id": 29,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR543vLRSsnj907vpP_joJBRZpJD7gDc_8daCmRGV7XD54Qu7Yq",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-b.jpeg?raw=true",
     "category": "Clay roofing tiles",
     "material": "Natural clay",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
 },
 
 {
-    "id": 30,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzj5Mwr3tYRUCvlC3jFzXGJqVTKy6jm1DgysSvJFJ4-o7DWon",
-
-    "category": "Clay roofing tiles",
-    "material": "Clay composite",
-    "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
-},
-{
     "id": 13,
-    "image": "https://github.com/VinayagaRoofing/Images/blob/master/black.png?raw=true" ,
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-c.jpeg?raw=true",
     "category": "Clay roofing tiles",
     "material": "Clay",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
@@ -217,96 +185,98 @@
 
 {
     "id": 31,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc9vhLGwKQgWt1gr3HG3pFtjUBqYOjk1paopMS_iF0ZkSTPU_9",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-jali/jali-5.jpeg?raw=true",
+    "material": "Clay",
     "category": "Clay jali",
     "description": "Durable wire-cut clay jalis with a bubble top design, ideal for both structural and decorative purposes."
   },
   {
     "id": 32,
-    "image": "https://i0.wp.com/brickart.in/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-20-at-1.25.44-PM-3.jpeg?fit=1024%2C683&ssl=1",
-
+    "image": "https://github.com/VinayagaRoofing/Images/raw/refs/heads/master/clay-jali/jali-6.webp",
+    "material": "Clay",
     "category": "Clay jali",
     "description": "Premium-quality wire-cut clay jalis designed for enhanced strength and aesthetic appeal."
   },
   {
     "id": 33,
-    "image": "https://terracon.in/uploads/product/gujarat-jolly.png",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-jali/jali-7.png?raw=true",
+"material": "Clay",
     "category": "Clay jali",
     "description": "High-performance Clay jalis, perfect for modern construction with a distinctive finish."
   },
   {
     "id": 34,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6ylNRDJTxmnFuTi8NlLYcEgEeJ6hJqHigeMEARZ3k30Qe0aba",
-    
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-d.jpeg?raw=true",
+    "material": "Clay",
     "category": "Clay false ceiling tiles",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   },
   {
     "id": 35,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcwyNa6SUKxRvEvqJ-JlxgyT2edXFRBzrXASXW4v02b1tlGqtM",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-e.jpeg?raw=true",
+"material": "Clay",
     "category": "Clay false ceiling tiles",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   },
   {
     "id": 36,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWfELlfyZgvpimjCT15RU96tn-TYxLLwOzVjlDtNHk_dQGxUOv",
-    
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-f.jpeg?raw=true",
     "category": "Clay false ceiling tiles",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   },
   {
     "id": 37,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIXE2anV4X1hxNmFoBk9iI4jM7jGs0-KdabiIiWR90Gq1j6ZvP",
-
+    "material": "Clay",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-h.jpeg?raw=true",
     "category": "Clay false ceiling tiles",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   },
   {
     "id": 38,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGxk7AyFS-y14IUTX0glaTotDKZUKzhLVbQ-5U3GA6c8VvF-sp",
-
+    "material": "Clay",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-i.jpeg?raw=true",
     "category": "Clay false ceiling tiles",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   },
   {
     "id": 39,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO3jaxFAdOdFTHjlW4uBMeMnkVqlugfGIVRg3EGWNbI9JQD9TG",
-
+    "material": "Clay",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-j.jpeg?raw=true",
     "category": "Clay false ceiling tiles",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   },
 
   {
     "id": 40,
-    "image": "https://github.com/VinayagaRoofing/Images/blob/master/ceramic-12.png?raw=true",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-7.png?raw=true",
     "category": "Ceramic roofing tiles",
 "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
     },
    {
     "id": 41,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrVVDYN7uzpXQrIQAhhmK9ZLSNmu50yV5eboK_QcEqrK3nJURF",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-7.jpeg?raw=true",
     "category": "Ceramic roofing tiles",
 "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
     },
  
-
   {
     "id": 42,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ojYrsBXjlPSTR-VAKvkkj_Gfg3UJI0G-UXwK-p4feDQUiB4b",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-d.jpeg?raw=true",
     "category": "Clay roofing tiles",
+    "material": "Clay",
+    "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
+  },
+  {
+    "id": 421,
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-e.png?raw=true",
+       "category": "Clay roofing tiles",
     "material": "Clay",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
   },
  
   {
     "id": 43,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaonuynsEyG8Z53EpjZ8iPxkSsXZXhty_ew1rravjzn7GxZB5q",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-f.jpeg?raw=true",
     "category": "Clay roofing tiles",
     "material": "Clay",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
@@ -314,51 +284,49 @@
   },
   {
     "id": 44,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThDZGtT6I9V59YJL3QnIRoCW0LKYfjZa6aB4xDVxvknY7a1cgv",
-
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-8.jpeg?raw=true",
     "category": "Ceramic roofing tiles",
     "material": "Ceramic",
 "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
     
   },  {
     "id": 45,
-    "image": "https://github.com/VinayagaRoofing/Images/blob/master/white-leaf.png?raw=true",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete-jali/white-leaf.png?raw=true",
     "category": "Concrete jali (white)",
     "material": "Concrete",
     "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
   },  {
     "id": 46,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi6WKcE6iZvgT-xLVCDcSKymsRGGJ-f7Y7jv0p_UnoLqUVy5BE",
-  
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete-jali/images.jpeg?raw=true",
     "category": "Concrete jali (white)",
     "material": "Concrete",
     "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
   },
   {
     "id": 47,
-    "image":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxVWTzTkM0Gfxcm7ThmRQNXBHe1V5yL5h_NveGwalZkagHDW_p",
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/concrete-jali/white-3.jpeg?raw=true",
     "category": "Concrete jali (white)",
     "material": "Concrete",
     "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
   },
   {
     "id": 48,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpZbzVvemTbbsAtvVnd1GlrQ-sI4mnmbAgTi-V-jJtUUY3pW_b",  
-    "category": "Concrete jali (white)",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete-jali/white-4.jpeg?raw=true",
+      "category": "Concrete jali (white)",
     "material": "Concrete",
     "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
   },
    {
     "id": 49,
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuE58ZqpClWt7S_1AGaiK1GEV0EPTPi3kqwRjqKpvvhyfXdao-",
-      "category": "Concrete jali (white)",
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/concrete-jali/white-5.jpeg?raw=true",
+        "category": "Concrete jali (white)",
     "material": "Concrete",
     "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
   },
   {
     "id": 50,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnQ3GRKhPa8Lfcnqx4OOqzttrYMxm3fkfL82ZpGQx-2v8jSKkI",
-     "material": "Concrete",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/concrete-jali/white-6.jpeg?raw=true",
+      "material": "Concrete",
          "category": "Concrete jali (white)",
     "description": "Durable concrete tiles with a bubble top texture, perfect for various roofing applications."
   },
@@ -367,16 +335,15 @@
   
   {
     "id": 51,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwZoJtAmR-z9aGFUyT3QP3OLeJIudZU7QOfypAllUyrza2lvNB",
-  
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/upvc-rain-gutter/upvc-1.jpeg?raw=true",
     "category": "UPVC Rain Gutter",
     "material": "UPVC",
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates."
   },
    {
   "id": 52,
-  "image": "https://raw.githubusercontent.com/VinayagaRoofing/Images/refs/heads/master/upvc-main.jpeg",
-  "category": "UPVC Rain Gutter",
+  "image": "https://github.com/VinayagaRoofing/Images/blob/master/upvc-rain-gutter/upvc-2.jpeg?raw=true",
+   "category": "UPVC Rain Gutter",
   "material": "UPVC",
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates."
 
@@ -384,8 +351,7 @@
 ,
   {
     "id": 53,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjK88vICvSsrvRBXcu2XlWOkDi0HUbXER2aJ_t-jTfIBBU-bHp",
-  
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/upvc-rain-gutter/upvc-3.jpeg?raw=true",
     "category": "UPVC Rain Gutter",
     "material": "UPVC",
         "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates."
@@ -393,8 +359,7 @@
   },
   {
     "id": 54,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTi-QEsP1EBeiUqA7TsmjqFzJITByjrUiQGMxkjJgJnEvgRElVn",
-  
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/upvc-rain-gutter/upvc-4.jpeg?raw=true",
     "category": "UPVC Rain Gutter",
     "material": "UPVC",
         "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates."
@@ -402,20 +367,22 @@
   },
     {
     "id": 80,
-    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser-123.jpeg?raw=true",
-     "category": "Laser Plates",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-1.jpeg?raw=true",
+      "category": "Laser Plates",
     "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 55,
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUCwOCmNzA5vwsB2TawD4WLkngeT7amMO8RjaAeL0V4pUuAhMS",    "category": "Laser Plates",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-10.jpeg?raw=true",
+     "category": "Laser Plates",
     "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 56,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZ79J4GiWqiQ9vftpbXT9cQkpHGPv6g9RPzlmaoQwTZLcQHZM",    "category": "Laser Plates",
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-2.jpeg?raw=true", 
+       "category": "Laser Plates",
     "material": "Aluminum",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
 
@@ -424,30 +391,30 @@
     {
     "id": 57,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV2CLjjxzhgXmPizEWg91xfB8AjnSeAQlDnTQI92hmHoDMeRMj",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-3.jpeg?raw=true",
     "material": "Stainless Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 58,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QujNbFHKkcW8nwDs8RRIVRsV-f-zKPKBFwMw8px2uW45RHv6",
-    "material": "Aluminum Alloy",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-4.jpeg?raw=true",
+       "material": "Aluminum Alloy",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 59,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOy4Mdsq7BwCRoYgauaIPXCRv9VafnB_Ksm-Vnfzlzu1NFSz1O",
-    "material": "Titanium",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-5.jpeg?raw=true",
+     "material": "Titanium",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 60,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2BbQyDaqi-t6Uz8PO94paAB54CAgstRSR9YbJQCmTkzMQQX6g",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-6.jpeg?raw=true",
     "material": "Carbon Steel",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
@@ -455,64 +422,64 @@
   {
     "id": 61,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj6N4U5o4MG7Yz6YkQlCAvMXevhpNlcSo2kNZWHFwWv0R8pDlQ",
-    "material": "Ceramic",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-7.jpeg?raw=true",
+       "material": "Laser",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 62,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgmLBaALPeXwohlnbFt1saKNFj7WDZ42ksYuzp5pAOQNMi-mDU",
-    "material": "Polycarbonate",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-8.jpeg?raw=true",
+     "material": "Polycarbonate",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 63,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxn8waMRo4naHBEY9LhvKIeYAepuhGbzWJZM5c49BCjE_Hv4n5",
-    "material": "Acrylic",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-9.jpeg?raw=true",
+      "material": "Acrylic",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 64,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFZ8hi9lYGKEm0DFQJqHorlzZzWDXPS5cWCiZTKORl-JhFKuoC",
-    "material": "Copper",
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/laser/laser11.jpeg?raw=true",
+      "material": "Copper",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 65,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQx4-5BAeLufNiiFIs2rNNswYvZ4QW8Y7SiyLeq15kkOs2ERq08",
-    "material": "Glass",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser12.jpeg?raw=true",
+        "material": "Glass",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 66,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL_qsVXAxYVBTCp1mCoTfSiT-Ak1pDReqdvN1gaSCeK6k05SDU",
-    "material": "PVC",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser13.jpeg?raw=true",
+     "material": "PVC",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 67,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQo9TNmKPk3Ce7UAXyw_qjPfkC4h7kS9M0ZDN4LrD0eyVZc1--b",
-    "material": "Zinc",
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/laser/laser13.png?raw=true",
+      "material": "Zinc",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 68,
     "category": "Laser Plates",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4D0Bwi3hvA9xGZlIdodBsmxffBehgEZXiIyjb9L7mkFbn36FJ",
-    "material": "Composite Material",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser14.jpeg?raw=true",
+       "material": "Composite Material",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
@@ -521,62 +488,63 @@
     "category": "Laser Plates",
     "material": "Steel",
 
-    "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings.",    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOGyFi5gNcscsOX1-W8gQBlRpcyoP6b3BDt8n9btICy08eJHsU"
-  },
+    "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings.",   
+     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser15.jpeg?raw=true"
+      },
   {
     "id": 70,
     "category": "Laser Plates",
     "material": "Aluminum",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
-,    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKmpf0rcCdEfybtlNDhvckesZQ7CsGq7Pvqtd80jFZt2eBtxzQ"
-  },
+,    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser16.jpeg?raw=true"
+ },
   {
     "id": 71,
     "category": "Laser Plates",
     "material": "Copper",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
-,    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBBuZf1jjIqdSiR8u3k6-3EcYFBPm403Zrm5beYaYwX8Ue04yJ"
+,    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser17.jpeg?raw=true"
   },
  {
     "id": 73,
     "category": "UPVC roofing shine tiles",
     "material": "UPVC",
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuwqSZT1_nEafX2OKqerfXrkVisW803G7kaw&s"
-  }, 
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/upvc-sheets/upvc-1.jpeg?raw=true"
+   }, 
    {
     "id": 75,
     "category": "UPVC roofing shine tiles",
     "material": "UPVC",
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
-    "image":"data:image/jpeg;base64,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"}
-  ,
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/upvc-sheets/upvc-2.jpeg?raw=true"
+     }  ,
    {
     "id": 76,
     "category": "UPVC roofing shine tiles",
     "material": "UPVC",
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8IOUvDdD5YADkmuOm3HUx4j0093NXRNbNrw&s"
-  },
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/upvc-sheets/upvc-3.jpeg?raw=true"
+   },
      {
     "id": 77,
     "category": "UPVC roofing shine tiles",
     "material": "UPVC",
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gztEXTsRpx2lALb_--_KVkVP7MQOHrJkJA&s"
-  },   {
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/upvc-sheets/upvc-4.jpeg?raw=true"
+     },   {
     "id": 78,
     "category": "UPVC roofing shine tiles",
     "material": "UPVC",
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm22qxGSuhOQKQBEas1pdvONwC0pxDq73NAg&s"
-  },   {
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/upvc-sheets/upvc-5.jpeg?raw=true"
+      },   {
     "id": 79,
     "category": "UPVC roofing shine tiles",
     "material": "UPVC",
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU9uBL2BigrazjIXACr-E0eYgBiO7W7BXxqg&s"
-  }
+    "image":"https://github.com/VinayagaRoofing/Images/blob/master/upvc-sheets/upvc-6.jpeg?raw=true"
+    }
 ]

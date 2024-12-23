@@ -115,5 +115,24 @@
     "category": "Ceramic roofing tiles",
     "material": "Ceramic",
 "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
-    }
+    },
+
+    {
+    "id": 27,
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG8p9F9n1Govx46c9DRdDm-WCwpctlxkjVEGgI97loeUdZJxGx",
+
+    "category": "Clay roofting tiles",
+    "material": "Clay",
+    "description": "Natural clay tiles providing exceptional thermal comfort and a timeless appearance."
+  }
+,
+{
+    "id": 30,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzj5Mwr3tYRUCvlC3jFzXGJqVTKy6jm1DgysSvJFJ4-o7DWon",
+
+    "category": "Clay roofing tiles",
+    "material": "Clay composite",
+    "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
+},
+  // ========================================================= 27 ============================================
 ]
