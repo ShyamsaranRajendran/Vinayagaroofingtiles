@@ -72,7 +72,7 @@ Could you share more details and assist with the purchase? 😊`
 
       <div className="product-card-content">
         <h3 className="product-card-title fade-in-animation">{category}</h3>
-        <p>{id}</p>
+        {/* <p>{id}</p> */}
 
         <div className="product-card-actions">
           <a
