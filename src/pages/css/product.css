@@ -162,16 +162,28 @@
 .filter-select:hover {
   border-color: #6b7280;
 }
-.body .dark-mode .suggested-keywords-container p{
+body .dark-mode .suggested-keywords-container p{
   color: white;
 }
 
 body.dark-mode .search-box {
   background-color: #333;
 }
-.lot{
-  background: transparent;
+
+.search-dark{
+  display: none;
 }
+
+body.dark-mode .search-dark{
+  display: block;
+  padding:0rem 0.8rem;
+}
+
+body.dark-mode  .search-lottie{
+  display: none;
+}
+
+
 body.dark-mode .search-input {
   color: #f9f9f9;
 }

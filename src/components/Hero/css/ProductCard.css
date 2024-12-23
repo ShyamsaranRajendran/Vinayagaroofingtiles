@@ -156,18 +156,13 @@
   color: #2c7be5;
   padding: 8px 16px;
   border-radius: 20px;
+  border:solid  black 1px ;
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
-.suggested-keywords li:hover {
-  background-color: #cfe4fd;
-  color: #1c5dbd;
-  transform: scale(1.05);
-}
 
 .suggested-keywords li:active {
   background-color: #2c7be5;
@@ -181,6 +176,8 @@ body.dark-mode .suggested-keywords-container p {
 
 body.dark-mode .suggested-keywords li {
   background: #1e1e1e;
+  
+  border:solid  rgb(255, 255, 255) 1px ;
   color: #90caf9;
 }
 
@@ -208,6 +205,7 @@ body.dark-mode .suggested-keywords li:active {
   .suggested-keywords li {
     padding: 6px 10px;
     font-size: 12px;
+    border-color: black;
   }
 }
 
@@ -573,3 +571,26 @@ body.dark-mode .product-card-modal-close-btn:hover {
   }
 }
 
+.product-card-trending-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.product-card-trending-badge span {
+  position: absolute;
+  top: 12px;
+  left: -25px;
+  background: linear-gradient(45deg, #ff4500, #ff6347);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 25px;
+  transform: rotate(-45deg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -86,7 +86,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2023 Maxwell Roofing Inc. All rights reserved.</p>
+        <p>© 2025 Vinayaga Roofing Inc. All rights reserved.</p>
         <div className="footer-legal-links">
           <a href="/terms">Terms</a> |<a href="/privacy">Privacy</a> |
           <a href="/cookies">Cookies</a>

@@ -59,7 +59,7 @@ const Carousel = () => {
 
     {
       image:
-        "https://www.jbcbricks.com/images/files/clay-jali-flower-jali-60d2f721214c7.jpg",
+        "https://assets-news.housing.com/news/wp-content/uploads/2021/07/28195700/All-about-roofing-sheets-Explore-these-evolving-roofing-trends-for-your-home-FB-1200x700-compressed.jpg",
       title: "Premium Roofing Solutions",
       description:
         "Transform your home with our high-quality roofing   materials.",
@@ -74,7 +74,7 @@ const Carousel = () => {
     },
     {
       image:
-        "https://www.tbkmetal.com/wp-content/uploads/2022/07/Modern-Ceiling-Sheet-With-Laser-Cut-Design-For-Home-2-1024x683.jpeg",
+        "https://i.pinimg.com/originals/5e/72/d5/5e72d5b22f1e3bdfa970d81c1034610f.jpg",
       title: "Innovative Roofing Designs",
       description: "Discover modern designs to enhance your living space.",
       cta: "Browse Designs",

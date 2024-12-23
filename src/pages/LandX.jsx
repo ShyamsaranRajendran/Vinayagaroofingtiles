@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./home.css";
 import "./css/landx.css";
 import { Link } from "react-router-dom";
-
+import logo from '../assets/display-logo.png'
 export default function RoofingLandingPageShuffle() {
 const words = ["metal roofs", "shingles", "green roofs", "clay tiles"];
 
@@ -67,6 +67,7 @@ Hi! I’m interested in learning more about your roofing solutions. Could you he
   return (
     <div className="landX-container">
       <header className="landX-header">
+        <img src={logo} alt="logo" />
         <p className="landX-title">
           <span className="landX-highlight">Secure</span> your home with{" "}
           <span className="landX-highlight">exceptional</span> roofing
@@ -80,7 +81,7 @@ Hi! I’m interested in learning more about your roofing solutions. Could you he
           </Link>
         </button>
         <button className="landX-cta-button-outline">
-          <Link to="/about" className="link-learn vnu">
+          <Link to="/about" className="link-learn">
             Learn More About Us
           </Link>
         </button>

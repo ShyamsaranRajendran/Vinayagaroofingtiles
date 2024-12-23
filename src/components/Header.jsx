@@ -86,22 +86,22 @@ function Header({ menuOpen, toggleMenu }) {
           <ul className={`header-menu ${menuOpen ? "open" : ""}`}>
             <li>
               <Link to="/" className="header-link" onClick={closeMenu}>
-                HOME
+                Home
               </Link>
             </li>
             <li>
               <Link to="/products" className="header-link" onClick={closeMenu}>
-                PRODUCTS
+                Products
               </Link>
             </li>
             <li>
               <Link to="/about" className="header-link" onClick={closeMenu}>
-                ABOUT
+                About
               </Link>
             </li>
             <li>
               <Link to="/contact" className="header-link" onClick={closeMenu}>
-                CONTACT
+                Contact
               </Link>
             </li>
             {/* <div className="animation-container">

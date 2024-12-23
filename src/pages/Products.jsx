@@ -6,7 +6,7 @@ import products from "../data/products.json";
 import NoProducts from "./NoProducts.jsx";
 import SearchAnimation from "../assets/Animation-search.json"; // Lottie animation for the search box
 import "./css/product.css";
-
+import { CiSearch } from "react-icons/ci";
 const categories = [
   "Clay roofing tiles",
   "Clay false ceiling tiles",
@@ -14,7 +14,7 @@ const categories = [
   "Ceramic roofing tiles",
   "UPVC roofing shine tiles",
   "Laser Plates",
-  "Wire clay jali",
+  "Clay jali",
   "UPVC Rain Gutter",
   "Concrete jali (white)",
 ];
@@ -88,7 +88,17 @@ export default function Products() {
     <div className="products-container">
       <div className="products-actions">
         <div className="search-box">
-          <Lottie options={searchOptions} className="lot" height={25} width={25} />
+          <div className="search-lottie">
+            <Lottie
+              options={searchOptions}
+              className="lot"
+              height={25}
+              width={25}
+            />
+          </div>
+          <div className="search-dark">
+            <CiSearch height={25} width={25} />
+          </div>
           <input
             type="text"
             placeholder="Search products..."

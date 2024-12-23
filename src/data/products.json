@@ -7,14 +7,7 @@
     "material": "Ceramic",
    "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
   },
-  {
-    "id": 2,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_eOEGs8nCHa3plqsSi-kfOVuVDsNG4FCyRlfeG4LZKXslh13i",
-
-    "category": "Ceramic roofing tiles",
-    "material": "Ceramic",
-"description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
-    },
+ 
   {
     "id": 3,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1KPMWEgiP_NWtz_ZRNHcykpzMLOXf7IyK39ZGP2aLh2s2axMy",
@@ -84,27 +77,7 @@
     "material": "Clay",
     "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
   }, 
-     {
-    "id": 12,
-    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-pattern.png?raw=true",
-     "category": "Clay false ceiling tiles",
-    "material": "Clay",
-    "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
-  }, {
-    "id": 13,
-    "image": "https://github.com/VinayagaRoofing/Images/blob/master/black.png?raw=true" ,
-
-    "category": "Clay roofing tiles",
-    "material": "Clay",
-    "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
-    },   {
-    "id": 14,
-    "image": "https://s.alicdn.com/@sc04/kf/H260255ff854345ef8ffea82603841055H.png_300x300.jpg",
-  
-    "category": "Clay roofing tiles",
-    "material": "Clay",
-    "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
-  },
+     
    {
     "id": 15,
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-123-removebg-preview.png?raw=true",
@@ -156,29 +129,29 @@
     "id": 21,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgoVZCCwH57OwQKOvVR_rqg5gvMdXcykSx97qcS0eDB88XY0m9",
 
-    "category": "Concrete roofing tiles",
-    "material": "Concrete",
+    "category": "Ceramic roofing tiles",
+    "material": "Ceramic",
     "description": "Concrete roofing tiles are a highly durable and versatile roofing solution known for their strength, longevity, and cost-effectiveness. Made from a mixture of cement, sand, and water, these tiles are molded into various shapes and designs to suit different architectural styles. Concrete tiles are incredibly robust, offering excellent protection against harsh weather conditions such as heavy rain, high winds, and extreme temperatures."
   },
   {
     "id": 22,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtW66Vn7quch0IwF3NVzvO2B-eYy-5hOzIkAJL2gez27qNFlcJ",
 
-    "category": "Wire clay jali",
+    "category": "Clay jali",
     "material": "Clay",
-    "description": "Sturdy and traditional wire clay jalis ideal for structural integrity and aesthetics."
+    "description": "Sturdy and traditional Clay jalis ideal for structural integrity and aesthetics."
   }, {
     "id": 23,
     "image": "data:image/jpeg;base64,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",
-    "category": "Wire clay jali",
+    "category": "Clay jali",
     "material": "Clay",
-    "description": "Sturdy and traditional wire clay jalis ideal for structural integrity and aesthetics."
+    "description": "Sturdy and traditional Clay jalis ideal for structural integrity and aesthetics."
   },
   {
     "id": 24,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQl2A3ZYyyrblkFRYM-ndYIKVE-kUKFCYq4eLUgRv1M6_4-C0_f",
 
-    "category": "Wire clay jali",
+    "category": "Clay jali",
     "material": "Clay",
     "description": "Reliable clay jalis designed for durability and optimal building performance."
   },
@@ -186,13 +159,13 @@
     "id": 25,
     "image": "https://i0.wp.com/brickart.in/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-20-at-1.25.44-PM-5.jpeg?fit=1024%2C683&ssl=1",
 
-    "category": "Wire clay jali",
+    "category": "Clay jali",
     "material": "Clay",
-    "description": "Premium wire clay jalis with a fine finish, perfect for traditional and modern construction."
+    "description": "Premium Clay jalis with a fine finish, perfect for traditional and modern construction."
   },
   {
     "id": 26,
-    "image": "../assets/brick.png",
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/flooring.png?raw=true",
 
     "category": "Clay false Ceiling tiles",
     "material": "Clay",
@@ -232,29 +205,36 @@
     "material": "Clay composite",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
 },
+{
+    "id": 13,
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/black.png?raw=true" ,
 
+    "category": "Clay roofing tiles",
+    "material": "Clay",
+    "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
+    },   
 
 
 {
     "id": 31,
     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc9vhLGwKQgWt1gr3HG3pFtjUBqYOjk1paopMS_iF0ZkSTPU_9",
 
-    "category": "Wire clay jali",
+    "category": "Clay jali",
     "description": "Durable wire-cut clay jalis with a bubble top design, ideal for both structural and decorative purposes."
   },
   {
     "id": 32,
     "image": "https://i0.wp.com/brickart.in/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-20-at-1.25.44-PM-3.jpeg?fit=1024%2C683&ssl=1",
 
-    "category": "Wire clay jali",
+    "category": "Clay jali",
     "description": "Premium-quality wire-cut clay jalis designed for enhanced strength and aesthetic appeal."
   },
   {
     "id": 33,
     "image": "https://terracon.in/uploads/product/gujarat-jolly.png",
 
-    "category": "Wire clay jali",
-    "description": "High-performance wire clay jalis, perfect for modern construction with a distinctive finish."
+    "category": "Clay jali",
+    "description": "High-performance Clay jalis, perfect for modern construction with a distinctive finish."
   },
   {
     "id": 34,
@@ -420,6 +400,13 @@
         "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates."
 
   },
+    {
+    "id": 80,
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser-123.jpeg?raw=true",
+     "category": "Laser Plates",
+    "material": "Steel",
+    "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
+  },
   {
     "id": 55,
     "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUCwOCmNzA5vwsB2TawD4WLkngeT7amMO8RjaAeL0V4pUuAhMS",    "category": "Laser Plates",
@@ -552,25 +539,13 @@
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
 ,    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBBuZf1jjIqdSiR8u3k6-3EcYFBPm403Zrm5beYaYwX8Ue04yJ"
   },
-  {
-    "id": 72,
-    "category": "UPVC roofing shine tiles",
-    "material": "UPVC",
-    "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
-     "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJNqI6vgagfHIRhxy3YHQpe-HVqZ0XozryOw&s"
-  },{
+ {
     "id": 73,
     "category": "UPVC roofing shine tiles",
     "material": "UPVC",
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuwqSZT1_nEafX2OKqerfXrkVisW803G7kaw&s"
-  },  {
-    "id": 74,
-    "category": "UPVC roofing shine tiles",
-    "material": "UPVC",
-    "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
-    "image": "data:image/jpeg;base64,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" }
-,
+  }, 
    {
     "id": 75,
     "category": "UPVC roofing shine tiles",

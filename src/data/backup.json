@@ -94,4 +94,26 @@
     "material": "Clay",
     "description": "Eco-friendly clay tiles with excellent thermal insulation and a natural finish."
   },
+  {
+    "id": 14,
+    "image": "https://s.alicdn.com/@sc04/kf/H260255ff854345ef8ffea82603841055H.png_300x300.jpg",
+  
+    "category": "Clay roofing tiles",
+    "material": "Clay",
+    "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
+  },
+  {
+    "id": 12,
+    "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay-pattern.png?raw=true",
+     "category": "Clay false ceiling tiles",
+    "material": "Clay",
+    "description": "Clay false ceiling tiles are a stylish and functional solution for interior spaces, offering a combination of aesthetic appeal and practical benefits. Made from natural clay, these tiles are molded and fired at high temperatures, resulting in a durable, long-lasting product. Clay tiles are known for their excellent thermal and acoustic insulation properties, helping to regulate room temperature and reduce noise, making them ideal for both residential and commercial spaces."
+  } ,{
+    "id": 2,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_eOEGs8nCHa3plqsSi-kfOVuVDsNG4FCyRlfeG4LZKXslh13i",
+
+    "category": "Ceramic roofing tiles",
+    "material": "Ceramic",
+"description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
+    }
 ]

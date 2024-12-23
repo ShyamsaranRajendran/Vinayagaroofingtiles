@@ -4,6 +4,8 @@ import { Info } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import flooringTile from "../assets/flooring.png";
 import "./Hero/css/ProductCard.css"
+import Trending from '../assets/trending.svg'
+import { RiFlag2Fill } from "react-icons/ri";
 export default function ProductCard({
   id,
   image,
@@ -53,6 +55,11 @@ Could you share more details and assist with the purchase? 😊`
           alt={name}
           className="product-card-image"
         />
+        {tag === "trending" && (
+          <div className="product-card-trending-badge">
+            <span>Trending</span>
+          </div>
+        )}
         <div className="product-card-overlay">
           <button
             className="product-card-zoom-btn bounce-animation"

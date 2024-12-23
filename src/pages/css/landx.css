@@ -1,36 +1,36 @@
 .landX-container {
-  font-style: oblique;
-  text-align: center;
-  color: var(--text-color, #2c2c2c);
-  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease 0.2s;
-  font-size: 3rem;
-  min-height: 100vh; /* Consistent height */
-  padding: 0 2rem; /* Prevent content from touching edges */
+  justify-content: center; /* Center content vertically */
+  align-items: center;    /* Center content horizontally */
+  text-align: center;     /* Center-align text */
+  min-height: 100vh;      /* Full viewport height for proper centering */
+  padding: 0 2rem;        /* Prevent content from touching edges */
   box-sizing: border-box; /* Include padding and border */
-}
-
-.landX-header {
-  border-radius: 1rem;
-  font-size: 2.5rem;
-  transition: all 0.3s ease 0.2s;
 }
 
 .landX-title {
   font-size: 4rem;
   font-weight: bold;
   color: #1d1d1d;
-  margin: 0 0 2rem;
   padding: 2px;
   transition: all 0.3s ease 0.2s;
-  min-height: 3rem;
-  text-align: center;
-  word-wrap: break-word; /* Prevent text overflow */
-  line-height: 1.6; /* Add line spacing to separate lines */
+  word-wrap: break-word;  /* Prevent text overflow */
+  line-height: 1.6;       /* Add line spacing to separate lines */
+  text-align: center;     /* Center-align title text */
+}
+
+.landX-header {
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  transition: all 0.3s ease 0.2s;
+  width: 100%;
+}
+
+.landX-header img{
+  max-width: 99%;
+  height: auto;
+  padding: 1rem;
 }
 
 .landX-highlight {
@@ -99,7 +99,7 @@ body.dark-mode .landX-title {
 
 .landX-cta-button-outline {
   background: transparent;
-  color: #ffd700;
+  color: #000000;
   border: 2px solid hsl(51, 100%, 44%);
 }
 
@@ -210,7 +210,7 @@ body.dark-mode .link-learn {
   .landX-title {
     font-size: 2rem;
     margin: 0 0 1rem;
-    width: 110%;
+    width: 100%;
   }
 
   .landX-subtitle {

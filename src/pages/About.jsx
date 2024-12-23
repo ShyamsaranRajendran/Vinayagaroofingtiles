@@ -102,13 +102,9 @@ const About = () => {
               <span className="highlight">Senthil Murugan</span>, we focus on
               using only branded products.
             </p>
-            <p>
-              We are proud to feature{" "}
-              <span className="highlight">popular brands</span> like:
-            </p>
+            <p>We are proud to feature popular brands like:</p>
             <ul className="brand-list">
               {[
-                
                 "Chitra Ceramic",
                 "Swastik Tiles",
                 "Thomson Tile",

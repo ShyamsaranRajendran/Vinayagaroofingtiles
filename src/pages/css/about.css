@@ -138,12 +138,18 @@ body.dark-mode .about-page{
   color: #25d366;
 }
 .highlight {
-  color: #e91e63; /* Pink color, adjust as needed */
-  font-weight: bold;
+  color: rgb(0, 0, 0); /* Pink color, adjust as needed */
+  font-weight:900;
+  font-style: italic;
 }
 .highlight a{
-  color: #e91e63; /* Pink color, adjust as needed */
+  color: rgb(0, 0, 0); /* Pink color, adjust as needed */
   font-weight: bold;
+}
+body.dark-mode .highlight , body.dark-mode .highlight a{
+  color: white;
+  font-weight: bold;
+  font-style: italic;
 }
 /* Dark mode specific styles */
 body.dark-mode .about-title,
@@ -176,4 +182,17 @@ body.dark-mode .brand-list li {
 
 body.dark-mode .brand-list li:hover {
   color: #25d366;
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (max-width: 480px) {
+.highlight {
+  font-size: 22px ;
+}
+.highlight a{
+  font-size: 22px ;
+}
 }
