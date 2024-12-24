@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./home.css";
 import "./css/landx.css";
 import { Link } from "react-router-dom";
-import logo from '../assets/display-logo.png'
+import logo from "../assets/logo.jpeg";
 export default function RoofingLandingPageShuffle() {
 const words = ["metal roofs", "shingles", "green roofs", "clay tiles"];
 

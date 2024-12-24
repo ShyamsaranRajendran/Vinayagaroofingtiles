@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
-import logo from "../assets/Group 5.svg";
+import logo from "../assets/logo.jpeg";
 import animationData from "../assets/Animation-menu.json";
 import './css/header.css'
 function Header({ menuOpen, toggleMenu }) {

@@ -190,7 +190,7 @@ body.dark-mode .search-input {
 
 body.dark-mode .search-input:focus {
   border-color: #0c0900;
-  box-shadow: 0 0 0 3px rgba(247, 236, 82, 0.2);
+  /* box-shadow: 0 0 0 3px rgba(247, 236, 82, 0.2); */
 }
 
 body.dark-mode .search-icon {

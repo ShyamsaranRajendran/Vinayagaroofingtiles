@@ -56,7 +56,11 @@ Could you share more details and assist with the purchase? 😊`
           className="product-card-image"
         />
         {tag === "trending" && (
-          <div className="product-card-trending-badge">
+          <div
+            className="product-card-trending-badge"
+            onClick={goToProductPage} // Add onClick here
+            style={{ cursor: "pointer" }} // Make it clear that this is clickable
+          >
             <span>Trending</span>
           </div>
         )}
@@ -72,7 +76,7 @@ Could you share more details and assist with the purchase? 😊`
 
       <div className="product-card-content">
         <h3 className="product-card-title fade-in-animation">{category}</h3>
-        <p>{id}</p>
+        {/* <p>{id}</p> */}
 
         <div className="product-card-actions">
           <a

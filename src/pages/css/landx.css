@@ -28,7 +28,8 @@
 }
 
 .landX-header img{
-  max-width: 99%;
+  max-width: 90%;
+  border-radius: 20px;
   height: auto;
   padding: 1rem;
 }
