@@ -62,9 +62,7 @@ function Footer() {
             <li>
               <a href="/privacy">Privacy Policy</a>
             </li>
-            <li>
-              <a href="/cookies">Cookies Policy</a>
-            </li>
+            
           </ul>
         </div>
 
@@ -84,8 +82,7 @@ function Footer() {
       <div className="footer-bottom">
         <p>© 2025 Vinayaga Roofing Inc. All rights reserved.</p>
         <div className="footer-legal-links">
-          <a href="/terms">Terms</a> |<a href="/privacy">Privacy</a> |
-          <a href="/cookies">Cookies</a>
+          <a href="/terms">Terms</a> |<a href="/privacy">Privacy</a>
         </div>
       </div>
     </footer>

@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProductDetails from './pages/ProductDetails';
 import "./App.css";
+import TermsAndServices from "./pages/TermsAndServices";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const SplashScreen = () => {
   const brands = [
@@ -53,7 +55,8 @@ function App() {
               <Route index element={<Home />} />
               <Route path="products" element={<Products />} />
               <Route path="/product/:id" element={<ProductDetails />} />
-             
+             <Route path="/terms" element={<TermsAndServices/>}/>
+             <Route path="/privacy" element={<PrivacyPolicy/>}/>
               {/* <Route path="gallery" element={<Gallery />} /> */}
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
