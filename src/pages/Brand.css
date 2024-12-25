@@ -1,10 +1,8 @@
-
 .brand-carousel-container {
-  width: 130%;
-  overflow: hidden; /* Hide the overflowing logos */
+  width: 100%;
+  overflow: hidden;
   position: relative;
   display: flex;
-  margin: 2rem;
   justify-content: center;
   align-items: center;
   background-color: #fff;
@@ -14,8 +12,9 @@
 
 .brand-carousel-track {
   display: flex;
-  gap: 20px; /* Adjust spacing between logos */
-  animation: scrollCarousel 60s linear infinite; /* Smooth continuous scrolling */
+  gap: 20px;
+  animation: scrollCarousel 20s linear infinite; /* Continuous scrolling */
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
 
 .brand-carousel-logo {
@@ -24,12 +23,24 @@
   object-fit: contain;
 }
 
-/* Keyframes for the scrolling effect */
 @keyframes scrollCarousel {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .brand-carousel-logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .brand-carousel-logo {
+    width: 90px;
   }
 }

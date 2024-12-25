@@ -3,8 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { Info } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import flooringTile from "../assets/flooring.png";
-import "./Hero/css/ProductCard.css"
+import "./Hero/css/ProductCard.css";
 import { RiFlag2Fill } from "react-icons/ri";
+
 export default function ProductCard({
   id,
   image,
@@ -12,10 +13,12 @@ export default function ProductCard({
   material,
   description,
   category,
-  tag
+  tag,
 }) {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
+  const [isLoading, setIsLoading] = useState(true); // Loading state for the image
+  const [hasError, setHasError] = useState(false); // Error state for the image
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -42,23 +45,38 @@ export default function ProductCard({
 - Link: ${productPageLink}
 Could you share more details and assist with the purchase? 😊`
   );
-// 9865980220;
+
   const whatsappLink = `https://wa.me/+9865980220?text=${whatsappMessage}`;
   const isRemoteImage = image.startsWith("http") || image.startsWith("data");
+
+  // Image loading handlers
+  const handleImageLoad = () => setIsLoading(false);
+  const handleImageError = () => {
+    setIsLoading(false);
+    setHasError(true);
+  };
 
   return (
     <div className={`product-card ${isVisible ? "fade-in" : ""}`}>
       <div className="product-card-image-container">
+        {isLoading && <div className="image-loading-spinner">Loading...</div>}
+        {hasError && (
+          <div className="image-error-placeholder">
+            <span>Image not available</span>
+          </div>
+        )}
         <img
-          src={isRemoteImage ? image : flooringTile}
+          src={isRemoteImage && !hasError ? image : flooringTile}
           alt={name}
-          className="product-card-image"
+          className={`product-card-image ${isLoading ? "hidden" : ""}`}
+          onLoad={handleImageLoad}
+          onError={handleImageError}
         />
         {tag === "trending" && (
           <div
             className="product-card-trending-badge"
-            onClick={goToProductPage} // Add onClick here
-            style={{ cursor: "pointer" }} // Make it clear that this is clickable
+            onClick={goToProductPage}
+            style={{ cursor: "pointer" }}
           >
             <span>Trending</span>
           </div>
@@ -75,7 +93,6 @@ Could you share more details and assist with the purchase? 😊`
 
       <div className="product-card-content">
         <h3 className="product-card-title fade-in-animation">{category}</h3>
-        {/* <p>{id}</p> */}
 
         <div className="product-card-actions">
           <a

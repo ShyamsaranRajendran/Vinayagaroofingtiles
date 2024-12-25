@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
 import "./css/landx.css";
+import Arrow from "../assets/arrow.svg";
 import { Link } from "react-router-dom";
 export default function RoofingLandingPageShuffle() {
 const words = ["metal roofs", "shingles", "green roofs", "clay tiles"];
@@ -82,10 +83,10 @@ Hi! I’m interested in learning more about your roofing solutions. Could you he
         <button className="landX-cta-button-outline">
           <Link to="/about" className="link-learn">
             Learn More About Us
+            <img src={Arrow} alt="arrow" className="arrow-icon" />
           </Link>
         </button>
       </section>
-      
     </div>
   );
 }

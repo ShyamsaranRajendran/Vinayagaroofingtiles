@@ -187,45 +187,7 @@ body.dark-mode .footer-legal-links a:hover {
 }
 
 @media (max-width: 768px) {
-  .header-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 5%;
-    right: 0;
-    background: var(--background-color,rgba(255, 255, 255, 0.8));
-    width: 50%;
-    padding: 1rem;
-    border-radius: 1rem;
-    z-index: 1000;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .header-menu.open {
-    display: flex;
-    transform: translateX(0); /* Slide in when open */
-  }
-
-  .header-menu-icon {
-    display: block; /* Show hamburger on small screens */
-    position: absolute;
-    right: 1rem;
-    top: 0.8rem;
-    z-index: 1001;
-  }
-
-  .header-brand-link {
-    font-size: 1.25rem;
-  }
-
-  .header-link {
-    font-size: 1rem;
-    margin-bottom: 1rem; /* Spacing between links */
-  }
-
-  .footer-container p {
+ .footer-container p {
     font-size: 0.75rem;
   }
 }
@@ -250,9 +212,6 @@ body.dark-mode {
   --footer-text: #aaa;
 }
 
-body.dark-mode .header-container{
-  border-bottom: solid 1px white;
-}
 
 body.dark-mode .footer-container{
   border-top: solid 1px white;
