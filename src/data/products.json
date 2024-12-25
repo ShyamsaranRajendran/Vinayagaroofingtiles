@@ -11,7 +11,7 @@
     "id": 3,
     "image":"https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-2.jpeg?raw=true",
     "category": "Ceramic roofing tiles",
-    "material": "Clay",
+    "material": "Ceramic",
 "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
     },
   {
@@ -47,7 +47,7 @@
     "id": 8,
     "image":"https://raw.githubusercontent.com/VinayagaRoofing/Images/refs/heads/master/ceramic/cer-4.webp",
     "category": "Ceramic roofing tiles",
-    "material": "Clay",
+    "material": "Ceramic",
 "description": "Ceramic roofing tiles are a renowned choice for their durability, aesthetic appeal, and exceptional performance. Made from high-quality ceramic, these tiles are crafted to provide long-lasting protection from the elements, including heavy rain, intense heat, and high winds. Their design allows for superior ventilation, ensuring that your roof remains cool during hot weather, which helps in maintaining a comfortable indoor temperature."
     },
   
@@ -163,14 +163,14 @@
     "id": 28,
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-a.jpeg?raw=true",
     "category": "Clay roofing tiles",
-    "material": "Premium clay",
+    "material": "clay",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
 },
 {
     "id": 29,
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-b.jpeg?raw=true",
     "category": "Clay roofing tiles",
-    "material": "Natural clay",
+    "material": "clay",
     "description": "Clay roofing tiles are a timeless, durable, and environmentally-friendly roofing solution that offers both functional and aesthetic benefits. Made from natural clay, these tiles are shaped and fired at high temperatures, ensuring strength and longevity. Their unique, earthy appearance adds a distinctive charm to any building, enhancing the overall aesthetic while providing excellent protection." 
 },
 
@@ -383,7 +383,7 @@
     "id": 56,
     "image":"https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-2.jpeg?raw=true", 
        "category": "Laser Plates",
-    "material": "Aluminum",
+    "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
 
   }
@@ -392,22 +392,21 @@
     "id": 57,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-3.jpeg?raw=true",
-    "material": "Stainless Steel",
+"material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 58,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-4.jpeg?raw=true",
-       "material": "Aluminum Alloy",
-
+      "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 59,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-5.jpeg?raw=true",
-     "material": "Titanium",
+    "material": "Steel",
 
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
@@ -415,95 +414,83 @@
     "id": 60,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-6.jpeg?raw=true",
-    "material": "Carbon Steel",
-
+   "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 61,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-7.jpeg?raw=true",
-       "material": "Laser",
-
+      "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 62,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-8.jpeg?raw=true",
-     "material": "Polycarbonate",
-
+    "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 63,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser-9.jpeg?raw=true",
-      "material": "Acrylic",
-
+    "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 64,
     "category": "Laser Plates",
     "image":"https://github.com/VinayagaRoofing/Images/blob/master/laser/laser11.jpeg?raw=true",
-      "material": "Copper",
-
+    "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 65,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser12.jpeg?raw=true",
-        "material": "Glass",
-
+     "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 66,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser13.jpeg?raw=true",
-     "material": "PVC",
-
+     "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 67,
     "category": "Laser Plates",
     "image":"https://github.com/VinayagaRoofing/Images/blob/master/laser/laser13.png?raw=true",
-      "material": "Zinc",
-
+     "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 68,
     "category": "Laser Plates",
     "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser14.jpeg?raw=true",
-       "material": "Composite Material",
-
+    "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
   },
   {
     "id": 69,
     "category": "Laser Plates",
     "material": "Steel",
-
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings.",   
      "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser15.jpeg?raw=true"
       },
   {
     "id": 70,
     "category": "Laser Plates",
-    "material": "Aluminum",
-
+    "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
 ,    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser16.jpeg?raw=true"
  },
   {
     "id": 71,
     "category": "Laser Plates",
-    "material": "Copper",
-
+    "material": "Steel",
     "description": "Laser plates are precision-engineered metal plates designed for use in laser cutting and engraving applications. Made from high-quality metals such as stainless steel, aluminum, or brass, these plates are often used in industries like manufacturing, signage, architecture, and art due to their ability to provide detailed, clean, and accurate cuts or engravings."
 ,    "image": "https://github.com/VinayagaRoofing/Images/blob/master/laser/laser17.jpeg?raw=true"
   },
