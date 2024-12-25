@@ -15,7 +15,7 @@ const CarouselSlide = ({ image, title, description, cta, url }) => (
         {description.split(" ").map((word, index) => {
           // Highlight important words
           if (
-            ["roofing", "quality", "premium", "eco-friendly"].includes(
+            ["roofingi"].includes(
               word.toLowerCase()
             )
           ) {
@@ -62,7 +62,7 @@ const Carousel = () => {
         "https://assets-news.housing.com/news/wp-content/uploads/2021/07/28195700/All-about-roofing-sheets-Explore-these-evolving-roofing-trends-for-your-home-FB-1200x700-compressed.jpg",
       title: "Premium Roofing Solutions",
       description:
-        "Transform your home with our high-quality roofing   materials.",
+        "Transform your home with our high-quality roofing  materials.",
       cta: "Explore Products",
     },
     {

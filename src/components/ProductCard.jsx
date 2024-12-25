@@ -4,7 +4,6 @@ import { Info } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import flooringTile from "../assets/flooring.png";
 import "./Hero/css/ProductCard.css"
-import Trending from '../assets/trending.svg'
 import { RiFlag2Fill } from "react-icons/ri";
 export default function ProductCard({
   id,

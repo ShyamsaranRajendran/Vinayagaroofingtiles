@@ -2,14 +2,21 @@ import React from "react";
 import "./Brand.css";
 const BrandCarousel = () => {
   const brandLogos = [
-    "/images/logo.svg",
-    "/images/logo.svg",
-    "/images/logo.svg",
-    "/images/logo.svg",
-    "/images/logo.svg",
-    "/images/logo.svg",
-    "/images/logo.svg",
-  ]; // Paths relative to the `public` folder
+    "/images/brand/aqua.svg",
+    "/images/brand/natural-tile.svg",
+    "/images/brand/nuvo.svg",
+    "/images/brand/pio.svg",
+    "/images/brand/shielder.svg",
+    "/images/brand/terracotta.svg",
+    "/images/brand/Rockshield.svg",
+    "/images/brand/aqua.svg",
+    "/images/brand/natural-tile.svg",
+    "/images/brand/nuvo.svg",
+    "/images/brand/pio.svg",
+    "/images/brand/shielder.svg",
+    "/images/brand/terracotta.svg",
+    "/images/brand/Rockshield.svg",
+  ]; 
 
   return (
     <div className="brand-carousel-container">
