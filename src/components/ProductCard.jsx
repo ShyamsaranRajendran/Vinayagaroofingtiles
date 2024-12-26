@@ -59,7 +59,11 @@ Could you share more details and assist with the purchase? 😊`
   return (
     <div className={`product-card ${isVisible ? "fade-in" : ""}`}>
       <div className="product-card-image-container">
-        {isLoading && <div className="image-loading-spinner">Loading...</div>}
+        {isLoading && (
+          <div class="loader-container">
+            <div class="loader"></div>
+          </div>
+        )}
         {hasError && (
           <div className="image-error-placeholder">
             <span>Image not available</span>

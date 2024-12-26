@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 import products from "../data/products.json";
 import { FaWhatsapp } from "react-icons/fa";
-import { Info } from "lucide-react";
 import "./css/ProductDetails.css";
 
 export default function ProductDetails() {
@@ -30,7 +29,7 @@ export default function ProductDetails() {
 
   if (!productDetails) {
     return <div>Loading...</div>;
-    }
+  }
 
   const {
     id: productId,
@@ -44,8 +43,8 @@ export default function ProductDetails() {
   const productPageLink = `${
     window.location.origin
   }/product/${encodeURIComponent(productId)}`;
-  const regex = new RegExp(name, "i"); 
-   const recommendedProducts = products.filter(
+  const regex = new RegExp(name, "i");
+  const recommendedProducts = products.filter(
     (product) => product.category.toLowerCase() === category.toLowerCase()
   );
 
@@ -59,14 +58,15 @@ export default function ProductDetails() {
   const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
 
   return (
-    <div className={`product-details-page`}>
+    <div className="product-details-page">
       <div className="product-image-container">
-        {!imageLoaded && <p>Loading image...</p>}
+        {!imageLoaded &&  <div className="splash-screen">
+      <div className="loader">
+      </div> </div>}
         <img
           src={image}
           alt={name}
           onLoad={() => setImageLoaded(true)} // Mark image as loaded
-          onError={() => setImageLoaded(true)} // Handle image load errors
           style={{
             display: imageLoaded ? "block" : "none", // Hide image until it's loaded
             width: "100%",
@@ -74,56 +74,60 @@ export default function ProductDetails() {
           }}
         />
       </div>
-      <div className="product-info">
-        <p>
-          <strong>Material:</strong> {material}
-        </p>
-        <p>
-          <strong>Category:</strong> {category}
-        </p>
-        <p>
-          <strong>Description:</strong> {description}
-        </p>
+      {imageLoaded && (
+        <div className="product-info">
+          <p>
+            <strong>Material:</strong> {material}
+          </p>
+          <p>
+            <strong>Category:</strong> {category}
+          </p>
+          <p>
+            <strong>Description:</strong> {description}
+          </p>
 
-        <div className="product-card-actions">
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="product-card-add-to-cart-btn"
-          >
-            <FaWhatsapp />
-          </a>
-        </div>
-      </div>
-
-      <div className="recommended-products">
-        <h2>Recommended Products</h2>
-        <div className="recommended-list">
-          {recommendedProducts.map((product, index) => (
-            <button
-              className="rec-btn"
-              onClick={() => goToProductPage(product)}
-              key={index}
+          <div className="product-card-actions">
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="product-card-add-to-cart-btn"
             >
-              <div className="recommended-card">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                    borderRadius: "8px",
-                  }}
-                />
-                <div>
-                  <h3 className="rec-cat">{product.category}</h3>
-                </div>
-              </div>
-            </button>
-          ))}
+              <FaWhatsapp />
+            </a>
+          </div>
         </div>
-      </div>
+      )}
+
+      {imageLoaded && (
+        <div className="recommended-products">
+          <h2>Recommended Products</h2>
+          <div className="recommended-list">
+            {recommendedProducts.map((product, index) => (
+              <button
+                className="rec-btn"
+                onClick={() => goToProductPage(product)}
+                key={index}
+              >
+                <div className="recommended-card">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      borderRadius: "8px",
+                    }}
+                  />
+                  <div>
+                    <h3 className="rec-cat">{product.category}</h3>
+                  </div>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

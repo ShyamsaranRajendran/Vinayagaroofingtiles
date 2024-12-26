@@ -1,4 +1,3 @@
-
 .splash-screen {
   position: fixed;
   top: 0;
@@ -12,45 +11,48 @@
   align-items: center;
   text-align: center;
   z-index: 1000; /* Ensure it appears on top of other content */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.loader {
-  border: 6px solid #f3f3f3; /* Light gray background */
-  border-top: 6px solid #ffd700; /* Gold color for the rotating part */
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1.5s linear infinite;
+.poper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-/* Keyframes for spinning animation */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.poper img {
+  width: 250px; /* Increased width */
+  height: auto;
+}
+
+
+.loader {
+  width: 80px;
+  height: 80px;
 }
 
 .splash-screen h1 {
   font-size: 2rem;
   color: #333;
-  margin: 20px 0;
   font-weight: bold;
 }
 
 .brand-list {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
+  padding: 0 10px;
 }
 
 .brand-item {
   font-size: 1.2rem;
   color: #2c2c2c;
-  font-weight: normal;
+  font-weight: 500;
   opacity: 0;
   animation: fadeIn 1.5s ease-out forwards;
 }
@@ -83,52 +85,28 @@
   animation-delay: 3.5s;
 }
 
-/* Keyframes for fading in brand items */
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: translateY(10px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* General Layout */
-.layout-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: var(--layout-bg, #f4f4f4);
-  color: var(--text-color, #333);
-}
-
-.layout-main {
-  flex-grow: 1;
-}
-
-/* Dark Mode */
-body.dark-mode {
-  --background-color: #1f1f1f;
-  --background-color-1:  rgba(48, 48, 48, 0.61),
-  --text-color: #eaeaea;
-  --splash-bg: linear-gradient(135deg, #1a1a1a, #4fc3f7);
-  --loader-border: #333;
-  --loader-highlight: #4fc3f7;
-  --brand-item-bg: #333;
-  --brand-item-color: #eaeaea;
-  --layout-bg: #1f1f1f;
-}
-
-.animation-container {
-  display: none; /* Default: Hidden on larger screens */
-  margin-top: 20px;
-}
-
+/* General responsive styling */
 @media (max-width: 768px) {
-  .animation-container {
-    display: block; /* Visible only on mobile screens */
-    width: 100%;
-    max-width: 200px;
-    margin: 10px auto;
+  .splash-screen {
+    padding: 10px;
+  }
+
+  .splash-screen h1 {
+    font-size: 1.5rem;
+  }
+
+  .brand-item {
+    font-size: 1rem;
   }
 }

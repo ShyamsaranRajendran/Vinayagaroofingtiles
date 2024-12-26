@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
 import "./css/landx.css";
-import Arrow from "../assets/arrow.svg";
 import { Link } from "react-router-dom";
 export default function RoofingLandingPageShuffle() {
 const words = [

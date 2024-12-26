@@ -6,17 +6,25 @@
   box-sizing: border-box;
 }
 
-.image-loading-spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px; /* Adjust based on your card height */
-  background-color: #f0f0f0;
-  color: #888;
-  font-size: 16px;
-  font-weight: bold;
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    background-color: #f9f9f9; /* Optional: light background */
 }
 
+
+/* Animation for spinning */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .image-error-placeholder {
   display: flex;
   justify-content: center;

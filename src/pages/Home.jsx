@@ -1,10 +1,9 @@
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 import Carousel from "../components/Hero/Carousel";
 import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import LandX from './LandX';
 import Brand from './Brand'
-import { useNavigate } from "react-router-dom";
 import Arrow from '../assets/arrow.svg'
 const featuredProducts = [
   {
