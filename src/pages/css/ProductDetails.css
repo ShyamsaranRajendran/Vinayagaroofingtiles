@@ -172,19 +172,30 @@ body.dark-mode .mode-toggle-btn {
   color: #fff; /* Keep button text light */
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .product-details-page h1 {
     font-size: 1.5rem;
   }
+  
+  .recommended-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1rem;
+}
+
+  .recommended-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   .product-info {
     padding: 15px;
-  }
-
-  .product-details-page img {
-    max-width: 100%;
-    width: 100%;
   }
 }
 

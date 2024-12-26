@@ -12,7 +12,7 @@ const words = [
   "Shimmering UPVC",
   "Precision laser",
   "Timeless grilles",
-  "StormGuard gutters",
+  "Storm gutters",
   "White concrete",
 ];
 
@@ -52,17 +52,18 @@ const words = [
     }, 100);
   };
 
-  const generateShuffledWord = (current, next, progress) => {
-    const maxLength = Math.max(current.length, next.length);
-    const shuffled = Array.from({ length: maxLength }).map((_, i) => {
-      if (Math.random() > progress) {
-        return String.fromCharCode(97 + Math.floor(Math.random() * 26));
-      } else {
-        return next[i] || " ";
-      }
-    });
-    return shuffled.join("").padEnd(maxLength, " ");
-  };
+const generateShuffledWord = (current, next, progress) => {
+  const targetLength = 15; 
+  const shuffled = Array.from({ length: targetLength }).map((_, i) => {
+    if (Math.random() > progress) {
+      return String.fromCharCode(97 + Math.floor(Math.random() * 26)); 
+    } else {
+      return next[i] || " "; 
+    }
+  });
+  return shuffled.join(""); 
+};
+
 
   const navigate = useNavigate();
   const whatsappMessage = encodeURIComponent(`

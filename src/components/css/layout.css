@@ -1,7 +1,4 @@
 .splash-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
@@ -10,8 +7,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 1000; /* Ensure it appears on top of other content */
-  padding: 20px;
+  z-index: 1000;
   box-sizing: border-box;
 }
 
@@ -32,7 +28,6 @@
     border: 8px solid #f3f3f3; /* Light grey background */
     border-top: 8px solid yellow; /* Yellow spinner color */
     border-radius: 50%;
-    margin-top: 40%;
     width: 50px; /* Size of the loader */
     height: 50px;
     animation: spin 1s linear infinite; /* Infinite spinning animation */
@@ -110,17 +105,49 @@
   }
 }
 
-/* General responsive styling */
+/* General responsive styling for mobile view */
 @media (max-width: 768px) {
   .splash-screen {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px; /* Move the content slightly upward */
   }
 
   .splash-screen h1 {
     font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .poper {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .poper img {
+    width: 200px; /* Adjusted size for smaller screens */
+    height: auto;
+  }
+
+  .loader {
+    width: 40px; /* Reduced loader size for mobile */
+    height: 40px;
+    border-width: 6px;
+  }
+
+  .brand-list {
+    margin-top: 15px;
+    gap: 8px; /* Reduced gap between items */
+    padding: 0 5px;
+    align-items: center; /* Ensure alignment remains centered */
   }
 
   .brand-item {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Adjust font size for readability on smaller screens */
+    text-align: center;
   }
 }
