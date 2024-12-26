@@ -28,10 +28,24 @@
   height: auto;
 }
 
-
 .loader {
-  width: 80px;
-  height: 80px;
+    border: 8px solid #f3f3f3; /* Light grey background */
+    border-top: 8px solid yellow; /* Yellow spinner color */
+    border-radius: 50%;
+    margin-top: 40%;
+    width: 50px; /* Size of the loader */
+    height: 50px;
+    animation: spin 1s linear infinite; /* Infinite spinning animation */
+}
+
+/* Animation for spinning */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .splash-screen h1 {
