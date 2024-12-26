@@ -4,7 +4,6 @@
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
-  border: 1px solid #000;
   border-radius: 10px;
   font-family: Arial, sans-serif;
   color: #000;
@@ -102,4 +101,36 @@ body {
 
 .terms-container a:hover {
   text-decoration: none;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .terms-container {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .terms-container h1,
+body.dark-mode .terms-container h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .terms-container p,
+body.dark-mode .terms-container ul {
+  color: #d0d0d0;
+}
+
+body.dark-mode .terms-container ul li {
+  color: #c0c0c0;
+}
+
+body.dark-mode .terms-container a {
+  color: #4db8ff; /* Bright blue for links */
+}
+
+body.dark-mode .terms-container a:hover {
+  color: #80d4ff;
 }

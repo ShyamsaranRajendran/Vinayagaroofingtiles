@@ -4,7 +4,6 @@
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
-  border: 1px solid #000;
   border-radius: 10px;
   font-family: Arial, sans-serif;
   color: #000;
@@ -87,4 +86,72 @@
 
 .privacy-container a:hover {
   text-decoration: none;
+}
+
+
+
+body.dark-mode .privacy-container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .privacy-container h1,
+body.dark-mode .privacy-container h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .privacy-container p,
+body.dark-mode .privacy-container ul {
+  color: #d0d0d0;
+}
+
+body.dark-mode .privacy-container ul li {
+  color: #c0c0c0;
+}
+
+body.dark-mode .privacy-container a {
+  color: #4db8ff; /* Bright blue for links */
+}
+
+body.dark-mode .privacy-container a:hover {
+  color: #80d4ff; /* Lighter blue for hover effect */
+}
+
+/* Dark mode responsive styles */
+@media (max-width: 768px) {
+  body.dark-mode .privacy-container {
+    padding: 15px;
+  }
+
+  body.dark-mode .privacy-container h1 {
+    font-size: 1.8rem;
+  }
+
+  body.dark-mode .privacy-container h2 {
+    font-size: 1.3rem;
+  }
+
+  body.dark-mode .privacy-container p,
+  body.dark-mode .privacy-container ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body.dark-mode .privacy-container {
+    padding: 10px;
+  }
+
+  body.dark-mode .privacy-container h1 {
+    font-size: 1.5rem;
+  }
+
+  body.dark-mode .privacy-container h2 {
+    font-size: 1.1rem;
+  }
+
+  body.dark-mode .privacy-container p,
+  body.dark-mode .privacy-container ul {
+    font-size: 0.8rem;
+  }
 }

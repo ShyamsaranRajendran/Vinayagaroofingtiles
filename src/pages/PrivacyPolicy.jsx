@@ -6,71 +6,60 @@ export default function PrivacyPolicy() {
     <div className="privacy-container">
       <h1>Privacy Policy</h1>
       <p>
-        At <strong>Vinayaga Roofing Company</strong>, we are committed to
-        protecting your privacy. This Privacy Policy outlines how we collect,
-        use, and safeguard your personal information when you visit our website
-        or use our services.
+        At <strong>Vinayaga Roofing Company</strong>, we value your privacy.
+        This Privacy Policy explains how we handle your personal information
+        when you visit our website or contact us via WhatsApp or phone.
       </p>
 
       <h2>1. Information We Collect</h2>
-      <p>We may collect the following types of information:</p>
+      <p>We may collect limited personal information, such as:</p>
       <ul>
-        <li>
-          Personal identification information (Name, Email address, Phone
-          number).
-        </li>
-        <li>
-          Technical data such as IP address, browser type, and usage data.
-        </li>
-        <li>
-          Any information you provide while interacting with our services.
-        </li>
+        <li>Your name and contact details (Phone number, WhatsApp ID).</li>
+        <li>Any information you provide when contacting us directly.</li>
       </ul>
 
       <h2>2. How We Use Your Information</h2>
-      <p>We use the collected information for purposes such as:</p>
+      <p>We use the information you provide for purposes such as:</p>
       <ul>
-        <li>Improving our website and services.</li>
-        <li>Processing transactions and providing customer support.</li>
-        <li>Sending promotional communications, if consent is given.</li>
+        <li>Responding to inquiries made via WhatsApp or phone calls.</li>
+        <li>Providing product information and support.</li>
+        <li>Improving customer experience based on your feedback.</li>
       </ul>
 
       <h2>3. Data Sharing and Security</h2>
       <p>
-        We do not sell or share your personal information with third parties,
-        except as required by law or to provide our services effectively. We use
-        industry-standard security measures to protect your data.
+        We do not share or sell your personal information to third parties. Your
+        contact information is used solely for communication purposes. Since no
+        backend or database is used, we rely on secure platforms like WhatsApp
+        for communication.
       </p>
 
       <h2>4. Cookies</h2>
       <p>
-        Our website uses cookies to enhance your browsing experience. You can
-        choose to disable cookies in your browser settings.
+        Our website does not collect cookies or track your browsing activity, as
+        it serves only to provide product information.
       </p>
 
       <h2>5. Your Rights</h2>
       <p>You have the right to:</p>
       <ul>
-        <li>Access, update, or delete your personal information.</li>
-        <li>Opt out of receiving promotional communications.</li>
-        <li>Contact us to address any concerns regarding your privacy.</li>
+        <li>Request that we stop contacting you via WhatsApp or phone.</li>
+        <li>Contact us to clarify how your information is used.</li>
       </ul>
 
       <h2>6. Changes to This Policy</h2>
       <p>
-        We reserve the right to update this Privacy Policy at any time. Changes
-        will be posted on this page with an updated "Last Updated" date.
+        We may update this Privacy Policy as necessary. Any changes will be
+        reflected on this page with an updated "Last Updated" date.
       </p>
 
       <h2>Contact Us</h2>
       <p>
-        If you have any questions about this Privacy Policy, please contact us
-        at:
+        For any questions about this Privacy Policy, please reach out to us via:
         <a href="mailto:vinayagaroofingtiles@gmail.com">
-          {" "}
           vinayagaroofingtiles@gmail.com
         </a>
-        .
+        , WhatsApp, or phone.
       </p>
     </div>
   );

@@ -4,126 +4,109 @@ import "./css/TermsAndServices.css";
 const TermsAndServices = () => {
   return (
     <div className="terms-container">
-      <h1>Terms and Services</h1>
-      <p>Welcome to Vinayaga Roofing Tiles !</p>
+      <h1>Terms and Conditions</h1>
+      <p>Welcome to Vinayaga Roofing Tiles!</p>
       <p>
-        These Terms and Services ("Terms") outline the rules and regulations for
-        using our website and the services provided by Vinayaga Roofing Tiles.
-        By accessing our website or engaging with our services, you agree to
-        comply with these Terms.
+        These Terms and Conditions ("Terms") govern the use of our website and
+        the sale of tiles and jaali through our services. By browsing our
+        website or contacting us via WhatsApp or phone, you agree to these
+        Terms.
       </p>
 
-      <h2>1. Services Provided</h2>
+      <h2>1. Products Offered</h2>
+      <p>
+        We provide a variety of roofing tiles and jaali in different designs and
+        categories to meet your needs. For more information or to place an
+        order, contact us directly.
+      </p>
+
+      <h2>2. Order Process</h2>
       <ul>
-        <li>Roof installation, repair, and replacement.</li>
-        <li>Inspection and maintenance services.</li>
+        <li>All orders must be placed via WhatsApp or phone.</li>
         <li>
-          Consultation and estimation services for residential and commercial
-          properties.
+          Product availability and pricing will be confirmed during the order
+          discussion.
+        </li>
+        <li>
+          Once the order details are finalized, customers will receive a
+          confirmation message with the agreed terms.
         </li>
       </ul>
 
-      <h2>2. Estimates and Quotes</h2>
+      <h2>3. Payment Terms</h2>
       <p>
-        - All estimates provided are valid for 30 days unless otherwise stated.
-        <br />- Changes in the scope of work may result in adjustments to the
-        final cost. Such changes will be communicated and agreed upon before
-        proceeding.
-      </p>
-
-      <h2>3. Warranties</h2>
-      <p>
-        - We offer warranties on materials and workmanship as specified in your
-        contract.
-        <br />- Warranties do not cover damages caused by:
-        <ul>
-          <li>Natural disasters, such as hurricanes or earthquakes.</li>
-          <li>Improper maintenance or unauthorized repairs.</li>
-          <li>Normal wear and tear.</li>
-        </ul>
-      </p>
-
-      <h2>4. Payment Terms</h2>
-      <p>
-        - Payment is required as per the agreed-upon schedule detailed in your
-        contract.
+        - Payments are handled offline and as per the agreement with the
+        customer.
         <br />
-        - Full payment must be completed upon the satisfactory completion of the
-        project unless otherwise arranged.
-        <br />- Late payments may incur additional fees.
+        - Payment details will be shared directly during the order confirmation
+        process.
+        <br />- Customers are responsible for making timely payments as agreed.
       </p>
 
-      <h2>5. Cancellation and Refund Policy</h2>
+      <h2>4. Delivery and Pickup</h2>
+      <ul>
+        <li>
+          Delivery charges, if applicable, will be communicated during the order
+          discussion.
+        </li>
+        <li>
+          Customers can also arrange to pick up their orders directly from our
+          location.
+        </li>
+        <li>
+          Delivery timelines will be provided based on product availability and
+          location.
+        </li>
+      </ul>
+
+      <h2>5. Returns and Refunds</h2>
       <p>
-        - Cancellations must be requested in writing within 1 days of signing
-        the contract.
+        - Returns are accepted only for damaged or defective products, reported
+        within 24 hours of delivery.
         <br />
-        - A cancellation fee may apply to cover administrative costs and
-        materials purchased.
-        <br />- Refunds are processed within 14 business days of cancellation
-        approval.
+        - Refunds or replacements will be processed after verifying the issue.
+        <br />- Products must be returned in their original condition for a
+        refund or exchange.
       </p>
 
-      <h2>6. Liability</h2>
+      <h2>6. Product Information</h2>
       <p>
-        - We are committed to providing safe and high-quality services. However,
-        we are not responsible for:
-        <ul>
-          <li>
-            Pre-existing conditions on the property that may affect the outcome
-            of our services.
-          </li>
-          <li>
-            Incidental or consequential damages beyond the agreed scope of work.
-          </li>
-        </ul>
-        - Clients are responsible for securing personal property around the work
-        area.
+        - We strive to ensure accurate product descriptions and images on our
+        website.
+        <br />- However, minor variations in color or design may occur due to
+        lighting and manufacturing processes.
       </p>
 
-      <h2>7. Site Access and Conditions</h2>
+      <h2>7. Customer Responsibility</h2>
       <p>
-        - Clients must provide safe and unobstructed access to the worksite.
-        <br />- We reserve the right to suspend work if unsafe conditions arise.
+        - Customers must verify product details and ensure suitability before
+        placing an order.
+        <br />- We are not responsible for issues arising from incorrect product
+        selection.
       </p>
 
-      <h2>8. Privacy Policy</h2>
+      <h2>8. Privacy</h2>
       <p>
-        - Any personal information collected will be used solely for providing
-        services and will not be shared with third parties without your consent.
+        - Any personal information provided will be used solely for order
+        processing and communication.
+        <br />- We do not share customer information with third parties.
       </p>
 
-      <h2>9. Intellectual Property</h2>
+      <h2>9. Changes to Terms</h2>
       <p>
-        - All content on this website, including text, graphics, and images, is
-        the property of Vinayaga Roofing Tiles and is protected by copyright
-        laws.
-        <br />- Unauthorized use or reproduction is prohibited.
+        - We reserve the right to update these Terms at any time. Updates will
+        be reflected on this page, and customers are encouraged to review the
+        Terms periodically.
       </p>
 
-      <h2>10. Changes to Terms</h2>
+      <h2>10. Contact Us</h2>
       <p>
-        - We reserve the right to update these Terms at any time. Changes will
-        be effective upon posting on this page. Clients are encouraged to review
-        these Terms periodically.
-      </p>
-
-      <h2>11. Governing Law</h2>
-      <p>
-        These Terms are governed by and construed in accordance with the laws of
-        [Your State/Country], and you irrevocably submit to the exclusive
-        jurisdiction of the courts in that State or location.
-      </p>
-
-      <h2>12. Contact Us</h2>
-      <p>
-        If you have any questions about these Terms, please contact us at:
+        If you have any questions or wish to place an order, please contact us:
         <br />
-        - Email: [vinayagaroofingtiles@gmail.com]
+        - WhatsApp/Phone: (+91) 98659 80220
         <br />
-        - Phone: [(+91) 98659 80220]
-        <br />- Address: [ 177, Sathy Rd, opp. Bus Stand, Erode, Tamil Nadu
-        638003 ]
+        - Address: 177, Sathy Rd, Opp. Bus Stand, Erode, Tamil Nadu 638003
+        <br />- Email: vinayagaroofingtiles@gmail.com
       </p>
     </div>
   );

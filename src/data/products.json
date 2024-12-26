@@ -534,4 +534,11 @@
     "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
     "image":"https://github.com/VinayagaRoofing/Images/blob/master/upvc-sheets/upvc-6.jpeg?raw=true"
     }
+    , {
+    "id": 900,
+    "category": "UPVC roofing shine tiles",
+    "material": "UPVC",
+    "description": "UPVC rain gutters are a modern, durable, and low-maintenance solution for managing rainwater runoff from roofs. Made from unplasticized polyvinyl chloride, these gutters are designed to withstand harsh weather conditions and offer superior performance compared to traditional metal or plastic options. UPVC rain gutters are resistant to corrosion, rust, and UV degradation, ensuring long-lasting functionality even in extreme climates.",
+    "image":"/images/roofing.jpeg"
+      }
 ]
