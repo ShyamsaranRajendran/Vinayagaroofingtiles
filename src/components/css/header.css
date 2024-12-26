@@ -26,7 +26,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  height: 80px;
+  height: 60px;
   margin: 0 auto;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .header-brand-link img {
-  width: 350%; /* Makes the image larger than the container */
+  width: 170px; /* Makes the image larger than the container */
   height: auto; /* Maintains aspect ratio */
   object-fit: contain; /* Prevents distortion */
   position: relative; /* Ensures the image stays in flow */
@@ -200,7 +200,7 @@ body.dark-mode .scroll-to-top-btn:hover {
     display: block; /* Show hamburger on small screens */
     position: absolute;
     right: 1rem;
-    top: 1.8rem;
+    top: 1.4rem;
     z-index: 1009;
   }
 
