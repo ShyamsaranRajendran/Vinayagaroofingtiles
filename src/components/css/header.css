@@ -20,30 +20,33 @@
 .header-container {
   color: var(--header-text, rgb(80, 80, 80));
   padding: 0.7rem 2rem;
+  padding-bottom: 0px;
+  padding-left: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  height: 100px;
+  height: 80px;
   margin: 0 auto;
 }
 
 .header-brand-link {
-  text-decoration: none;
-  color: var(--brand-color, #C2B280);
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
-  font-family: 'Roboto Slab', serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: auto; /* Container retains flexibility */
+  max-width: 200px; /* Keeps container size fixed */
+  text-align: center;
+  position: relative;
+  overflow: visible; /* Allows the image to exceed the container */
 }
 
 .header-brand-link img {
-  width: 140px;
-  height: 90px;
+  width: 350%; /* Makes the image larger than the container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Prevents distortion */
+  position: relative; /* Ensures the image stays in flow */
+  transform: translateY(-10%); /* Adjust position if needed for alignment */
 }
 
 .header-brand-link:focus {
@@ -197,7 +200,7 @@ body.dark-mode .scroll-to-top-btn:hover {
     display: block; /* Show hamburger on small screens */
     position: absolute;
     right: 1rem;
-    top: 2.8rem;
+    top: 1.8rem;
     z-index: 1009;
   }
 

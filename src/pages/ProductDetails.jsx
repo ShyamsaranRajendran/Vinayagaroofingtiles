@@ -10,6 +10,7 @@ export default function ProductDetails() {
   const location = useLocation();
   const navigate = useNavigate();
   const [productDetails, setProductDetails] = useState(null);
+  const [imageLoaded, setImageLoaded] = useState(false); // Track image loading status
 
   // Fetch product details based on the id from the URL params
   useEffect(() => {
@@ -20,7 +21,6 @@ export default function ProductDetails() {
     window.scrollTo(0, 0); // Scroll to top when component mounts
   }, [id]);
 
-  // Navigate to product page with state
   const goToProductPage = (product) => {
     navigate(`/product/${encodeURIComponent(product.id)}`, {
       state: product,
@@ -29,8 +29,8 @@ export default function ProductDetails() {
   };
 
   if (!productDetails) {
-    return <div>Loading...</div>; // Show loading until product details are fetched
-  }
+    return <div>Loading...</div>;
+    }
 
   const {
     id: productId,
@@ -44,12 +44,9 @@ export default function ProductDetails() {
   const productPageLink = `${
     window.location.origin
   }/product/${encodeURIComponent(productId)}`;
-  const regex = new RegExp(name, "i"); // Case-insensitive search to avoid the current product
-
-  // Filter recommended products by category and exclude the current product
-  const recommendedProducts = products.filter(
-    (product) =>
-      product.category.toLowerCase() === category.toLowerCase()
+  const regex = new RegExp(name, "i"); 
+   const recommendedProducts = products.filter(
+    (product) => product.category.toLowerCase() === category.toLowerCase()
   );
 
   const whatsappMessage = encodeURIComponent(
@@ -63,11 +60,20 @@ export default function ProductDetails() {
 
   return (
     <div className={`product-details-page`}>
-      <img
-        src={image}
-        alt={name}
-        style={{ width: "100%", maxWidth: "500px" }}
-      />
+      <div className="product-image-container">
+        {!imageLoaded && <p>Loading image...</p>}
+        <img
+          src={image}
+          alt={name}
+          onLoad={() => setImageLoaded(true)} // Mark image as loaded
+          onError={() => setImageLoaded(true)} // Handle image load errors
+          style={{
+            display: imageLoaded ? "block" : "none", // Hide image until it's loaded
+            width: "100%",
+            maxWidth: "500px",
+          }}
+        />
+      </div>
       <div className="product-info">
         <p>
           <strong>Material:</strong> {material}

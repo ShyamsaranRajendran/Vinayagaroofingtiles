@@ -93,7 +93,7 @@ Hi! I’m interested in learning more about your roofing solutions. Could you he
         <button className="landX-cta-button-outline">
           <Link to="/about" className="link-learn">
             Learn More About Us
-            <img src={Arrow} alt="arrow" className="arrow-icon" />
+            {/* <img src={Arrow} alt="arrow" className="arrow-icon" /> */}
           </Link>
         </button>
       </section>
