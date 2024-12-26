@@ -5,7 +5,17 @@ import "./css/landx.css";
 import Arrow from "../assets/arrow.svg";
 import { Link } from "react-router-dom";
 export default function RoofingLandingPageShuffle() {
-const words = ["metal roofs", "shingles", "green roofs", "clay tiles"];
+const words = [
+  "Elegant clay",
+  "Classic ceilings",
+  "Durable concrete",
+  "Glossy ceramic",
+  "Shimmering UPVC",
+  "Precision laser",
+  "Timeless grilles",
+  "StormGuard gutters",
+  "White concrete",
+];
 
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [shufflingWord, setShufflingWord] = useState(currentWord);
