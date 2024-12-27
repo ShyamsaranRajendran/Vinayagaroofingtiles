@@ -4,6 +4,7 @@ import Lottie from "react-lottie";
 import logo from "../assets/logo.svg";
 import animationData from "../assets/Animation-menu.json";
 import './css/header.css'
+import Whitelogo from "../assets/white-logo.svg";
 function Header({ menuOpen, toggleMenu }) {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -64,7 +65,8 @@ function Header({ menuOpen, toggleMenu }) {
       <header className="header-container">
         <div className="header-brand">
           <Link to="/" className="header-brand-link" onClick={closeMenu}>
-            <img src={logo} alt="logo" />
+            <img src={logo} className="whitelogo" alt="logo" />
+            <img src={Whitelogo} className="darklogo" alt="logo" />
           </Link>
         </div>
         <nav className="header-navigation" ref={menuRef}>

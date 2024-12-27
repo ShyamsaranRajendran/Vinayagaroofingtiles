@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import {
-  FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaTwitter,
+  FaWhatsapp,
 } from "react-icons/fa";
-import './css/footer.css'
-function Footer() {
+import "./css/footer.css";
 
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
-    
+function Footer() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     const sections = document.querySelectorAll(".footer-section");
     const observer = new IntersectionObserver(
@@ -46,7 +46,6 @@ function Footer() {
             <li>
               <a href="/contact">Contact</a>
             </li>
-         
             <li>
               <a href="/about">About</a>
             </li>
@@ -62,18 +61,17 @@ function Footer() {
             <li>
               <a href="/privacy">Privacy Policy</a>
             </li>
-            
           </ul>
         </div>
 
         <div className="footer-section social">
           <h4>Follow Us</h4>
           <div className="social-icons">
-            <a href="https://facebook.com">
-              <FaFacebookF />
-            </a>
             <a href="https://instagram.com">
               <FaInstagram />
+            </a>
+            <a href="https://wa.me/9865980220">
+              <FaWhatsapp />
             </a>
           </div>
         </div>

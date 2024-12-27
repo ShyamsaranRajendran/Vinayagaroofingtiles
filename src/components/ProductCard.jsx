@@ -46,7 +46,7 @@ export default function ProductCard({
 Could you share more details and assist with the purchase? 😊`
   );
 
-  const whatsappLink = `https://wa.me/+9865980220?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
   const isRemoteImage = image.startsWith("http") || image.startsWith("data");
 
   // Image loading handlers
@@ -59,11 +59,7 @@ Could you share more details and assist with the purchase? 😊`
   return (
     <div className={`product-card ${isVisible ? "fade-in" : ""}`}>
       <div className="product-card-image-container">
-        {isLoading && (
-          <div class="loader-container">
-            <div class="loader"></div>
-          </div>
-        )}
+        {isLoading && <div class="loader-product"></div>}
         {hasError && (
           <div className="image-error-placeholder">
             <span>Image not available</span>

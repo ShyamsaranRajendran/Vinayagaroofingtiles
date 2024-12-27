@@ -25,7 +25,7 @@ export default function Products() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  // Load filters from localStorage on mount
+
   useEffect(() => {
     const savedCategory = localStorage.getItem("categoryFilter") || "all";
     const savedSearchQuery = localStorage.getItem("searchQuery") || "";

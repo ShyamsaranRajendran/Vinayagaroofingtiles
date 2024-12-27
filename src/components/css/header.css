@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--background-color-1, rgba(244, 244, 244, 0.8));
+  background: var(--background-color-header, rgba(244, 244, 244, 0.8));
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   font-style: normal;
@@ -19,9 +19,7 @@
 
 .header-container {
   color: var(--header-text, rgb(80, 80, 80));
-  padding: 0.7rem 2rem;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding: 0.7rem 2rem 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,19 +32,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto; /* Container retains flexibility */
-  max-width: 200px; /* Keeps container size fixed */
+  width: auto;
+  max-width: 200px;
   text-align: center;
   position: relative;
-  overflow: visible; /* Allows the image to exceed the container */
+  overflow: visible;
 }
 
 .header-brand-link img {
-  width: 170px; /* Makes the image larger than the container */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: contain; /* Prevents distortion */
-  position: relative; /* Ensures the image stays in flow */
-  transform: translateY(-10%); /* Adjust position if needed for alignment */
+  width: 170px;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  transform: translateY(-10%);
 }
 
 .header-brand-link:focus {
@@ -58,18 +56,17 @@
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
-  display: none; /* Hide by default */
+  display: none;
   align-items: center;
   justify-content: center;
 }
 
-/* Hamburger Icon */
 .hamburger-icon span {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px 0;
-  background-color:var( --ham-white-color, #000000);
+  background-color: var(--ham-white-color, #000000);
   transition: all 0.3s ease;
 }
 
@@ -83,7 +80,6 @@
 .header-menu {
   display: flex;
   gap: 2.5rem;
-
   list-style: none;
   margin: 0;
   padding: 0;
@@ -106,7 +102,7 @@
   color: var(--link-hover-color, rgb(73, 73, 73));
   background-color: #C2B280;
 }
-/* Container for both buttons */
+
 .dark-options {
   position: fixed;
   bottom: 50px;
@@ -123,81 +119,93 @@
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  padding: 1rem; /* Adjusting padding for consistent button size */
+  padding: 1rem;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease; /* Smooth transition for both size and color */
+  transition: all 0.3s ease;
   opacity: 0.8;
   width: 50px;
-  height: 50px; /* Equal width and height for consistency */
+  height: 50px;
 }
 
-/* Dark mode button styling */
 .dark-mode-toggle {
-  background-color: var(--dark-bg, #fff); /* Light background for dark mode */
-  color: var(--dark-text, #333); /* Dark text color for dark mode */
+  background-color: var(--dark-bg, #fff);
+  color: var(--dark-text, #333);
 }
 
-/* Scroll to top button styling */
 .scroll-to-top-btn {
-  background-color: var(--scroll-to-top-bg, #fff); /* Light background */
-  color: var(--scroll-to-top-text, #333); /* Dark text for normal mode */
+  background-color: var(--scroll-to-top-bg, #fff);
+  color: var(--scroll-to-top-text, #333);
 }
 
-/* Hover effect for both buttons */
 .dark-mode-toggle:hover,
 .scroll-to-top-btn:hover {
   opacity: 1;
-  transform: scale(1.1); /* Slight scaling effect */
+  transform: scale(1.1);
 }
 
-/* Button colors for Dark Mode */
 body.dark-mode .dark-mode-toggle {
-  background-color: #333; /* Dark background */
-  color: #fff; /* White text */
+  background-color: #333;
+  color: #fff;
 }
 
 body.dark-mode .scroll-to-top-btn {
-  background-color: #333; /* Dark background */
-  color: #fff; /* White text */
+  background-color: #333;
+  color: #fff;
 }
 
 body.dark-mode .scroll-to-top-btn:hover {
   opacity: 1;
-  transform: scale(1.1); /* Scaling effect on hover */
+  transform: scale(1.1);
 }
 
+.whitelogo{
+ display: block;
+}
 
-/* Media Queries */
+.darklogo{
+   display: none;
+}
+
+body.dark-mode .darklogo{
+  display: block;
+    width: 160px;
+
+}
+
+body.dark-mode .whitelogo{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .header-menu {
-  display: none; /* Hidden by default */
-  flex-direction: column; /* Stack items vertically */
-  align-items: flex-start; /* Align items to the left inside the container */
-  justify-content: center; /* Center items vertically within the container */
-  position: absolute; /* Positioned relative to the container */
-  top: 30%; /* Aligns below the header container */
-  right: 0; /* Aligns the menu to the right edge */
-  background: var(--background-color, rgba(255, 255, 255, 0.8));
-  width: 50%; /* Adjusts menu width */
-  padding: 1rem;
-  border-radius: 1rem;
-  z-index: 1000;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-  transform: translateX(100%); /* Initially off-screen */
-  transition: transform 0.3s ease-in-out;
-}
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    background: var(--background-color, rgba(255, 255, 255, 0.8));
+    width: 50%;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 1000;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
 
-.header-menu.open {
-  display: flex; /* Make menu visible */
-  transform: translateX(0); /* Slide menu into view */
-}
+  .header-menu.open {
+    display: flex;
+    transform: translateX(0);
+  }
 
   .header-menu-icon {
-    display: block; /* Show hamburger on small screens */
+    display: block;
     position: absolute;
     right: 1rem;
     top: 1.4rem;
@@ -210,21 +218,16 @@ body.dark-mode .scroll-to-top-btn:hover {
 
   .header-link {
     font-size: 1rem;
-    margin-bottom: 1rem; /* Spacing between links */
-  }
-
-  .footer-container p {
-    font-size: 0.75rem;
+    margin-bottom: 1rem;
   }
 }
 
 @media (min-width: 769px) {
   .header-menu-icon {
-    display: none; /* Hide hamburger on larger screens */
+    display: none;
   }
 }
 
-/* Dark Mode Styling */
 body.dark-mode {
   --header-text: #eee;
   --brand-color: #4ade80;
@@ -233,16 +236,16 @@ body.dark-mode {
   --menu-background: rgb(44, 44, 44);
   --menu-icon-color: rgba(12, 11, 11, 0.6);
   --link-color: #fff;
+  --background-color-header: rgb(27, 27, 27); 
   --link-hover-color: #4ade80;
   --footer-bg: #1a1a1a;
   --footer-text: #aaa;
 }
 
-body.dark-mode .header-container{
+body.dark-mode .header-container {
   border-bottom: solid 1px white;
 }
 
-body.dark-mode .footer-container{
+body.dark-mode .footer-container {
   border-top: solid 1px white;
 }
-

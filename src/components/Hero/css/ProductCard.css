@@ -6,15 +6,33 @@
   box-sizing: border-box;
 }
 
-.loader-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: inherit;
-    height: inherit;
-    background-color: #f9f9f9; /* Optional: light background */
+.product-card-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* To allow absolute positioning of the loader */
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9; /* Optional background for better visibility */
 }
 
+.loader-product {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid yellow; /* Yellow spinner */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 100000000000000000000;
+  animation: spin 1s linear infinite;
+  position: absolute; /* Ensures it stays in the center */
+}
+
+.image-error-placeholder {
+  position: absolute;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
 
 /* Animation for spinning */
 @keyframes spin {
