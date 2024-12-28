@@ -13,24 +13,6 @@ const products = [
     tag: "New",
   },
   {
-    id: 2,
-    name: "Leviosa",
-    description: "Comfortable lounge chair",
-    price: 3500000,
-    image:
-      "https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-2.jpeg?raw=true",
-    tag: "Premium",
-  },
-  {
-    id: 3,
-    name: "Sirius",
-    description: "Modern office chair",
-    price: 4500000,
-    image:
-      "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-a.jpeg?raw=true",
-    tag: "Best Seller",
-  },
-  {
     id: 4,
     name: "Nimbus",
     description: "Elegant dining chair",
@@ -47,24 +29,6 @@ const products = [
     image:
       "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-d.jpeg?raw=true",
     tag: "Limited Stock",
-  },
-  {
-    id: 6,
-    name: "Vega",
-    description: "Ergonomic gaming chair",
-    price: 6000000,
-    image:
-      "https://github.com/VinayagaRoofing/Images/blob/master/concrete-jali/white-leaf.png?raw=true",
-    tag: "Popular",
-  },
-  {
-    id: 7,
-    name: "Luna",
-    description: "Comfortable reading chair",
-    price: 2200000,
-    image:
-      "https://github.com/VinayagaRoofing/Images/blob/master/concrete-jali/white-3.jpeg?raw=true",
-    tag: "Classic",
   },
   {
     id: 8,

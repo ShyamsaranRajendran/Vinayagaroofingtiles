@@ -7,7 +7,7 @@ const roofingCategories = [
   },
   {
     title: "Clay False Ceiling Tiles",
-    image: "/images/cat/cat-ceil.jpeg",
+    image: "/images/cat/ccc.webp",
   },
   {
     title: "Concrete Roofing Tiles",
