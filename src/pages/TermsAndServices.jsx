@@ -1,10 +1,9 @@
 import React from "react";
-import "./css/TermsAndServices.css";
 
 const TermsAndServices = () => {
   return (
-    <div className="terms-container">
-      <h1>Terms and Conditions</h1>
+    <div className="terms-container p-6 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <h1 className="text-2xl font-bold mb-4">Terms and Conditions</h1>
       <p>Welcome to Vinayaga Roofing Tiles!</p>
       <p>
         These Terms and Conditions ("Terms") govern the use of our website and
@@ -13,15 +12,15 @@ const TermsAndServices = () => {
         Terms.
       </p>
 
-      <h2>1. Products Offered</h2>
+      <h2 className="text-xl font-semibold mt-6">1. Products Offered</h2>
       <p>
         We provide a variety of roofing tiles and jaali in different designs and
         categories to meet your needs. For more information or to place an
         order, contact us directly.
       </p>
 
-      <h2>2. Order Process</h2>
-      <ul>
+      <h2 className="text-xl font-semibold mt-6">2. Order Process</h2>
+      <ul className="list-disc ml-6">
         <li>All orders must be placed via WhatsApp or phone.</li>
         <li>
           Product availability and pricing will be confirmed during the order
@@ -33,7 +32,7 @@ const TermsAndServices = () => {
         </li>
       </ul>
 
-      <h2>3. Payment Terms</h2>
+      <h2 className="text-xl font-semibold mt-6">3. Payment Terms</h2>
       <p>
         - Payments are handled offline and as per the agreement with the
         customer.
@@ -43,8 +42,8 @@ const TermsAndServices = () => {
         <br />- Customers are responsible for making timely payments as agreed.
       </p>
 
-      <h2>4. Delivery and Pickup</h2>
-      <ul>
+      <h2 className="text-xl font-semibold mt-6">4. Delivery and Pickup</h2>
+      <ul className="list-disc ml-6">
         <li>
           Delivery charges, if applicable, will be communicated during the order
           discussion.
@@ -59,7 +58,7 @@ const TermsAndServices = () => {
         </li>
       </ul>
 
-      <h2>5. Returns and Refunds</h2>
+      <h2 className="text-xl font-semibold mt-6">5. Returns and Refunds</h2>
       <p>
         - Returns are accepted only for damaged or defective products, reported
         within 24 hours of delivery.
@@ -69,7 +68,7 @@ const TermsAndServices = () => {
         refund or exchange.
       </p>
 
-      <h2>6. Product Information</h2>
+      <h2 className="text-xl font-semibold mt-6">6. Product Information</h2>
       <p>
         - We strive to ensure accurate product descriptions and images on our
         website.
@@ -77,7 +76,7 @@ const TermsAndServices = () => {
         lighting and manufacturing processes.
       </p>
 
-      <h2>7. Customer Responsibility</h2>
+      <h2 className="text-xl font-semibold mt-6">7. Customer Responsibility</h2>
       <p>
         - Customers must verify product details and ensure suitability before
         placing an order.
@@ -85,28 +84,31 @@ const TermsAndServices = () => {
         selection.
       </p>
 
-      <h2>8. Privacy</h2>
+      <h2 className="text-xl font-semibold mt-6">8. Privacy</h2>
       <p>
         - Any personal information provided will be used solely for order
         processing and communication.
         <br />- We do not share customer information with third parties.
       </p>
 
-      <h2>9. Changes to Terms</h2>
+      <h2 className="text-xl font-semibold mt-6">9. Changes to Terms</h2>
       <p>
         - We reserve the right to update these Terms at any time. Updates will
         be reflected on this page, and customers are encouraged to review the
         Terms periodically.
       </p>
 
-      <h2>10. Contact Us</h2>
+      <h2 className="text-xl font-semibold mt-6">10. Contact Us</h2>
       <p>
         If you have any questions or wish to place an order, please contact us:
         <br />
         - WhatsApp/Phone: (+91) 98659 80220
         <br />
         - Address: 177, Sathy Rd, Opp. Bus Stand, Erode, Tamil Nadu 638003
-        <br />- Email: vinayagaroofingtiles@gmail.com
+        <br />- Email:{" "}
+        <a href="mailto:vinayagaroofingtiles@gmail.com">
+          vinayagaroofingtiles@gmail.com
+        </a>
       </p>
     </div>
   );

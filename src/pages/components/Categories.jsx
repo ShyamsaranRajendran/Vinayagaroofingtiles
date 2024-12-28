@@ -64,9 +64,9 @@ export function Categories() {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl font-semibold text-center mb-12 text-gray-800 dark:text-gray-100">
           Explore Our Roofing Categories
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -79,10 +79,10 @@ export function Categories() {
                   : "opacity-0 translate-y-10"
               } transition-all duration-500`}
             >
-              <div className="relative h-[250px] overflow-hidden rounded-lg shadow-md bg-gray-200 flex items-center justify-center">
+              <div className="relative h-[250px] overflow-hidden rounded-lg shadow-md bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
                 {/* Show spinner only when the image is not loaded */}
                 {!imageLoaded[index] && (
-                  <div className="w-10 h-10 border-4 border-gray-300 border-t-gray-800 rounded-full animate-spin"></div>
+                  <div className="w-10 h-10 border-4 border-gray-300 border-t-gray-800 dark:border-gray-700 dark:border-t-gray-400 rounded-full animate-spin"></div>
                 )}
                 {/* Image that becomes visible when loaded */}
                 <img
@@ -94,7 +94,7 @@ export function Categories() {
                   }`}
                 />
               </div>
-              <h3 className="mt-4 text-xl font-medium text-center text-gray-700">
+              <h3 className="mt-4 text-xl font-medium text-center text-gray-700 dark:text-gray-200">
                 {category.title}
               </h3>
             </div>

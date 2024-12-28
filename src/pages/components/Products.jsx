@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Heart, ShoppingCart } from "lucide-react";
-import { FaWhatsapp, FaArrowLeft } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const products = [
   {
@@ -10,7 +10,7 @@ const products = [
     price: 2500000,
     image:
       "https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-7.png?raw=true",
-    tag: "New",
+    tag: "Hot Deal",
   },
   {
     id: 4,
@@ -42,28 +42,31 @@ const products = [
 ];
 
 export function Products() {
-  // Retrieve favorites from localStorage on component mount
   const [favorites, setFavorites] = useState(() => {
     const savedFavorites = localStorage.getItem("favorites");
     return savedFavorites ? JSON.parse(savedFavorites) : [];
   });
 
-  // Function to toggle favorite status
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme ? savedTheme : "dark"; // Default to dark
+  });
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   const handleFavoriteToggle = (productId) => {
     let updatedFavorites;
     if (favorites.includes(productId)) {
-      // Remove from favorites
       updatedFavorites = favorites.filter((id) => id !== productId);
     } else {
-      // Add to favorites
       updatedFavorites = [...favorites, productId];
     }
     setFavorites(updatedFavorites);
-    // Save updated favorites to localStorage
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
   };
 
-  // Function to create WhatsApp link (your existing function)
   const createWhatsappLink = (product) => {
     const productPageLink = `${
       window.location.origin
@@ -75,16 +78,16 @@ export function Products() {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-semibold text-center mb-12">
+        <h2 className="text-2xl font-semibold text-center text-gray-900 dark:text-white mb-12">
           Our Products
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="relative group">
                 <img
@@ -95,42 +98,32 @@ export function Products() {
                 {product.tag && (
                   <span
                     className={`absolute top-4 right-4 ${
-                      product.tag === "New" ? "bg-green-500" : "bg-red-500"
+                      product.tag === "New"
+                        ? "bg-green-500"
+                        : product.tag === "Hot Deal"
+                        ? "bg-red-500"
+                        : "bg-yellow-500"
                     } text-white px-2 py-1 rounded-md text-sm`}
                   >
                     {product.tag}
                   </span>
                 )}
                 <div className="absolute bottom-4 right-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button
-                    className="bg-white p-2 rounded-full shadow-md hover:bg-gray-100"
-                    onClick={() => handleFavoriteToggle(product.id)} // Add favorite toggle function
-                  >
-                    <Heart
-                      className={`w-5 h-5 ${
-                        favorites.includes(product.id)
-                          ? "text-red-500"
-                          : "text-gray-500"
-                      }`}
-                    />
-                  </button>
-                  <button className="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                  
+                  <button className="bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-300 dark:hover:bg-gray-600">
                     <a
                       href={createWhatsappLink(product)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition"
                     >
                       <FaWhatsapp className="w-5 h-5" />
-                      <span>Contact on WhatsApp</span>
+                      <span>Contact via WhatsApp</span>
                     </a>
                   </button>
                 </div>
               </div>
-              {/* <div className="p-4">
-                <h3 className="font-medium">{product.name}</h3>
-                <p className="text-sm text-gray-500">{product.description}</p>
-              </div> */}
+             
             </div>
           ))}
         </div>

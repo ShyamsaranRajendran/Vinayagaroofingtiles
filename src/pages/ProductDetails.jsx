@@ -18,13 +18,14 @@ export default function ProductDetails() {
     window.scrollTo(0, 0);
   }, [id]);
 
-  const handleBack = () => {
-    if (window.history.length > 1) {
-      navigate("/products");
-    } else {
-      navigate("/products"); // Fallback to home page or previous page
-    }
-  };
+ const handleBack = () => {
+   if (window.history.length > 1) {
+     navigate(-1); // Navigate to the previous page
+   } else {
+     navigate("/products"); // Fallback to the landing page
+   }
+ };
+
 
   const handleImageLoad = (productId) => {
     setRecommendedImageLoaded((prevState) => ({
@@ -112,7 +113,7 @@ export default function ProductDetails() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition"
             >
               <FaWhatsapp className="w-5 h-5" />
-              Contact on WhatsApp
+              Contact via WhatsApp
             </a>
           </div>
         </div>

@@ -106,7 +106,6 @@ export default function Products() {
             style={{
               padding: "8px 12px",
               borderRadius: "8px",
-              border: "1px solid #ddd",
               fontSize: "16px",
             }}
           />

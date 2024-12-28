@@ -10,33 +10,8 @@ import TermsAndServices from "./pages/TermsAndServices";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import "./App.css";
 import logodp from "./assets/logo.svg"
-const SplashScreen = () => {
-  const brands = [
-    "Chitra Ceramic",
-    "Swastik Tiles",
-    "Thomson Tile",
-    "Wiener Berger Bricks",
-    "Pionnier Roof Tile",
-    "Nuvocotto Clay Roof Tile",
-    "Topco Ceramic Tiles",
-  ];
+import SplashScreen from "./pages/SplashScreen";
 
-  return (
-    <div className="splash-screen">
-      <div className="poper">
-        <img src={logodp} alt="dp"></img>
-      </div>
-      <h1>Welcome to Vinayaga Roofing Tiles</h1>
-      <div className="brand-list">
-        {brands.map((brand, index) => (
-          <div key={index} className="brand-item">
-            {brand}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

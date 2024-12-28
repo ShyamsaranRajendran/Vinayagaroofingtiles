@@ -57,12 +57,12 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about-page py-16 bg-gray-50">
+    <div className="about-page py-16 bg-gray-50 dark:bg-gray-900">
       <div className="about-container max-w-6xl mx-auto px-6">
-        <h1 className="about-title text-3xl font-bold text-center text-gray-800 mb-6">
+        <h1 className="about-title text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-6">
           About
         </h1>
-        <p className="about-description text-lg text-center text-gray-600 mb-8">
+        <p className="about-description text-lg text-center text-gray-600 dark:text-gray-400 mb-8">
           Since 1998,{" "}
           <span className="text-blue-500 font-semibold">Vinayaga Roofing</span>{" "}
           has been the leading provider of premium roofing solutions. We take
@@ -74,24 +74,26 @@ const About = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="stat-card bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="stat-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:hover:shadow-2xl"
             >
-              <stat.icon className="stat-icon text-4xl text-blue-500 mb-4" />
-              <div className="stat-value text-3xl font-semibold text-gray-800">
+              <stat.icon className="stat-icon text-4xl text-blue-500 dark:text-blue-400 mb-4" />
+              <div className="stat-value text-3xl font-semibold text-gray-800 dark:text-gray-200">
                 {counts[index]}
                 {stat.label === "Customer Satisfaction (%)" ? "%" : "+"}
               </div>
-              <div className="stat-label text-sm text-gray-500">
+              <div className="stat-label text-sm text-gray-500 dark:text-gray-400">
                 {stat.label}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="about-story bg-white p-8 rounded-lg shadow-lg">
+        <div className="about-story bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
           <div className="story-content space-y-6">
-            <h2 className="text-2xl font-bold text-gray-800">Our Story</h2>
-            <p className="text-lg text-gray-600">
+            <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
+              Our Story
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400">
               What started as a small family business has grown into one of the
               most trusted names in roofing. Founded{" "}
               <span className="text-blue-500 font-semibold">38 years ago</span>{" "}
@@ -101,10 +103,10 @@ const About = () => {
               </span>
               , we focus on using only branded products.
             </p>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-gray-400">
               We are proud to feature popular brands like:
             </p>
-            <ul className="brand-list list-disc pl-6 text-gray-600">
+            <ul className="brand-list list-disc pl-6 text-gray-600 dark:text-gray-400">
               {[
                 "Chitra Ceramic",
                 "Swastik Tiles",
@@ -119,7 +121,7 @@ const About = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-gray-400">
               We are proud to be a{" "}
               <span className="text-blue-500 font-semibold">
                 <a

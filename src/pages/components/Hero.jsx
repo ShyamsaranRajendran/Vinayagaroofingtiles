@@ -72,7 +72,7 @@ export function Hero() {
   };
 
   return (
-    <div className="relative bg-gradient-to-r from-blue-100 via-white to-blue-50">
+    <div className="relative bg-gradient-to-r from-blue-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content Section */}
@@ -83,13 +83,13 @@ export function Hero() {
             animate="visible"
           >
             <motion.span
-              className="text-blue-600 font-medium"
+              className="text-blue-400 font-medium dark:text-blue-300"
               variants={itemVariants}
             >
               Welcome to Vinayaga Roofing Tiles!
             </motion.span>
             <motion.h1
-              className="text-4xl md:text-5xl font-bold text-gray-900"
+              className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100"
               variants={itemVariants}
             >
               Discover Premium
@@ -97,14 +97,14 @@ export function Hero() {
               Roofing Solutions
             </motion.h1>
             <motion.p
-              className="text-gray-600 max-w-md"
+              className="text-gray-700 max-w-md dark:text-gray-200"
               variants={itemVariants}
             >
               Protect and beautify your home with our wide range of durable and
               stylish roofing tiles.
             </motion.p>
             <motion.button
-              className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors"
+              className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
               variants={itemVariants}
             >
               Explore Now

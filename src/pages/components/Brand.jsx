@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 
-// Array of brand logos
 const brandLogos = [
   "/images/brand/aqua.svg",
   "/images/brand/natural-tile.svg",
@@ -12,17 +11,15 @@ const brandLogos = [
   "/images/brand/Rockshield.svg",
 ];
 
-// Brand component using react-slick
 export function Brand() {
-  // Slider settings for infinite, smooth scrolling
   const settings = {
-    infinite: true, // Infinite loop
-    speed: 500, // Transition speed
-    slidesToShow: 4, // Number of items visible
-    slidesToScroll: 1, // Number of items to scroll at once
-    autoplay: true, // Autoplay enabled
-    autoplaySpeed: 2000, // Speed of autoplay (2000 ms = 2 seconds)
-    pauseOnHover: true, // Pause autoplay when hovering over the carousel
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -46,9 +43,9 @@ export function Brand() {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-center mb-8 text-gray-800">
+        <h2 className="text-3xl font-semibold text-center mb-8 text-gray-800 dark:text-gray-100">
           Trusted Brands We Work With
         </h2>
         {/* Slider component */}
@@ -56,7 +53,7 @@ export function Brand() {
           {brandLogos.map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-6 border rounded-lg shadow-md bg-gray-50 hover:bg-gray-100 transition"
+              className="flex items-center justify-center p-6 border rounded-lg shadow-md bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
             >
               <img
                 src={logo}
