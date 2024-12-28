@@ -1,75 +1,82 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import Map from '../assets/map.png';
-import './css/contact.css'
+import Map from "../assets/map.png";
+
 export default function Contact() {
   return (
-    <div className="contact-container">
-      <div className="contact-wrapper">
-        <div className="contact-header">
-          <h1 className="contact-title">Contact Us</h1>
-          <p className="contact-description">
-            Have questions? We'd love to hear from you. Send us a message and
+    <div className="bg-gray-50 py-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-10">
+          <h1 className="text-3xl font-bold text-gray-800">Contact Us</h1>
+          <p className="mt-4 text-gray-600">
+            Have questions? We'd love to hear from you. Send us a message, and
             we'll respond as soon as possible.
           </p>
         </div>
 
-        <div className="contact-grid">
-          <div className="contact-info">
-            <h3 className="contact-info-title">Contact Information</h3>
-            <div className="contact-info-list">
-              <div className="contact-info-item">
-                <MapPin className="contact-icon" />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Contact Information */}
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              Contact Information
+            </h3>
+            <ul className="space-y-6">
+              <li className="flex items-start">
+                <MapPin className="w-6 h-6 text-blue-500 mr-4" />
                 <div>
-                  <p className="contact-info-label">Address</p>
-                  <p className="contact-info-text">
+                  <p className="font-medium text-gray-700">Address</p>
+                  <p className="text-gray-600">
                     177, Sathy Rd, opp. Bus Stand, Erode, Tamil Nadu 638003
                   </p>
                 </div>
-              </div>
-              <div className="contact-info-item">
-                <Phone className="contact-icon" />
+              </li>
+              <li className="flex items-start">
+                <Phone className="w-6 h-6 text-green-500 mr-4" />
                 <div>
-                  <p className="contact-info-label">Phone</p>
-                  <p className="contact-info-text">(+91) 98659 80220</p>
+                  <p className="font-medium text-gray-700">Phone</p>
+                  <p className="text-gray-600">(+91) 98659 80220</p>
                 </div>
-              </div>
-              <div className="contact-info-item">
-                <Mail className="contact-icon" />
+              </li>
+              <li className="flex items-start">
+                <Mail className="w-6 h-6 text-red-500 mr-4" />
                 <div>
-                  <p className="contact-info-label">Email</p>
-                  <p className="contact-info-text">
+                  <p className="font-medium text-gray-700">Email</p>
+                  <p className="text-gray-600">
                     <a
                       href="mailto:vinayagaroofingtiles@gmail.com"
-                      className="contact-info-email-link"
+                      className="text-blue-500 hover:underline"
                     >
                       vinayagaroofingtiles@gmail.com
                     </a>
                   </p>
                 </div>
-              </div>
-              <div className="contact-info-item">
-                <Clock className="contact-icon" />
+              </li>
+              <li className="flex items-start">
+                <Clock className="w-6 h-6 text-yellow-500 mr-4" />
                 <div>
-                  <p className="contact-info-label">Hours</p>
-                  <p className="contact-info-text">
+                  <p className="font-medium text-gray-700">Hours</p>
+                  <p className="text-gray-600">
                     Monday - Friday: 9:00 AM - 6:00 PM
                   </p>
-                  <p className="contact-info-text">
-                    Saturday: 10:00 AM - 4:00 PM
-                  </p>
+                  <p className="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
 
-          <div className="map">
+          {/* Map */}
+          <div className="overflow-hidden rounded-lg shadow-lg">
             <a
               href="https://www.google.com/maps/place/Vinayaga+Timbers+Pvt/@11.3474741,77.721128,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba96f378e01f547:0x26fc8eb30000000!8m2!3d11.3474741!4d77.721128!16s%2Fg%2F11s0fl727b?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Map} alt="Map" />
+              <img
+                src={Map}
+                alt="Map"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
             </a>
           </div>
         </div>

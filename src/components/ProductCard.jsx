@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Info } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import flooringTile from "../assets/flooring.png";
-import "./Hero/css/ProductCard.css";
-import { RiFlag2Fill } from "react-icons/ri";
 
 export default function ProductCard({
   id,
@@ -17,8 +14,7 @@ export default function ProductCard({
 }) {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); // Loading state for the image
-  const [hasError, setHasError] = useState(false); // Error state for the image
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -31,75 +27,65 @@ export default function ProductCard({
     window.location.origin
   }/product/${encodeURIComponent(id)}`;
 
-  const goToProductPage = () => {
-    navigate(`/product/${encodeURIComponent(id)}`, {
-      state: { id, image, name, material, description, category, tag },
-    });
-  };
-
   const whatsappMessage = encodeURIComponent(
-    `Hi! I'm interested in the following product: 
-- Name: ${name}
-- Category: ${category} 
-- Material: ${material} 
-- Link: ${productPageLink}
-Could you share more details and assist with the purchase? 😊`
+    `Hi! I'm interested in the following product: \n- Category: ${category} \n- Material: ${material} \n- Link: ${productPageLink}\nCould you share more details and assist with the purchase? 😊`
   );
 
   const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
   const isRemoteImage = image.startsWith("http") || image.startsWith("data");
 
-  // Image loading handlers
-  const handleImageLoad = () => setIsLoading(false);
-  const handleImageError = () => {
-    setIsLoading(false);
-    setHasError(true);
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
   };
 
   return (
-    <div className={`product-card ${isVisible ? "fade-in" : ""}`}>
-      <div className="product-card-image-container">
-        {isLoading && <div class="loader-product"></div>}
-        {hasError && (
-          <div className="image-error-placeholder">
-            <span>Image not available</span>
+    <div
+      className={`p-4 border rounded-lg shadow-lg transform transition-all ${
+        isVisible ? "opacity-100" : "opacity-0"
+      } hover:shadow-xl hover:-translate-y-1 bg-white`}
+    >
+      {/* Image Container */}
+      <div className="relative aspect-square overflow-hidden rounded-lg bg-gray-100">
+        {/* Image Loader / Placeholder */}
+        {!isImageLoaded && (
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
+            <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
           </div>
         )}
         <img
-          src={isRemoteImage && !hasError ? image : flooringTile}
+          src={isRemoteImage ? image : flooringTile}
           alt={name}
-          className={`product-card-image ${isLoading ? "hidden" : ""}`}
+          className={`w-full h-full object-cover transition-transform duration-300 hover:scale-105 ${
+            isImageLoaded ? "opacity-100" : "opacity-0"
+          }`}
           onLoad={handleImageLoad}
-          onError={handleImageError}
         />
+        {/* Trending Badge */}
         {tag === "trending" && (
-          <div
-            className="product-card-trending-badge"
-            onClick={goToProductPage}
-            style={{ cursor: "pointer" }}
-          >
-            <span>Trending</span>
+          <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">
+            Trending
           </div>
         )}
-        <div className="product-card-overlay">
-          <button
-            className="product-card-zoom-btn bounce-animation"
-            onClick={goToProductPage}
-          >
-            <Info size={20} />
-          </button>
-        </div>
       </div>
 
-      <div className="product-card-content">
-        <h3 className="product-card-title fade-in-animation">{category}</h3>
+      {/* Content */}
+      <div className="mt-4">
+        {/* <h3 className="text-lg font-semibold text-gray-800">{id}</h3> */}
+        <p className="text-sm text-gray-500">{category}</p>
 
-        <div className="product-card-actions">
+        {/* Actions */}
+        <div className="mt-4 flex justify-between items-center">
+          <button
+            onClick={() => navigate(`/product/${id}`)}
+            className="text-blue-600 font-medium hover:underline"
+          >
+            View Details
+          </button>
           <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="product-card-add-to-cart-btn pulse-animation"
+            className="text-green-600 hover:text-green-800"
           >
             <FaWhatsapp size={20} />
           </a>

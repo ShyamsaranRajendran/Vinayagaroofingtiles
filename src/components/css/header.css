@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  height: 60px;
+  height: 90px;
   margin: 0 auto;
 }
 
@@ -99,7 +99,7 @@
 .header-link:hover,
 .header-link:active,
 .header-link:focus {
-  color: var(--link-hover-color, rgb(73, 73, 73));
+  /* color: var(--link-hover-color, rgb(73, 73, 73)); */
   background-color: #C2B280;
 }
 
@@ -181,6 +181,18 @@ body.dark-mode .whitelogo{
 }
 
 @media (max-width: 768px) {
+
+  .header-container {
+  color: var(--header-text, rgb(80, 80, 80));
+  padding: 0.7rem 2rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+}
+
   .header-menu {
     display: none;
     flex-direction: column;

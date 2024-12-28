@@ -98,20 +98,15 @@ body.dark-mode .about-page{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.story-image {
-  width: 90%;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
 .story-content {
   width: 100%;
+  text-align: center;
 }
 
 .story-content h2 {
   font-size: 28px;
   font-weight: bold;
+  text-align: center;
   color: #333;
   margin-bottom: 20px;
 }
@@ -119,6 +114,7 @@ body.dark-mode .about-page{
 .story-content p {
   font-size: 18px;
   line-height: 1.6;
+  text-align: center;
   color: #302f2f;
 }
 
@@ -184,15 +180,3 @@ body.dark-mode .brand-list li:hover {
   color: #25d366;
 }
 
-@media (min-width: 768px) {
-  
-}
-
-@media (max-width: 480px) {
-.highlight {
-  font-size: 22px ;
-}
-.highlight a{
-  font-size: 22px ;
-}
-}

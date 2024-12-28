@@ -8,21 +8,9 @@ import Contact from "./pages/Contact";
 import ProductDetails from "./pages/ProductDetails";
 import TermsAndServices from "./pages/TermsAndServices";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Lottie from "react-lottie";
-import loaderAnimation from "./assets/loader.json"; // Adjust path if needed
 import "./App.css";
 import logodp from "./assets/logo.svg"
 const SplashScreen = () => {
-
-   const loaderOptions = {
-    loop: true, // Infinite loop
-    autoplay: true, // Start playing as soon as possible
-    animationData: loaderAnimation, // Lottie animation data
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice", // Ensure the aspect ratio is maintained
-    }
-  }
-
   const brands = [
     "Chitra Ceramic",
     "Swastik Tiles",
@@ -37,8 +25,6 @@ const SplashScreen = () => {
     <div className="splash-screen">
       <div className="poper">
         <img src={logodp} alt="dp"></img>
-        <Lottie options={loaderOptions} height={150} width={150} />
-     
       </div>
       <h1>Welcome to Vinayaga Roofing Tiles</h1>
       <div className="brand-list">
