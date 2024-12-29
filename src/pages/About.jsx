@@ -94,7 +94,7 @@ const About = () => {
               Our Story
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              What started as a small family business has grown into one of the
+              We started as a small family business has grown into one of the
               most trusted names in roofing. Founded{" "}
               <span className="text-blue-500 font-semibold">38 years ago</span>{" "}
               by Paramasivam, and now maintained by{" "}

@@ -9,21 +9,21 @@ const products = [
     tag: "Hot Deal",
   },
   {
-    id: 19,
+    id: 15,
     image:
-      "https://github.com/VinayagaRoofing/Images/blob/master/concrete/con4.jpeg?raw=true",
+      "https://github.com/VinayagaRoofing/Images/blob/master/clay/clay-123-removebg-preview.png?raw=true",
     tag: "Hot Deal",
   },
   {
-    id: 34,
+    id: 5,
     image:
-      "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-d.jpeg?raw=true",
+      "https://github.com/VinayagaRoofing/Images/blob/master/concrete/concrete-3.png?raw=true",
     tag: "Limited Stock",
   },
   {
-    id: 51,
+    id: 52,
     image:
-      "https://github.com/VinayagaRoofing/Images/blob/master/upvc-rain-gutter/upvc-1.jpeg?raw=true",
+      "https://github.com/VinayagaRoofing/Images/blob/master/upvc-rain-gutter/upvc-2.jpeg?raw=true",
     tag: "Premium",
   },
 ];
@@ -62,7 +62,7 @@ export function Products() {
     <section className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-semibold text-center text-gray-900 dark:text-white mb-12">
-          Our Products
+          Best Selling Products
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product) => (

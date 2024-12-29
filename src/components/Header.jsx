@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo-cropped.svg";
 import "./css/header.css";
 import Whitelogo from "../assets/white-logo.svg";
+import { Search, X } from "lucide-react";
 
 function Header({ menuOpen, toggleMenu }) {
   const [darkMode, setDarkMode] = useState(false);
@@ -82,24 +83,35 @@ function Header({ menuOpen, toggleMenu }) {
             <img
               src={logo}
               alt="logo"
-              className=" h-14 object-contain dark:hidden" // Reduced size
+              className=" h-14 object-contain dark:hidden"
             />
             {/* Dark Mode Logo */}
             <img
               src={Whitelogo}
               alt="dark logo"
-              className="hidden  h-14 object-contain dark:block" // Reduced size
+              className="hidden  h-14 object-contain dark:block"
             />
           </Link>
         </div>
-        <nav className="relative">
+        <nav className="relative" ref={menuRef}>
           <button
-            className="text-xl md:hidden focus:outline-none" // Decreased font size
+            className="text-xxl md:hidden focus:outline-none"
             onClick={() => toggleMenu(!menuOpen)}
             aria-label="Toggle Menu"
           >
             {menuOpen ? (
-              <span className="text-red-600">&times;</span>
+              <span
+                className="text-red-600"
+                style={{
+                  position: "absolute",
+                  top: "1.5rem",
+                  right: "1.8rem",
+                  zIndex: 50000,
+                }}
+              >
+                {" "}
+                <X size={22} />
+              </span>
             ) : (
               <div className="flex flex-col gap-1">
                 <span className="block w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
@@ -109,14 +121,14 @@ function Header({ menuOpen, toggleMenu }) {
             )}
           </button>
           <ul
-            className={`absolute top-full right-0 bg-white dark:bg-gray-800 shadow-lg w-48 py-4 rounded-lg md:static md:flex md:gap-8 md:shadow-none md:w-auto md:py-0 md:bg-transparent md:dark:bg-transparent transition-transform duration-300 ${
+            className={`absolute top-0 right-0 bg-white dark:bg-gray-800 shadow-lg w-56 py-4 rounded-lg md:static md:flex md:gap-8 md:shadow-none md:w-auto md:py-0 md:bg-transparent md:dark:bg-transparent transition-transform duration-300 ${
               menuOpen ? "block" : "hidden md:flex"
             }`}
           >
             <li>
               <Link
                 to="/"
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
+                className="block px-4 py-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
                 onClick={closeMenu}
               >
                 Home
@@ -125,7 +137,7 @@ function Header({ menuOpen, toggleMenu }) {
             <li>
               <Link
                 to="/products"
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
+                className="block px-4 py-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
                 onClick={closeMenu}
               >
                 Products
@@ -134,7 +146,7 @@ function Header({ menuOpen, toggleMenu }) {
             <li>
               <Link
                 to="/about"
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
+                className="block px-4 py-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
                 onClick={closeMenu}
               >
                 About
@@ -143,7 +155,7 @@ function Header({ menuOpen, toggleMenu }) {
             <li>
               <Link
                 to="/contact"
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
+                className="block px-4 py-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
                 onClick={closeMenu}
               >
                 Contact

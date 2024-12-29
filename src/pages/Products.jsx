@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Lottie from "react-lottie";
-import { Search, X } from "lucide-react";
+import { X } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
 import NoProducts from "./NoProducts.jsx";
@@ -85,7 +85,7 @@ export default function Products() {
   };
 
   return (
-    <div className="p-4">
+    <div className="mt-4 p-4">
       {/* Search Bar */}
       <div className="flex flex-col gap-4">
         <div
@@ -110,7 +110,7 @@ export default function Products() {
           {searchQuery && (
             <button
               onClick={clearSearch}
-              className="text-gray-500"
+              className="text-red-600"
               style={{
                 background: "none",
                 border: "none",
@@ -125,27 +125,25 @@ export default function Products() {
 
         {/* Suggested Keywords */}
         <div className="text-sm text-gray-500">
-          <p>Try using these keywords:</p>
+          <p className="py-2">Try using these keywords:</p>
           <ul className="flex gap-3 flex-wrap">
-            {["UPVC", "Ceramic", "Clay", "Jali"].map(
-              (keyword, index) => (
-                <li
-                  key={index}
-                  onClick={() => handleKeywordClick(keyword)}
-                  className="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline transition-all px-2 py-1 rounded-full"
-                >
-                  {keyword}
-                </li>
-              )
-            )}
+            {["UPVC", "Ceramic", "Clay", "Jali"].map((keyword, index) => (
+              <li
+                key={index}
+                onClick={() => handleKeywordClick(keyword)}
+                className="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline transition-all px-2 py-1 rounded-full dark:border dark:border-gray-700 "
+              >
+                {keyword}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
 
       {/* Category Filter */}
-      <div className="mt-4">
+      <div className="relative mt-4">
         <select
-          className="w-full p-3 border rounded-lg bg-white shadow-md"
+          className="w-full p-3 px-5 border rounded-lg bg-white shadow-md appearance-none pr-10"
           value={categoryFilter}
           onChange={handleCategoryChange}
         >
@@ -156,6 +154,9 @@ export default function Products() {
             </option>
           ))}
         </select>
+        <span className="absolute top-1/2 right-4 transform -translate-y-1/2 pointer-events-none">
+          ▼
+        </span>
       </div>
 
       {/* Product Grid */}
@@ -165,7 +166,9 @@ export default function Products() {
             <ProductCard key={index} {...product} />
           ))
         ) : (
-          <NoProducts />
+          <div className="col-span-full flex justify-center items-center py-6">
+            <NoProducts />
+          </div>
         )}
       </div>
     </div>

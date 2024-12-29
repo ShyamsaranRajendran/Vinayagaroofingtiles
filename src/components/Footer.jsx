@@ -95,8 +95,10 @@ function Footer() {
               <FaInstagram size={20} />
             </a>
             <a
-              href="https://wa.me/9865980220"
+              href="https://wa.me/9865980220?text=Hello%20Vinayaga%20Roofing"
               className="text-gray-400 hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaWhatsapp size={20} />
             </a>
