@@ -1,40 +1,27 @@
-import React, { useState, useEffect } from "react";
-import { Heart, ShoppingCart } from "lucide-react";
+import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const products = [
   {
-    id: 1,
-    name: "Syltherine",
-    description: "Stylish cafe chair",
-    price: 2500000,
+    id: 40,
     image:
       "https://github.com/VinayagaRoofing/Images/blob/master/ceramic/cer-7.png?raw=true",
     tag: "Hot Deal",
   },
   {
-    id: 4,
-    name: "Nimbus",
-    description: "Elegant dining chair",
-    price: 2000000,
+    id: 19,
     image:
       "https://github.com/VinayagaRoofing/Images/blob/master/concrete/con4.jpeg?raw=true",
     tag: "Hot Deal",
   },
   {
-    id: 5,
-    name: "Aurora",
-    description: "Minimalist desk chair",
-    price: 3000000,
+    id: 34,
     image:
       "https://github.com/VinayagaRoofing/Images/blob/master/clay-false/clay-d.jpeg?raw=true",
     tag: "Limited Stock",
   },
   {
-    id: 8,
-    name: "Orion",
-    description: "Luxury recliner chair",
-    price: 8000000,
+    id: 51,
     image:
       "https://github.com/VinayagaRoofing/Images/blob/master/upvc-rain-gutter/upvc-1.jpeg?raw=true",
     tag: "Premium",
@@ -47,14 +34,8 @@ export function Products() {
     return savedFavorites ? JSON.parse(savedFavorites) : [];
   });
 
-  const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem("theme");
-    return savedTheme ? savedTheme : "dark"; // Default to dark
-  });
 
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+
 
   const handleFavoriteToggle = (productId) => {
     let updatedFavorites;
@@ -72,7 +53,7 @@ export function Products() {
       window.location.origin
     }/product/${encodeURIComponent(product.id)}`;
     const whatsappMessage = encodeURIComponent(
-      `Hi! I'm interested in the following product:\nName: ${product.name}\nDescription: ${product.description}\nPrice: ${product.price}\nLink: ${productPageLink}`
+      `Hi! I'm interested in the following product:\nLink: ${productPageLink}`
     );
     return `https://wa.me/+919865980220?text=${whatsappMessage}`;
   };

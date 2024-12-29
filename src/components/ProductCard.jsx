@@ -55,7 +55,7 @@ export default function ProductCard({
         <img
           src={isRemoteImage ? image : flooringTile}
           alt={name}
-          className={`w-full h-full object-cover transition-transform duration-300 hover:scale-105 ${
+          className={`w-full h-full object-cover transition-transform duration-300 hover:scale-175 ${
             isImageLoaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={handleImageLoad}

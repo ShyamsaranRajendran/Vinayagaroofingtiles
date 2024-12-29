@@ -71,30 +71,30 @@ function Header({ menuOpen, toggleMenu }) {
         showHeader ? "translate-y-0" : "-translate-y-full"
       } ${
         lastScrollY > 50
-          ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg"
-          : "bg-white dark:bg-gray-900 shadow-md"
+          ? "bg-white/80 dark:bg-gray-800/90 backdrop-blur-md shadow-lg"
+          : "bg-white dark:bg-gray-800 shadow-md"
       }`}
     >
-      <header className="flex items-center justify-between px-6 py-4">
+      <header className="flex items-center justify-between px-6 py-4 dark:shadow-md dark:border-b dark:border-gray-700">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             {/* Normal Logo (Light Mode) */}
             <img
               src={logo}
               alt="logo"
-              className="w-40 h-10 object-contain dark:hidden transform scale-150" // Zoomed-in by 1.5 times
+              className=" h-14 object-contain dark:hidden" // Reduced size
             />
             {/* Dark Mode Logo */}
             <img
               src={Whitelogo}
               alt="dark logo"
-              className="hidden w-40 h-10 object-contain dark:block transform scale-150" // Zoomed-in by 1.5 times
+              className="hidden  h-14 object-contain dark:block" // Reduced size
             />
           </Link>
         </div>
         <nav className="relative">
           <button
-            className="text-2xl md:hidden focus:outline-none"
+            className="text-xl md:hidden focus:outline-none" // Decreased font size
             onClick={() => toggleMenu(!menuOpen)}
             aria-label="Toggle Menu"
           >
@@ -109,14 +109,14 @@ function Header({ menuOpen, toggleMenu }) {
             )}
           </button>
           <ul
-            className={`absolute top-full right-0 bg-white dark:bg-gray-900 shadow-lg w-48 py-4 rounded-lg md:static md:flex md:gap-8 md:shadow-none md:w-auto md:py-0 md:bg-transparent md:dark:bg-transparent transition-transform duration-300 ${
+            className={`absolute top-full right-0 bg-white dark:bg-gray-800 shadow-lg w-48 py-4 rounded-lg md:static md:flex md:gap-8 md:shadow-none md:w-auto md:py-0 md:bg-transparent md:dark:bg-transparent transition-transform duration-300 ${
               menuOpen ? "block" : "hidden md:flex"
             }`}
           >
             <li>
               <Link
                 to="/"
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition"
+                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
                 onClick={closeMenu}
               >
                 Home
@@ -125,7 +125,7 @@ function Header({ menuOpen, toggleMenu }) {
             <li>
               <Link
                 to="/products"
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition"
+                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
                 onClick={closeMenu}
               >
                 Products
@@ -134,7 +134,7 @@ function Header({ menuOpen, toggleMenu }) {
             <li>
               <Link
                 to="/about"
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition"
+                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
                 onClick={closeMenu}
               >
                 About
@@ -143,7 +143,7 @@ function Header({ menuOpen, toggleMenu }) {
             <li>
               <Link
                 to="/contact"
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition"
+                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
                 onClick={closeMenu}
               >
                 Contact

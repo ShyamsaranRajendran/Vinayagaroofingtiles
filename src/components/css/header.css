@@ -1,6 +1,6 @@
-.header-container {
+/* .header-container {
   @apply bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100;
-}
+} */
 
 .header-link {
   @apply text-gray-600 dark:text-gray-300;

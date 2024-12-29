@@ -58,7 +58,6 @@ export default function ProductDetails() {
     `Hi! I'm interested in the following product: 
     - Category: ${category} 
     - Link: ${productPageLink}
-    - Material: ${material} 
     Could you share more details and assist with the purchase? 😊`
   );
   const whatsappLink = `https://wa.me/+919865980220?text=${whatsappMessage}`;
@@ -69,7 +68,7 @@ export default function ProductDetails() {
       <div className="flex items-center mb-6">
         <button
           onClick={handleBack}
-          className="flex items-center gap-2 text-gray-700 hover:text-gray-900"
+          className="flex items-center gap-2 text-gray-700 hover:text-gray-900 dark:text-white"
         >
           <FaArrowLeft className="w-5 h-5" />
           Back
@@ -105,7 +104,7 @@ export default function ProductDetails() {
           </p>
           <p className="mt-4 text-gray-700">{description}</p>
 
-          <div className="mt-6">
+          <div className="mt-6 flex justify-center items-center">
             <a
               href={whatsappLink}
               target="_blank"

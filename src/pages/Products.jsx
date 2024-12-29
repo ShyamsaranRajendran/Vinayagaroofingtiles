@@ -89,18 +89,16 @@ export default function Products() {
       {/* Search Bar */}
       <div className="flex flex-col gap-4">
         <div
-          className="flex items-center gap-4 bg-white shadow-md p-3 rounded-lg"
+          className="flex items-center gap-4 bg-white shadow-md p-3 rounded-lg w-full max-w-md mx-auto"
           style={{
             border: "1px solid #e0e0e0",
-            maxWidth: "600px",
-            margin: "0 auto",
           }}
         >
           <CiSearch size={25} className="text-gray-600" />
           <input
             type="text"
             placeholder="Search products..."
-            className="flex-1 bg-transparent outline-none text-gray-700"
+            className="flex-1 bg-transparent outline-none text-gray-700 w-full"
             value={searchQuery}
             onChange={handleSearchChange}
             style={{
@@ -129,21 +127,17 @@ export default function Products() {
         <div className="text-sm text-gray-500">
           <p>Try using these keywords:</p>
           <ul className="flex gap-3 flex-wrap">
-            {[
-              "UPVC roof",
-              "Ceramic tiles",
-              "Clay ",
-              "Jali",
-            ].map((keyword, index) => (
-              <li
-                key={index}
-                onClick={() => handleKeywordClick(keyword)}
-                className="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline transition-all"
-                style={{ padding: "4px 8px", borderRadius: "20px" }}
-              >
-                {keyword}
-              </li>
-            ))}
+            {["UPVC", "Ceramic", "Clay", "Jali"].map(
+              (keyword, index) => (
+                <li
+                  key={index}
+                  onClick={() => handleKeywordClick(keyword)}
+                  className="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline transition-all px-2 py-1 rounded-full"
+                >
+                  {keyword}
+                </li>
+              )
+            )}
           </ul>
         </div>
       </div>
@@ -165,7 +159,7 @@ export default function Products() {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product, index) => (
             <ProductCard key={index} {...product} />

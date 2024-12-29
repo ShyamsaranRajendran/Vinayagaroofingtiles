@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import {
-  FaTwitter,
   FaInstagram,
-  FaLinkedinIn,
   FaWhatsapp,
   FaEnvelope, // Import the email icon
 } from "react-icons/fa";
@@ -85,7 +83,7 @@ function Footer() {
           <h4 className="text-lg font-bold mb-4">Follow Us</h4>
           <div className="flex space-x-4">
             <a
-              href="mailto:info@vinayagaroofing.com"
+              href="mailto:vinayagaroofingtiles@gmail.com"
               className="text-gray-400 hover:text-white"
             >
               <FaEnvelope size={20} />

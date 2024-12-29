@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom"; // Ensure this is imported
 
 // Hero component
 export function Hero() {
@@ -33,17 +34,11 @@ export function Hero() {
       title: "Innovative Roofing Designs",
       description: "Discover modern designs to enhance your living space.",
       cta: "Browse Designs",
-    },
-    {
-      image:
-        "https://tricitypropertysearches.com/wp-content/uploads/2022/05/What-color-roof-lasts-the-longest.jpg",
-      title: "Weatherproof Roofing",
-      description: "Durable and reliable materials to withstand any climate.",
-      cta: "Check Products",
-    },
+    }
   ];
 
   const [currentSlide, setCurrentSlide] = useState(slides[0]);
+  const navigate = useNavigate(); // Use the hook to get the navigate function
 
   // Function to get a random slide
   const getRandomSlide = () => {
@@ -52,7 +47,7 @@ export function Hero() {
   };
 
   useEffect(() => {
-    const interval = setInterval(getRandomSlide, 5000); // Change slide every 5 seconds
+    const interval = setInterval(getRandomSlide, 3000); // Change slide every 5 seconds
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
 
@@ -106,7 +101,8 @@ export function Hero() {
             <motion.button
               className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
               variants={itemVariants}
-            >
+              onClick={() => navigate(`/products`)} 
+                  >
               Explore Now
             </motion.button>
           </motion.div>
