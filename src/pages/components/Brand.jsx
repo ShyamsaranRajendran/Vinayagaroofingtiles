@@ -53,7 +53,7 @@ export function Brand() {
           {brandLogos.map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-6 border rounded-lg shadow-md bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+              className="flex items-center justify-center p-6 border rounded-lg shadow-md bg-gray-50  hover:bg-gray-100 dark:hover:bg-gray-700 transition"
             >
               <img
                 src={logo}
