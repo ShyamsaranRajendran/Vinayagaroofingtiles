@@ -85,6 +85,15 @@ const AboutCodelancing = () => {
         >
           @codelancing_technologies_
         </a>
+        <br /> Website:{" "}
+        <a
+          href="https://codelancing.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500"
+        >
+          codelancing.in
+        </a>
       </p>
 
       <h2 className="text-xl font-semibold mt-6 text-center md:text-left px-2">
@@ -121,5 +130,8 @@ const AboutCodelancing = () => {
     </div>
   );
 };
+
+
+//redeay for
 
 export default AboutCodelancing;
