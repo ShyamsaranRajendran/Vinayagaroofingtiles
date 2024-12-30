@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Lottie from "react-lottie";
 import { X } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
 import NoProducts from "./NoProducts.jsx";
-import SearchAnimation from "../assets/Animation-search.json";
 import { CiSearch } from "react-icons/ci";
 
 const categories = [
@@ -75,14 +73,7 @@ export default function Products() {
     return matchesCategory && matchesSearchQuery;
   });
 
-  const searchOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: SearchAnimation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+ 
 
   return (
     <div className="mt-4 p-4">
@@ -131,7 +122,7 @@ export default function Products() {
               <li
                 key={index}
                 onClick={() => handleKeywordClick(keyword)}
-                className="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline transition-all px-2 py-1 rounded-full dark:border dark:border-gray-700 "
+                className="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline transition-all px-2 py-1 rounded-full border border-gray dark:border dark:border-gray-700 "
               >
                 {keyword}
               </li>

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "react-lottie";
 import NoProductsAnimation from "../assets/no-data.json"; // Lottie JSON file
 
 const NoProducts = () => {
+   useEffect(() => {
+     window.scrollTo(0, 0);
+   }, []);
   const defaultOptions = {
     loop: true,
     autoplay: true,

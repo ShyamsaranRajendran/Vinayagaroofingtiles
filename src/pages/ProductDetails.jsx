@@ -68,9 +68,9 @@ export default function ProductDetails() {
       <div className="fixed top-17 right-4 z-50 flex items-center space-x-2">
         <button
           onClick={handleBack}
-          className="flex items-center gap-2 text-gray-700 hover:text-gray-900 dark:text-white"
+          className="flex items-center  text-white hover:text-gray-900 dark:text-white p-3 bg-gray-800 rounded-full shadow-lg hover:bg-gray-700 dark:bg-gray-600 dark:hover:bg-gray-500 focus:outline-none"
         >
-          <FaArrowLeft size={20} />
+          <FaArrowLeft size={18} />
         </button>
       </div>
 
@@ -120,7 +120,7 @@ export default function ProductDetails() {
       {/* Recommended Products */}
       {recommendedProducts.length > 0 && (
         <div className="mt-10">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl font-semibold text-gray-800 dark:text-dark-text mb-4">
             Recommended Products
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">

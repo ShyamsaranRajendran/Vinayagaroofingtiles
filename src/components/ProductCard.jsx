@@ -55,6 +55,7 @@ export default function ProductCard({
         <img
           src={isRemoteImage ? image : flooringTile}
           alt={name}
+          onClick={() => navigate(`/product/${id}`)}
           className={`w-full h-full object-cover transition-transform duration-300 hover:scale-175 ${
             isImageLoaded ? "opacity-100" : "opacity-0"
           }`}

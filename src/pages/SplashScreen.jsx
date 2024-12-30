@@ -3,6 +3,7 @@ import logodp from "../assets/logo-cropped.svg";
 import "./css/animations.css"; // New CSS file for animations
 
 const SplashScreen = () => {
+  
   const brands = [
     "Chitra Ceramic",
     "Swastik Tiles",

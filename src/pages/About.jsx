@@ -23,12 +23,17 @@ const About = () => {
       { threshold: 0.1 }
     );
 
+
     const statsSection = document.querySelector(".about-stats");
     if (statsSection) {
       observer.observe(statsSection);
     }
 
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   const startCounting = useCallback(() => {

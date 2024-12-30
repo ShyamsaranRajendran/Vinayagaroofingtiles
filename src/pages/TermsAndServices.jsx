@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const TermsAndServices = () => {
+
+   useEffect(() => {
+     window.scrollTo(0, 0);
+   }, []);
+
   return (
     <div className="terms-container p-6 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       <h1 className="text-2xl font-bold mb-4">Terms and Conditions</h1>
