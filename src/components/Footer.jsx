@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import {
   FaInstagram,
   FaWhatsapp,
+  FaHeart,
   FaEnvelope, // Import the email icon
 } from "react-icons/fa";
 
@@ -109,7 +110,7 @@ function Footer() {
       {/* Footer Bottom */}
       <div className="bg-gray-700 py-4 text-center">
         <p className="text-gray-400">
-          © 2025 Vinayaga Roofing Inc. All rights reserved.
+          © 2025 Vinayaga Roofing Pvt. All rights reserved.
         </p>
         <div className="mt-2">
           <a href="/terms" className="text-gray-400 hover:text-white">
@@ -119,12 +120,11 @@ function Footer() {
           <a href="/privacy" className="text-gray-400 hover:text-white">
             Privacy
           </a>
-          <span className="mx-2">|</span>
           <a
             href="/developer"
-            className="text-gray-400 hover:text-white"
+            className="text-gray-400 hover:text-white flex items-center justify-center"
           >
-            Developer Credits
+            Made with <FaHeart className="text-red-500 mx-1" /> by /codelancing_
           </a>
         </div>
       </div>

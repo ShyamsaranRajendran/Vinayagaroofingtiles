@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import DevLogo from "../assets/dev-dark.svg"; // Light theme logo
-import DevLogoD from "../assets/dev-white.svg"; // Dark theme logo
+import DevLogo from "../assets/dark.jpeg"; // Light theme logo
+import DevLogoD from "../assets/white.jpeg"; // Dark theme logo
 
 const AboutCodelancing = () => {
   useEffect(() => {
@@ -8,23 +8,23 @@ const AboutCodelancing = () => {
   }, []);
 
   return (
-    <div className="about-container p-6 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <div className="about-container p-6 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-light">
       {/* Logo Section */}
-      <div className="logo-container flex justify-center mb-6">
+      <div className="logo-container flex justify-center p-3 mb-6">
         {/* Conditional rendering based on theme */}
         <img
           src={DevLogo}
           alt="Codelancing Technologies Logo Light"
-          className="w-30 h-auto dark:hidden"
+          className="w-30 h-auto rounded-lg dark:hidden"
         />
         <img
           src={DevLogoD}
           alt="Codelancing Technologies Logo Dark"
-          className="w-30 h-auto hidden dark:block"
+          className="w-30 h-auto rounded-lg hidden dark:block"
         />
       </div>
 
-      <h1 className="text-3xl font-bold mb-4 text-center">
+      <h1 className="text-3xl font-bold mb-4 text-center font-light">
         Welcome to Codelancing Technologies
       </h1>
       <p className="mb-4 text-lg">
@@ -43,16 +43,20 @@ const AboutCodelancing = () => {
         into reality.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6">Our Mission</h2>
-      <p className="mb-4">
+      <h2 className="text-xl font-semibold mt-6 text-center md:text-left px-2">
+        Our Mission
+      </h2>
+      <p className="mb-4 text-lg">
         To empower businesses with cutting-edge solutions while fostering a
         culture of creativity and collaboration. We believe in pushing
         boundaries, challenging norms, and delivering results that exceed
         expectations.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6">Managing Directors</h2>
-      <ul className="list-disc ml-6 mb-4">
+      <h2 className="text-xl font-semibold mt-6 text-center md:text-left px-2">
+        Managing Directors
+      </h2>
+      <ul className="list-disc ml-6 mb-4 ">
         <li>
           <strong>Aditya Balasubramaniam</strong> (Founder & CTO)
         </li>
@@ -61,16 +65,18 @@ const AboutCodelancing = () => {
         </li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6">Contact</h2>
+      <h2 className="text-xl font-semibold mt-6 text-center md:text-left px-2">
+        Contact
+      </h2>
       <p className="mb-4">
-        - Email:{" "}
+        Email:{" "}
         <a
           href="mailto:codelancingtechnologies@gmail.com"
           className="text-blue-500"
         >
           codelancingtechnologies@gmail.com
         </a>
-        <br />- Instagram:{" "}
+        <br /> Instagram:{" "}
         <a
           href="https://instagram.com/codelancing_technologies_"
           target="_blank"
@@ -81,7 +87,9 @@ const AboutCodelancing = () => {
         </a>
       </p>
 
-      <h2 className="text-xl font-semibold mt-6">Rights</h2>
+      <h2 className="text-xl font-semibold mt-6 text-center md:text-left px-2">
+        Rights
+      </h2>
       <p className="mb-4">
         At Codelancing Technologies, we are committed to transparency and open
         collaboration. The content, images, and resources provided on our
@@ -96,7 +104,9 @@ const AboutCodelancing = () => {
       </p>
       <p>Together, let's build a future where technology empowers everyone.</p>
 
-      <h2 className="text-xl font-semibold mt-6">Developer Credits</h2>
+      <h2 className="text-xl font-semibold mt-6 text-center md:text-left px-2">
+        Developer Credits
+      </h2>
       <p>
         GitHub:{" "}
         <a

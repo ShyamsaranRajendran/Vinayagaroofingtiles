@@ -116,7 +116,7 @@ export default function Products() {
 
         {/* Suggested Keywords */}
         <div className="text-sm text-gray-500">
-          <p className="py-2">Try using these keywords:</p>
+          <p className="py-2 px-2">Try using these keywords:</p>
           <ul className="flex gap-3 flex-wrap">
             {["UPVC", "Ceramic", "Clay", "Jali"].map((keyword, index) => (
               <li
