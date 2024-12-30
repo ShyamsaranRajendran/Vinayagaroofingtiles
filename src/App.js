@@ -11,6 +11,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import "./App.css";
 import logodp from "./assets/logo.svg"
 import SplashScreen from "./pages/SplashScreen";
+import AboutCodelancing from "./pages/AboutCodeLancing";
 
 
 function App() {
@@ -30,12 +31,14 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
-              <Route path="products" element={<Products />} />
+              <Route path="/products" element={<Products />} />
               <Route path="/product/:id" element={<ProductDetails />} />
               <Route path="/terms" element={<TermsAndServices />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
-              <Route path="about" element={<About />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/developer" element={<AboutCodelancing />} />
+
             </Route>
           </Routes>
         )}

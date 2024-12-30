@@ -119,6 +119,13 @@ function Footer() {
           <a href="/privacy" className="text-gray-400 hover:text-white">
             Privacy
           </a>
+          <span className="mx-2">|</span>
+          <a
+            href="/developer"
+            className="text-gray-400 hover:text-white"
+          >
+            Developer Credits
+          </a>
         </div>
       </div>
     </footer>
