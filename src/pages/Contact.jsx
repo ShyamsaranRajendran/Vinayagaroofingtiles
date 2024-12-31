@@ -1,11 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Map from "../assets/map.png";
 
 export default function Contact() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Scroll to top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Handle image load
+  const handleImageLoad = () => {
+    setIsLoading(false); // Image has loaded
+  };
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900 py-10">
@@ -90,10 +98,21 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              {/* Loader: Displayed when the image is loading */}
+              {isLoading && (
+                <div className="flex justify-center items-center w-full h-full bg-gray-200">
+                  <div className="spinner-border animate-spin w-8 h-8 border-4 border-t-4 border-blue-500 rounded-full"></div>
+                </div>
+              )}
+
+              {/* Image: Displayed once loaded */}
               <img
                 src={Map}
                 alt="Map"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                className={`w-full h-full object-cover hover:scale-105 transition-transform duration-300 ${
+                  isLoading ? "opacity-0" : "opacity-100"
+                }`}
+                onLoad={handleImageLoad} // Trigger loading state change once image is loaded
               />
             </a>
           </div>

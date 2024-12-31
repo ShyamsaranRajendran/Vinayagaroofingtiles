@@ -10,17 +10,17 @@ const AboutCodelancing = () => {
   return (
     <div className="about-container p-6 md:p-12 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-light">
       {/* Logo Section */}
-      <div className="logo-container flex justify-center p-3 mb-8">
+      <div className="logo-container flex justify-center p-3 mb-6">
         {/* Conditional rendering based on theme */}
         <img
           src={DevLogo}
-          alt="Codelancing Technologies Logo Light Theme"
-          className="w-32 h-auto rounded-lg dark:hidden md:w-48"
+          alt="Codelancing Technologies Logo Light"
+          className="w-30 h-auto rounded-lg dark:hidden"
         />
         <img
           src={DevLogoD}
-          alt="Codelancing Technologies Logo Dark Theme"
-          className="w-32 h-auto rounded-lg hidden dark:block md:w-48"
+          alt="Codelancing Technologies Logo Dark"
+          className="w-30 h-auto rounded-lg hidden dark:block"
         />
       </div>
 
