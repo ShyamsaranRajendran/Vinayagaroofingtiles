@@ -122,7 +122,7 @@ function Footer() {
           </a>
           <a
             href="/developer"
-            className="text-gray-400 hover:text-white flex items-center justify-center"
+            className="text-gray-400 py-1 hover:text-white flex items-center justify-center"
           >
             Made with <FaHeart className="text-red-500 mx-1" /> by /codelancing_
           </a>

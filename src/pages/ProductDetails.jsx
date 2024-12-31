@@ -18,20 +18,26 @@ export default function ProductDetails() {
     window.scrollTo(0, 0);
   }, [id]);
 
- const handleBack = () => {
-   if (window.history.length > 1) {
-     navigate(-1); // Navigate to the previous page
-   } else {
-     navigate("/products"); // Fallback to the landing page
-   }
- };
-
+  const handleBack = () => {
+    if (window.history.length > 1) {
+      navigate(-1); // Navigate to the previous page
+    } else {
+      navigate("/products"); // Fallback to the landing page
+    }
+  };
 
   const handleImageLoad = (productId) => {
     setRecommendedImageLoaded((prevState) => ({
       ...prevState,
       [productId]: true,
     }));
+  };
+
+  const shuffleArray = (array) => {
+    return array
+      .map((item) => ({ item, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ item }) => item);
   };
 
   if (!productDetails) {
@@ -50,8 +56,12 @@ export default function ProductDetails() {
   const productPageLink = `${
     window.location.origin
   }/product/${encodeURIComponent(productId)}`;
-  const recommendedProducts = products.filter(
-    (product) => product.category.toLowerCase() === category.toLowerCase()
+  const recommendedProducts = shuffleArray(
+    products.filter(
+      (product) =>
+        product.category.toLowerCase() === category.toLowerCase() &&
+        product.id !== productId // Exclude the current product
+    )
   );
 
   const whatsappMessage = encodeURIComponent(
@@ -68,7 +78,7 @@ export default function ProductDetails() {
       <div className="fixed top-17 right-4 z-50 flex items-center space-x-2">
         <button
           onClick={handleBack}
-          className="flex items-center  text-white hover:text-gray-900 dark:text-white p-3 bg-gray-800 rounded-full shadow-lg hover:bg-gray-700 dark:bg-gray-600 dark:hover:bg-gray-500 focus:outline-none"
+          className="flex items-center text-white hover:text-gray-900 dark:text-white p-3 bg-gray-800 rounded-full shadow-lg hover:bg-gray-700 dark:bg-gray-600 dark:hover:bg-gray-500 focus:outline-none"
         >
           <FaArrowLeft size={18} />
         </button>
@@ -78,7 +88,6 @@ export default function ProductDetails() {
       <div className="flex flex-col lg:flex-row gap-8 bg-white shadow-lg rounded-lg p-6">
         {/* Product Image */}
         <div className="flex-1">
-          {/* Main product image loader */}
           {!imageLoaded && (
             <div className="w-full h-80 bg-gray-200 animate-pulse rounded-lg"></div>
           )}
@@ -124,34 +133,39 @@ export default function ProductDetails() {
             Recommended Products
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-            {recommendedProducts.map((product, index) => (
-              <button
-                onClick={() => navigate(`/product/${product.id}`)}
-                key={index}
-                className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition"
-              >
-                <div className="relative">
-                  {/* Recommended product image loader */}
-                  {!recommendedImageLoaded[product.id] && (
-                    <div className="w-full h-42 bg-gray-200 animate-pulse"></div>
-                  )}
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    onLoad={() => handleImageLoad(product.id)}
-                    className={`w-full h-38 object-cover ${
-                      recommendedImageLoaded[product.id] ? "block" : "hidden"
-                    }`}
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-sm font-semibold text-gray-800">
-                    {product.name}
-                  </h3>
-                  <p className="text-xs text-gray-500">{product.category}</p>
-                </div>
-              </button>
-            ))}
+            {recommendedProducts
+              .filter((product) => product.id !== productId) // Exclude the current product
+              .sort(() => Math.random() - 0.5) // Shuffle the array
+              .map((product) => (
+                <button
+                  onClick={() => navigate(`/product/${product.id}`)}
+                  key={product.id}
+                  className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition"
+                >
+                  <div className="relative">
+                    {/* Recommended product image loader */}
+                    {!recommendedImageLoaded[product.id] && (
+                      <div className="flex items-center justify-center w-full h-42">
+                        <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+                      </div>
+                    )}
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      onLoad={() => handleImageLoad(product.id)}
+                      className={`w-full h-38 object-cover ${
+                        recommendedImageLoaded[product.id] ? "block" : "hidden"
+                      }`}
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-sm font-semibold text-gray-800">
+                      {product.name}
+                    </h3>
+                    <p className="text-xs text-gray-500">{product.category}</p>
+                  </div>
+                </button>
+              ))}
           </div>
         </div>
       )}

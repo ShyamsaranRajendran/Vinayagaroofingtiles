@@ -115,14 +115,14 @@ export default function Products() {
         </div>
 
         {/* Suggested Keywords */}
-        <div className="text-sm text-gray-500">
-          <p className="py-2 px-2">Try using these keywords:</p>
-          <ul className="flex gap-3 flex-wrap">
+        <div className="text-sm text-gray-500 flex flex-col items-center lg:items-center">
+          <p className="py-2 text-center">Try using these keywords:</p>
+          <ul className="flex gap-3 flex-wrap justify-center">
             {["UPVC", "Ceramic", "Clay", "Jali"].map((keyword, index) => (
               <li
                 key={index}
                 onClick={() => handleKeywordClick(keyword)}
-                className="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline transition-all px-2 py-1 rounded-full border border-gray dark:border dark:border-gray-700 "
+                className="cursor-pointer text-blue-500 hover:text-blue-700 hover:underline transition-all px-3 py-1 rounded-full border border-gray-300 dark:border-gray-700"
               >
                 {keyword}
               </li>
