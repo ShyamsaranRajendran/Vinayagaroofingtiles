@@ -151,7 +151,7 @@ export default function Products() {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4">
+      <div className="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] xl:grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product, index) => (
             <ProductCard key={index} {...product} />
