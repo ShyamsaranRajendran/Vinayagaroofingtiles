@@ -8,49 +8,11 @@ import Contact from "./pages/Contact";
 import ProductDetails from "./pages/ProductDetails";
 import TermsAndServices from "./pages/TermsAndServices";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Lottie from "react-lottie";
-import loaderAnimation from "./assets/loader.json"; // Adjust path if needed
 import "./App.css";
 import logodp from "./assets/logo.svg"
-const SplashScreen = () => {
+import SplashScreen from "./pages/SplashScreen";
+import AboutCodelancing from "./pages/AboutCodeLancing";
 
-   const loaderOptions = {
-    loop: true, // Infinite loop
-    autoplay: true, // Start playing as soon as possible
-    animationData: loaderAnimation, // Lottie animation data
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice", // Ensure the aspect ratio is maintained
-    }
-  }
-
-  const brands = [
-    "Chitra Ceramic",
-    "Swastik Tiles",
-    "Thomson Tile",
-    "Wiener Berger Bricks",
-    "Pionnier Roof Tile",
-    "Nuvocotto Clay Roof Tile",
-    "Topco Ceramic Tiles",
-  ];
-
-  return (
-    <div className="splash-screen">
-      <div className="poper">
-        <img src={logodp} alt="dp"></img>
-        <Lottie options={loaderOptions} height={150} width={150} />
-     
-      </div>
-      <h1>Welcome to Vinayaga Roofing Tiles</h1>
-      <div className="brand-list">
-        {brands.map((brand, index) => (
-          <div key={index} className="brand-item">
-            {brand}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -69,12 +31,14 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
-              <Route path="products" element={<Products />} />
+              <Route path="/products" element={<Products />} />
               <Route path="/product/:id" element={<ProductDetails />} />
               <Route path="/terms" element={<TermsAndServices />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
-              <Route path="about" element={<About />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/developer" element={<AboutCodelancing />} />
+
             </Route>
           </Routes>
         )}

@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Outlet, useLocation } from "react-router-dom"; // Import useLocation
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import './css/layout.css';
-
 import { FaArrowUp } from "react-icons/fa";
 
 function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  const [showScrollToTop, setShowScrollToTop] = useState(false); // State to show/hide the up arrow button
-  const location = useLocation(); // Get the current location (route)
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+  const location = useLocation();
 
   // Toggle menu open/close
   const toggleMenu = (state) => {
@@ -20,7 +18,7 @@ function Layout() {
   // Toggle dark mode
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    document.body.classList.toggle("dark-mode", !darkMode); // Toggle dark mode class on body
+    document.body.classList.toggle("dark", !darkMode);
   };
 
   const scrollToTop = () => {
@@ -33,13 +31,13 @@ function Layout() {
   // Handle scroll event
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollToTop(window.scrollY > 200); // Show button after scrolling 200px
+      setShowScrollToTop(window.scrollY > 200);
     };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll); // Cleanup event listener
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -49,30 +47,37 @@ function Layout() {
   }, [location]);
 
   return (
-    <div className="layout-container">
+    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+      {/* Header */}
       <Header menuOpen={menuOpen} toggleMenu={toggleMenu} />
-      <main className="layout-main">
+
+      {/* Main Content */}
+      <main className="flex-grow pt-20 md:pt-16 p-6">
+        {/* Apply padding-top equal to header height */}
         <Outlet />
       </main>
-      <div className="dark-options">
+
+      {/* Dark Mode and Scroll to Top Buttons */}
+      <div className="fixed bottom-4 right-4 flex flex-col items-center space-y-4">
         <button
-          className="dark-mode-toggle"
+          className="p-3 bg-indigo-600 text-white rounded-full shadow-lg hover:bg-indigo-500 dark:bg-yellow-400 dark:hover:bg-yellow-300 focus:outline-none"
           onClick={toggleDarkMode}
           aria-label="Toggle dark mode"
         >
           {darkMode ? "☀️" : "🌙"}
         </button>
-        {showScrollToTop && ( // Conditionally render the button
+        {showScrollToTop && (
           <button
-            className="scroll-to-top-btn"
-            aria-label="Scroll to top"
+            className="p-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 dark:bg-gray-600 dark:hover:bg-gray-500 focus:outline-none"
             onClick={scrollToTop}
+            aria-label="Scroll to top"
           >
-            <FaArrowUp size={18} color="gold" />
+            <FaArrowUp size={18} />
           </button>
         )}
       </div>
 
+      {/* Footer */}
       <Footer />
     </div>
   );

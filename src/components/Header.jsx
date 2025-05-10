@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import Lottie from "react-lottie";
-import logo from "../assets/logo.svg";
-import animationData from "../assets/Animation-menu.json";
-import './css/header.css'
+import logo from "../assets/logo-cropped.svg";
+import "./css/header.css";
 import Whitelogo from "../assets/white-logo.svg";
+import { Search, X } from "lucide-react";
+
 function Header({ menuOpen, toggleMenu }) {
+  const [darkMode, setDarkMode] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const menuRef = useRef(null);
@@ -13,6 +14,20 @@ function Header({ menuOpen, toggleMenu }) {
   const closeMenu = () => {
     toggleMenu(false);
   };
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
+  useEffect(() => {
+    const root = document.documentElement;
+
+    if (darkMode) {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+  }, [darkMode]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,64 +66,101 @@ function Header({ menuOpen, toggleMenu }) {
     };
   }, [menuOpen]);
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
-    <div className={`header-wrapper ${showHeader ? "show" : "hide"}`}>
-      <header className="header-container">
-        <div className="header-brand">
-          <Link to="/" className="header-brand-link" onClick={closeMenu}>
-            <img src={logo} className="whitelogo" alt="logo" />
-            <img src={Whitelogo} className="darklogo" alt="logo" />
+    <div
+      className={`fixed top-0 w-full z-50 transition-transform duration-300 ${
+        showHeader ? "translate-y-0" : "-translate-y-full"
+      } ${
+        lastScrollY > 50
+          ? "bg-white/80 dark:bg-gray-800/90 backdrop-blur-md shadow-lg"
+          : "bg-white dark:bg-gray-800 shadow-md"
+      }`}
+    >
+      <header className="flex items-center justify-between px-6 py-4 dark:shadow-md dark:border-b dark:border-gray-700">
+        <div className="flex items-center">
+          <Link to="/" className="flex items-center">
+            {/* Normal Logo (Light Mode) */}
+            <img
+              src={logo}
+              alt="logo"
+              className=" h-14 object-contain dark:hidden"
+            />
+            {/* Dark Mode Logo */}
+            <img
+              src={Whitelogo}
+              alt="dark logo"
+              className="hidden  h-14 object-contain dark:block"
+            />
           </Link>
         </div>
-        <nav className="header-navigation" ref={menuRef}>
+        <nav className="relative" ref={menuRef}>
           <button
-            className="header-menu-icon"
+            className="text-xxl md:hidden focus:outline-none"
             onClick={() => toggleMenu(!menuOpen)}
-            aria-label="Toggle menu"
+            aria-label="Toggle Menu"
           >
             {menuOpen ? (
-              <span className="close-icon">&times;</span>
-            ) : (
-              <span className="hamburger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
+              <span
+                className="text-red-600"
+                style={{
+                  position: "absolute",
+                  top: "1.5rem",
+                  right: "1.8rem",
+                  zIndex: 50000,
+                }}
+              >
+                {" "}
+                <X size={22} />
               </span>
+            ) : (
+              <div className="flex flex-col gap-1">
+                <span className="block w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
+                <span className="block w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
+                <span className="block w-6 h-0.5 bg-gray-800 dark:bg-white"></span>
+              </div>
             )}
           </button>
-          <ul className={`header-menu ${menuOpen ? "open" : ""}`}>
+          <ul
+            className={`absolute top-0 right-0 bg-white dark:bg-gray-800 shadow-lg w-56 py-4 rounded-lg md:static md:flex md:gap-8 md:shadow-none md:w-auto md:py-0 md:bg-transparent md:dark:bg-transparent transition-transform duration-300 ${
+              menuOpen ? "block" : "hidden md:flex"
+            }`}
+          >
             <li>
-              <Link to="/" className="header-link" onClick={closeMenu}>
+              <Link
+                to="/"
+                className="block px-4 py-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
+                onClick={closeMenu}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/products" className="header-link" onClick={closeMenu}>
+              <Link
+                to="/products"
+                className="block px-4 py-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
+                onClick={closeMenu}
+              >
                 Products
               </Link>
             </li>
             <li>
-              <Link to="/about" className="header-link" onClick={closeMenu}>
+              <Link
+                to="/about"
+                className="block px-4 py-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
+                onClick={closeMenu}
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="header-link" onClick={closeMenu}>
+              <Link
+                to="/contact"
+                className="block px-4 py-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition md:px-6 md:py-3"
+                onClick={closeMenu}
+              >
                 Contact
               </Link>
             </li>
-            {/* <div className="animation-container">
-              <Lottie options={defaultOptions} height={200} width={200} />
-            </div> */}
           </ul>
         </nav>
       </header>
