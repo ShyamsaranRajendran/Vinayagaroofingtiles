@@ -14,8 +14,7 @@ export function Hero() {
       cta: "View Testimonials",
     },
     {
-      image:
-        "https://assets-news.housing.com/news/wp-content/uploads/2021/07/28195700/All-about-roofing-sheets-Explore-these-evolving-roofing-trends-for-your-home-FB-1200x700-compressed.jpg",
+      image:"https://i.pinimg.com/originals/5e/72/d5/5e72d5b22f1e3bdfa970d81c1034610f.jpg",
       title: "Premium Roofing Solutions",
       description:
         "Transform your home with our high-quality roofing materials.",
@@ -116,7 +115,7 @@ export function Hero() {
           >
             <img
               src={currentSlide.image}
-              alt="Roofing tiles display"
+              alt={currentSlide.title}
               className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md"
             />
           </motion.div>
