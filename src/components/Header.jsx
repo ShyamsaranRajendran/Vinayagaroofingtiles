@@ -1,33 +1,18 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo-cropped.svg";
 import "./css/header.css";
 import Whitelogo from "../assets/white-logo.svg";
-import { Search, X } from "lucide-react";
+import { X } from "lucide-react";
 
 function Header({ menuOpen, toggleMenu }) {
-  const [darkMode, setDarkMode] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const menuRef = useRef(null);
 
-  const closeMenu = () => {
+  const closeMenu = useCallback(() => {
     toggleMenu(false);
-  };
-
-  const toggleDarkMode = () => {
-    setDarkMode((prevMode) => !prevMode);
-  };
-
-  useEffect(() => {
-    const root = document.documentElement;
-
-    if (darkMode) {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-  }, [darkMode]);
+  }, [toggleMenu]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,7 +49,7 @@ function Header({ menuOpen, toggleMenu }) {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [menuOpen]);
+  }, [menuOpen, closeMenu]);
 
   return (
     <div

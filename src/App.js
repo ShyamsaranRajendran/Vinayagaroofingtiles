@@ -9,7 +9,6 @@ import ProductDetails from "./pages/ProductDetails";
 import TermsAndServices from "./pages/TermsAndServices";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import "./App.css";
-import logodp from "./assets/logo.svg"
 import SplashScreen from "./pages/SplashScreen";
 import AboutCodelancing from "./pages/AboutCodeLancing";
 

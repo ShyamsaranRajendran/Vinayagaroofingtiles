@@ -48,6 +48,7 @@ export function Hero() {
   useEffect(() => {
     const interval = setInterval(getRandomSlide, 3000); // Change slide every 5 seconds
     return () => clearInterval(interval); // Cleanup interval on component unmount
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const containerVariants = {

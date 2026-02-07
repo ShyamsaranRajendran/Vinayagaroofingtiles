@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const products = [
@@ -29,25 +29,6 @@ const products = [
 ];
 
 export function Products() {
-  const [favorites, setFavorites] = useState(() => {
-    const savedFavorites = localStorage.getItem("favorites");
-    return savedFavorites ? JSON.parse(savedFavorites) : [];
-  });
-
-
-
-
-  const handleFavoriteToggle = (productId) => {
-    let updatedFavorites;
-    if (favorites.includes(productId)) {
-      updatedFavorites = favorites.filter((id) => id !== productId);
-    } else {
-      updatedFavorites = [...favorites, productId];
-    }
-    setFavorites(updatedFavorites);
-    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
-  };
-
   const createWhatsappLink = (product) => {
     const productPageLink = `${
       window.location.origin
