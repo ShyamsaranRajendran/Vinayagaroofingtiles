@@ -59,7 +59,7 @@ const Carousel = () => {
 
     {
       image:
-        "https://assets-news.housing.com/news/wp-content/uploads/2021/07/28195700/All-about-roofing-sheets-Explore-these-evolving-roofing-trends-for-your-home-FB-1200x700-compressed.jpg",
+        "https://tricitypropertysearches.com/wp-content/uploads/2022/05/What-color-roof-lasts-the-longest.jpg",
       title: "Premium Roofing Solutions",
       description:
         "Transform your home with our high-quality roofing  materials.",
